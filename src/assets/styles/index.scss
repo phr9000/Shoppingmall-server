@@ -1,0 +1,19 @@
+// base 
+@import './src/assets/styles/base/font.scss';
+// @import '/src/assets/styles/base/reset.scss';
+
+
+// // abstracts
+// @import '/src/assets/styles/layout/abstracts/mixin.scss';
+// @import '/src/assets/styles/abstracts/variables.scss';
+
+// // common
+// @import './common.scss';
+
+// // layout
+@import '/src/assets/styles/layout/header.scss';
+// @import '/src/assets/styles/layout/space.scss';
+@import '/src/assets/styles/layout/main.scss';
+
+// // components
+// @import '/src/assets/styles/components/input.scss';

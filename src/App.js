@@ -1,15 +1,23 @@
 // import { useState } from "react"
-import Header from "./components/Header/Header"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import Root from './pages/Root'
+import JoinLayout from "pages/Join/JoinLayout";
+import MainLayout from "pages/mainLayout/MainLayout";
+
+
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <Root/>,
+        children: [
+            {index: true, element: <MainLayout/>},
+            {path: '/join', element:<JoinLayout/>}
+        ]
+    }
+]);
 
 function App() {
-    return (
-        <>
-            <Header/>
-            {/* <div className="container">
-                <MainLayout/>
-            </div> */}
-        </>     
-        )
+    return <RouterProvider router={router} />;
 }
 
 export default App
