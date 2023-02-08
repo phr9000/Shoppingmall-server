@@ -1,3 +1,27 @@
-.header-container {
-background-color: black; 
+// ------- common ------- //
+html,
+body {
+  font-size: 10px;
+  letter-spacing: -0.5px;
+}
+body {
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+a {
+  color: inherit;
+}
+em {
+  font-style: normal; 
+}
+.ir {
+  position: absolute;
+  text-indent: -9999px;
+}
+.hidden {
+  display: none !important;
+}
+.bold {
+  font-weight: bold !important;
 }

@@ -1,0 +1,212 @@
+@import '/src/assets/styles/abstracts/variables.scss';
+// ------- form ------- //
+legend, caption {
+    @include ir;
+}
+/* input 기본 스타일 초기화 */
+input {
+-webkit-appearance: none;
+    -moz-appearance: none;
+        appearance: none;
+    -webkit-border-radius: 0;
+    font-family:  "Roboto", "Noto Sans KR", "Sans-serif";
+}
+  
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear { display: none; }
+  
+/* input type number 에서 화살표 제거 */
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+}
+  
+  /* Select box 스타일 초기화 */ 
+select {
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+    width: 100%;
+    height: 4rem;
+    padding-right: 3rem;
+    padding-left: 1.6rem;
+    background: image('common/drop_down_btn.svg') no-repeat right 1.6rem center $white;
+    border: 1px solid $border-color-03;
+    border-radius: 0.4rem;
+    @include font(1.4rem, normal, $color-gray-01);
+    &:focus {
+        outline: none;
+        border-color: $black;
+    }
+}
+.select {
+    flex-shrink: 0;
+    width: 12rem;
+    &.typeRow {
+        width: 10.8rem;
+    }
+}
+  
+/* IE 에서 Select box 화살표 제거 */ 
+select::-ms-expand { display: none; }
+  
+/* Input */
+input[type=text],
+input[type=number],
+input[type=tel],
+input[type=email],
+input[type=password],
+input[type=date] {
+    width: 100%;
+    height: 4rem;
+    padding: 0 1.6rem;
+    margin: 0;
+    outline-offset: 0;
+    box-sizing: border-box;
+    border: 1px solid $border-color-03;
+    border-radius: 4px;
+    font-family:  "Noto Sans KR", "Sans-serif";
+    @include font(1.4rem, normal, $color-gray-01);
+    background-color: $white;
+    &:focus {
+        outline: none;
+        border-color: $black;
+    }
+    &::placeholder {
+        color: $placeholder;
+    }
+    &:read-only, &.readonly,
+    &:disabled, &.disabled {
+        background-color: $bgcolor-gray-02;
+        color: $black;
+        }
+    }
+    input[type="date"] {
+        width: auto;
+        &::-webkit-calendar-picker-indicator {
+            opacity: 0.6;
+        }
+    }
+    input[type=checkbox], input[type=radio] {
+        cursor: pointer;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        opacity: 0;
+    }
+  
+  /* textarea */
+  textarea {
+    display: block;
+    width: 100%;
+    height: 17.8rem;
+    resize: none;
+    padding: 1.6rem;
+    border: 1px solid $border-color-01;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+    font-family:  "Noto Sans KR", "Sans-serif";
+    @include font(1.4rem, normal, $color-gray-01, 1.4);
+    &:disabled {
+      background-color: $bgcolor-gray-02;
+    }
+    &:read-only {
+      border: none;
+    }
+    &.highLarge {
+      height: 54rem;
+    }
+  }
+  .textarea {
+    position: relative;
+    padding-bottom: 4rem;
+    border: 1px solid $border-color-01;
+    border-radius: 0.4rem;
+    textarea {
+      height: 13.6rem;
+      padding: 1.6rem 2rem 0;
+      border: none;
+    }
+
+    &.disabled {
+      background-color: $bgcolor-gray-02;
+      textarea {
+        background-color: $bgcolor-gray-02;
+      }
+    }
+  }
+
+.field {
+    .field-label {
+        @include flex(row, flex-start, center);
+        margin-bottom: 0.8rem;
+        @include font(1.7rem, 400, $black, 2.5rem);
+    }
+    .field-form {
+        @include flex(row, flex-start, center);
+        position: relative;
+        @include font(1.6rem, normal, $color-gray-01, 1.4);
+        &.align-center {
+          justify-content: center;
+        }
+        & > *:only-child {
+          flex: 1;
+        }
+    }
+}
+
+/* Field - input */
+.field-input {
+    .input {
+      & + .btn { //중복확인
+        flex-basis: 11.8rem;
+        margin-left: 0.8rem;
+        height: 4rem;
+      }
+    }
+  }
+
+  /* button */
+.btn {
+    display: inline-block; 
+    padding: 5px 10px; 
+    @include font(26px, 400, $black1, 26px);
+    border: 1px solid $black;
+    border-radius: 3px;
+
+    @include flex(row, center, center);
+    position: relative;
+    z-index: 1;
+    height: 5.7rem;
+    padding: 0 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid $primary;
+    @include font(1.6rem, 500, $primary);
+    white-space: nowrap;
+    outline: none;
+    
+    &:after {
+        content: '';
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        border: 4px solid $black;
+    }
+    &:disabled {
+        cursor: default;
+        border-color: $black;
+        color: $black;
+        &:hover, &:focus-visible {
+        background-color: transparent;
+        }
+        &:active {
+        background-color: transparent;
+        }
+    }
+}

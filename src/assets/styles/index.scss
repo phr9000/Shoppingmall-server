@@ -1,14 +1,14 @@
 // base 
 @import './src/assets/styles/base/font.scss';
-// @import '/src/assets/styles/base/reset.scss';
+@import '/src/assets/styles/base/reset.scss';
 
 
 // // abstracts
-// @import '/src/assets/styles/layout/abstracts/mixin.scss';
-// @import '/src/assets/styles/abstracts/variables.scss';
+@import '/src/assets/styles/abstracts/mixin.scss';
+@import '/src/assets/styles/abstracts/variables.scss';
 
 // // common
-// @import './common.scss';
+@import './common.scss';
 
 // // layout
 @import '/src/assets/styles/layout/header.scss';
@@ -16,4 +16,5 @@
 @import '/src/assets/styles/layout/main.scss';
 
 // // components
-// @import '/src/assets/styles/components/input.scss';
+@import '/src/assets/styles/components/form.scss';
+@import '/src/assets/styles/components/guide.scss';

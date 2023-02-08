@@ -137,3 +137,44 @@
 		-webkit-line-clamp: $line;
 	}
 }
+
+// set ir
+@mixin ir {
+  text-indent: -9999px;
+  display: block;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%); 
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  left: -9999px;
+  white-space: nowrap;
+  font-size: 1px;
+  transform: translateX(-100px) scale(0.0001);
+  z-index: -1;
+}
+// reset ir
+@mixin no-ir {
+  text-indent: 0;
+  display: inherit;
+  border: 0;
+  clip: unset;
+  clip-path: none; 
+  width: inherit;
+  height: inherit;
+  margin: inherit;
+  padding: inherit;
+  overflow: unset;
+  padding: inherit;
+  position: static;
+  left: unset;
+  white-space: unset;
+  font-size: inherit;
+  transform: none;
+  z-index: unset;
+}
