@@ -5,7 +5,8 @@ import '../assets/styles/index.scss';
 export default function Header() {
   return (
     <header className='header-container'>
-      <Link to='/join'>Join</Link>
+      <span className='display-inblock'><Link to='/guide'>Guide</Link></span>
+      <span className='display-inblock ml5'><Link to='/join'>Join</Link></span>
     </header>
   )
 }
