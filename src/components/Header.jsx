@@ -11,7 +11,9 @@ export default function Header() {
       <span className="display-inblock ml5">
         <Link to="/join">Join</Link>
       </span>
-      <div>후덜덜해 이렇게 하는 데 변경이 안되나? 이번에는 성공한다</div>
+      <span className="display-inblock ml5">
+        <Link to="/login">Login</Link>
+      </span>
     </header>
   );
 }

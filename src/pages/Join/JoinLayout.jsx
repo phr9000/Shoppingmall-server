@@ -3,7 +3,9 @@ export default function JoinLayout() {
   return (
     <div className='join-container'>
       <h2 className='title'>회원가입</h2>
-      <div className='top-title-area'><p className='top-title'>필수입력사항</p></div>
+      <div className='top-title-area'>
+        <p className='top-title'>필수입력사항</p>
+      </div>
       <div className='join-area'>
         <div className="field flex align-center">
           <div className='input-name-area'>
