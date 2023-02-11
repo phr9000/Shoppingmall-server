@@ -1,5 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 export default function JoinLayout() {
+  const [id, setId] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleInput = () => {
+    console.log(id, password);
+  };
   return (
     <div className='join-container'>
       <h2 className='title'>회원가입</h2>
@@ -9,7 +15,7 @@ export default function JoinLayout() {
       <div className='join-area'>
         <div className="field flex align-center">
           <div className='input-name-area'>
-            <label for="input-name">
+            <label htmlFor="input-name">
               아이디를 입력해주세요
             </label>
             <span className='required-icon'></span>
@@ -19,18 +25,18 @@ export default function JoinLayout() {
               <input
                 type="text"
                 id="input-name"
-                defaltValue=""
+                onChange={e=>setId(e.target.value)}
                 placeholder="아이디를 입력해주세요"
               />
             </div>
-            <button type="button" className="btn btn-size-middle">
+            <button type="button" className="btn btn-size-middle" >
               <span>중복확인</span>
             </button>
           </div>
         </div>
         <div className="field flex align-center">
           <div className='input-name-area'>
-            <label for="input-name">
+            <label htmlFor="input-name">
               비밀번호
             </label>
             <span className='required-icon'></span>
@@ -40,7 +46,7 @@ export default function JoinLayout() {
               <input
                 type="text"
                 id="input-name"
-                defaltValue=""
+                onChange={e=>setPassword(e.target.value)}
                 placeholder="비밀번호를 입력해주세요"
               />
             </div>
@@ -48,7 +54,7 @@ export default function JoinLayout() {
         </div>
         <div className="field flex align-center">
           <div className='input-name-area'>
-            <label for="input-name">
+            <label htmlFor="input-name">
               비밀번호확인
             </label>
             <span className='required-icon'></span>
@@ -66,7 +72,7 @@ export default function JoinLayout() {
         </div>
         <div className="field flex align-center">
           <div className='input-name-area'>
-            <label for="input-name">
+            <label htmlFor="input-name">
               이름
             </label>
             <span className='required-icon'></span>
@@ -85,7 +91,7 @@ export default function JoinLayout() {
         <div className="field flex align-center">
           <div className='input-name-area'>
             <span className='required-icon'></span>
-            <label for="input-name">
+            <label htmlFor="input-name">
               이메일
             </label>
           </div>
@@ -106,7 +112,7 @@ export default function JoinLayout() {
         <div className="field flex align-center">
           <div className='input-name-area'>
             <span className='required-icon'></span>
-            <label for="input-name">
+            <label htmlFor="input-name">
               휴대폰
             </label>
           </div>
@@ -125,6 +131,12 @@ export default function JoinLayout() {
           </div>
         </div>
       </div>
+      <div className="btn-area">
+          <button className="btn primary w100" type="button" onClick={()=> handleInput()}>
+            가입하기
+          </button>
+        </div>
     </div>
+    
   )
 }

@@ -5,10 +5,19 @@ export default function Guide() {
     <div className="guide-container">
       {/* button */}
       <div className="guide-box">
-        <h2 className="guide-title">기본 버튼</h2>
-        <div className="btn-area">
+        <h2 className="guide-title">버튼</h2>
+        <div className="btn-area flex">
           <button className="btn" type="button">
             기본버튼
+          </button>
+          <button className="btn primary ml5" type="button">
+            기본버튼
+          </button>
+        </div>
+        <br></br>
+        <div className="btn-area">
+          <button className="btn full" type="button">
+            Full 버튼
           </button>
         </div>
       </div>

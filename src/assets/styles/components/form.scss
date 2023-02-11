@@ -186,6 +186,14 @@ input[type=date] {
   @include font(1.6rem, 500, $primary);
   white-space: nowrap;
   outline: none;
+
+  &.primary {
+    background-color: $black;
+    color: $white; 
+  }
+  &.full {
+    width: 100%; 
+  }
   
   &:after {
       content: '';
