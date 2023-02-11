@@ -131,7 +131,7 @@ export default function JoinLayout() {
           </div>
         </div>
       </div>
-      <div className="btn-area">
+      <div className="btn-area join-btn">
           <button className="btn primary w100" type="button" onClick={()=> handleInput()}>
             가입하기
           </button>
