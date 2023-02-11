@@ -12,6 +12,7 @@
         &:after {
             position: absolute;
             left: 0; 
+            top: 0;
             display: block;
             content: '*';
             color: red; 
@@ -47,9 +48,15 @@
         }
     }
     .input-name-area {
+        position: relative;
+        display: flex; 
+        align-items: center;
         min-width: 14rem;
         width: 14rem; 
         @include font(1.4rem, 500, $black, 2rem);
+        label {
+            padding-left: 1rem; 
+        }
     }
     .join-area {
         padding: 0 2rem; 
@@ -62,5 +69,7 @@
     }
     .btn {
         min-width: 120px; 
+        font-size: 14px;
+        line-height: 15px; 
     }
 }
