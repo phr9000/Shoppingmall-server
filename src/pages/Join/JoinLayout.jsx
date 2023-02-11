@@ -1,5 +1,4 @@
 import React from 'react'
-
 export default function JoinLayout() {
   return (
     <div className='join-container'>
@@ -9,7 +8,7 @@ export default function JoinLayout() {
         <div className="field flex align-center">
           <div className='input-name-area'>
             <label for="input-name">
-              이름을 입력해주세요
+              아이디를 입력해주세요
             </label>
             <span className='required-icon'></span>
           </div>
@@ -18,7 +17,7 @@ export default function JoinLayout() {
               <input
                 type="text"
                 id="input-name"
-                value=""
+                defaltValue=""
                 placeholder="아이디를 입력해주세요"
               />
             </div>
@@ -39,7 +38,7 @@ export default function JoinLayout() {
               <input
                 type="text"
                 id="input-name"
-                value=""
+                defaltValue=""
                 placeholder="비밀번호를 입력해주세요"
               />
             </div>
@@ -57,7 +56,7 @@ export default function JoinLayout() {
               <input
                 type="text"
                 id="input-name"
-                value=""
+                defaltValue=""
                 placeholder="비밀번호를 한번 더 입력해주세요"
               />
             </div>
@@ -75,7 +74,7 @@ export default function JoinLayout() {
               <input
                 type="text"
                 id="input-name"
-                value=""
+                defaltValue=""
                 placeholder="이름을 입력해주세요"
               />
             </div>
@@ -93,7 +92,7 @@ export default function JoinLayout() {
               <input
                 type="text"
                 id="input-name"
-                value=""
+                defaltValue=""
                 placeholder="예: marketkurly@krly.com"
               />
             </div>
@@ -114,7 +113,7 @@ export default function JoinLayout() {
               <input
                 type="text"
                 id="input-name"
-                value=""
+                defaltValue=""
                 placeholder="숫자만 입력해주세요"
               />
             </div>
@@ -123,7 +122,6 @@ export default function JoinLayout() {
             </button>
           </div>
         </div>
-
       </div>
     </div>
   )
