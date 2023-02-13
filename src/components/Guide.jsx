@@ -28,7 +28,7 @@ export default function Guide() {
         <div>
           <h2 className="guide-title">인풋 + 버튼</h2>
           <div className="field">
-            <label className="ir" for="input-name">
+            <label className="ir" htmlFor="input-name">
               이름을 입력해주세요
             </label>
             <div className="field-form field-input">
@@ -36,7 +36,7 @@ export default function Guide() {
                 <input
                   type="text"
                   id="input-name"
-                  value=""
+                  // value=""
                   placeholder="이름을 입력해주세요"
                 />
               </div>
@@ -50,7 +50,7 @@ export default function Guide() {
         <div className="ml10">
           <h2 className="guide-title">인풋 + 비활성 버튼</h2>
           <div className="field">
-            <label className="ir" for="input-name">
+            <label className="ir" htmlFor="input-name">
               이름을 입력해주세요
             </label>
             <div className="field-form field-input">
@@ -58,7 +58,7 @@ export default function Guide() {
                 <input
                   type="text"
                   id="input-name"
-                  value=""
+                  // value=""
                   placeholder="이름을 입력해주세요"
                 />
               </div>
@@ -73,38 +73,38 @@ export default function Guide() {
       {/* radio btn */}
       <div className="guide-box">
         <h2 className="guide-title">라디오 사용법</h2>
-        <div class="field fieldRadio">
+        <div className="field fieldRadio">
           {/* <div class="field-label">라디오 사용법</div> */}
           {/* inline radio */}
-          <div class="field-form mb10">
-            <div class="radio">
+          <div className="field-form mb10">
+            <div className="radio">
               <input type="radio" id="input-id-08" name="radio" defaultChecked={true}/>
-              <label for="input-id-08" class="radio-label">
+              <label htmlFor="input-id-08" className="radio-label">
                 <span>Inline radio</span>
               </label>
             </div>
-            <div class="radio ml10">
+            <div className="radio ml10">
               <input type="radio" id="input-id-09" name="radio" defaultChecked={true} />
-              <label for="input-id-09" class="radio-label">
+              <label htmlFor="input-id-09" className="radio-label">
                 <span>Inline radio</span>
               </label>
             </div>
-            <div class="radio ml10">
+            <div className="radio ml10">
               <input type="radio" id="input-id-10" name="radio" defaultChecked={true} />
-              <label for="input-id-10" class="radio-label">
+              <label htmlFor="input-id-10" className="radio-label">
                 <span>Inline radio</span>
               </label>
             </div>
-            <div class="radio ml10">
+            <div className="radio ml10">
               <input type="radio" id="input-id-11" name="radio" defaultChecked={true} />
-              <label for="input-id-11" class="radio-label">
+              <label htmlFor="input-id-11" className="radio-label">
                 <span>Inline radio</span>
               </label>
             </div>
           </div>
           {/* disabled */}
-          <div class="fieldForm">
-            <div class="radio">
+          <div className="fieldForm">
+            <div className="radio">
               <input
                 type="radio"
                 id="input-id-21"
@@ -112,13 +112,13 @@ export default function Guide() {
                 defaultChecked={true}
                 disabled
               />
-              <label for="input-id-21" class="radio-label">
+              <label htmlFor="input-id-21" className="radio-label">
                 <span>disabled radio</span>
               </label>
             </div>
-            <div class="radio">
+            <div className="radio">
               <input type="radio" id="input-id-22" name="radio03" disabled />
-              <label for="input-id-22" class="radio-label">
+              <label htmlFor="input-id-22" className="radio-label">
                 <span>disabled radio</span>
               </label>
             </div>
