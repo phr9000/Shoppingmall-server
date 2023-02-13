@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage" : "https://gilded-medovik-a0c18d.netlify.app",
+  "homepage" : "https://shopping-portfolio01.netlify.app",
   "eslintConfig": {
     "extends": [
       "react-app",
