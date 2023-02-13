@@ -2,9 +2,13 @@ import React, {useState} from 'react'
 export default function JoinLayout() {
   const [id, setId] = useState('');
   const [password, setPassword] = useState('');
+  const [passwordConfirm, setPasswordConfirm] = useState('');
+  const [name, setName] = useState('');
+  const [mail, setMail] = useState('');
+  const [mobile, setMobile] = useState('');
 
   const handleInput = () => {
-    console.log(id, password);
+    console.log(id, password, passwordConfirm, name, mail, mobile);
   };
   return (
     <div className='join-container'>
@@ -29,7 +33,7 @@ export default function JoinLayout() {
                 placeholder="아이디를 입력해주세요"
               />
             </div>
-            <button type="button" className="btn btn-size-middle" >
+            <button type="button" className="btn btn-size-midonchadle" >
               <span>중복확인</span>
             </button>
           </div>
@@ -64,7 +68,7 @@ export default function JoinLayout() {
               <input
                 type="text"
                 id="input-name"
-                defaltValue=""
+                onChange={e=>setPasswordConfirm(e.target.value)}
                 placeholder="비밀번호를 한번 더 입력해주세요"
               />
             </div>
@@ -82,7 +86,7 @@ export default function JoinLayout() {
               <input
                 type="text"
                 id="input-name"
-                defaltValue=""
+                onChange={e=>setName(e.target.value)}
                 placeholder="이름을 입력해주세요"
               />
             </div>
@@ -100,7 +104,7 @@ export default function JoinLayout() {
               <input
                 type="text"
                 id="input-name"
-                defaltValue=""
+                onChange={e=>setMail(e.target.value)}
                 placeholder="예: marketkurly@krly.com"
               />
             </div>
@@ -121,7 +125,7 @@ export default function JoinLayout() {
               <input
                 type="text"
                 id="input-name"
-                defaltValue=""
+                onChange={e=>setMobile(e.target.value)}
                 placeholder="숫자만 입력해주세요"
               />
             </div>

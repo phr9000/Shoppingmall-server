@@ -78,25 +78,25 @@ export default function Guide() {
           {/* inline radio */}
           <div class="field-form mb10">
             <div class="radio">
-              <input type="radio" id="input-id-08" name="radio" checked />
+              <input type="radio" id="input-id-08" name="radio" defaultChecked={true}/>
               <label for="input-id-08" class="radio-label">
                 <span>Inline radio</span>
               </label>
             </div>
             <div class="radio ml10">
-              <input type="radio" id="input-id-09" name="radio" checked />
+              <input type="radio" id="input-id-09" name="radio" defaultChecked={true} />
               <label for="input-id-09" class="radio-label">
                 <span>Inline radio</span>
               </label>
             </div>
             <div class="radio ml10">
-              <input type="radio" id="input-id-10" name="radio" checked />
+              <input type="radio" id="input-id-10" name="radio" defaultChecked={true} />
               <label for="input-id-10" class="radio-label">
                 <span>Inline radio</span>
               </label>
             </div>
             <div class="radio ml10">
-              <input type="radio" id="input-id-11" name="radio" checked />
+              <input type="radio" id="input-id-11" name="radio" defaultChecked={true} />
               <label for="input-id-11" class="radio-label">
                 <span>Inline radio</span>
               </label>
@@ -109,7 +109,7 @@ export default function Guide() {
                 type="radio"
                 id="input-id-21"
                 name="radio03"
-                checked
+                defaultChecked={true}
                 disabled
               />
               <label for="input-id-21" class="radio-label">
