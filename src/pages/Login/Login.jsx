@@ -1,6 +1,14 @@
 import React from "react";
+import { useState } from "react";
 
 export default function Login() {
+  const [id, setId] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleInput = () => {
+    console.log(id, password);
+  };
+
   return (
     <div className="login-container">
       <h2 className="title">로그인</h2>
@@ -12,15 +20,19 @@ export default function Login() {
             name="login-id"
             required=""
             placeholder="아이디를 입력해주세요"
+            onChange={(e) => setId(e.target.value)}
           />
           <label htmlFor="login-id">username</label>
         </div>
         <div className="user-box mt10">
           <input
-            type="text"
+            type="password"
             name="login-pw"
             required=""
             placeholder="비밀번호를 입력해주세요"
+            minLength={8}
+            maxLength={16}
+            onChange={(e) => setPassword(e.target.value)}
           />
           <label htmlFor="login-pw">password</label>
         </div>
@@ -30,10 +42,13 @@ export default function Login() {
         <span></span>
         <a href="#none">비밀번호 찾기</a>
       </div>
-     
 
       <div className="btn-area w100">
-        <button className="btn primary" type="button">
+        <button
+          className="btn primary"
+          type="button"
+          onClick={() => handleInput()}
+        >
           로그인
         </button>
         <button className="btn" type="button">
