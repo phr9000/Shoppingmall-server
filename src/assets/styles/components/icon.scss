@@ -1,0 +1,25 @@
+@import '/src/assets/styles/abstracts/variables.scss';
+
+.icon {
+    display: inline-block;
+    &.search-icon {
+        width: 30px;
+        height: 30px; 
+        background: url('/assets/images/icon-search.png') center center /100% 100% no-repeat;
+    }
+    &.join-icon {
+        width: 25px;
+        height: 25px;
+        background: url('/assets/images/icon-user-dark.png') center center /100% 100% no-repeat;
+    }
+    &.login-icon {
+        width: 25px;
+        height: 25px;
+        background: url('/assets/images/icon-sign-in-dark.png') center center /100% 100% no-repeat;
+    }
+    &.basket-icon {
+        width: 25px;
+        height: 25px;
+        background: url('/assets/images/icon-bag-dark.png') center center /100% 100% no-repeat;
+    }
+}

@@ -8,12 +8,6 @@ export default function Header() {
       <span className="display-inblock">
         <Link to="/guide">Guide</Link>
       </span>
-      <span className="display-inblock ml5">
-        <Link to="/join">Join</Link>
-      </span>
-      <span className="display-inblock ml5">
-        <Link to="/login">Login</Link>
-      </span>
     </header>
   );
 }
