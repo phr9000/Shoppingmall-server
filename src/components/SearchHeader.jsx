@@ -6,6 +6,9 @@ export default function SearchHeader() {
     const handleSearch = () => {
         console.log(search);
       };
+    
+      // input 호버시 placeholder 사라지게
+      let [isInputClicked, setIsInputClicked] = useState(false);
 
     return (
     <div className='search-header-container'>
@@ -19,7 +22,14 @@ export default function SearchHeader() {
                 <div className='flex align-center'>
                     <input 
                         type="text"
-                        placeholder='지금 바로 [프리쇼]'
+                        onFocus={() => {
+                            setIsInputClicked(true);
+                        }}
+                        // 클릭되어 있지 않을 때 작동input 이외의 영역이 클릭되었을 때)
+                        onBlur={() => {
+                            setIsInputClicked(false);
+                        }}
+                        placeholder={isInputClicked === true ? "" : "지금 바로 [프리쇼] 로 봄 신상을 만나보세요"}
                         onChange={e=>setSearch(e.target.value)}
                     />
                     <button className='icon search-icon' onClick={()=> handleSearch()}></button>
