@@ -10,7 +10,7 @@ export default function Root() {
     <div>
       <SearchHeader />
       <Header />
-      <div className="main-layout-container">
+      <div>
         <Outlet />
       </div>
       <Footer />

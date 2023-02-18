@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import MainCarousel from './MainCarousel';
 
 export default function MainLayout() {
   const [products, setProducts] = useState([]);
@@ -18,6 +19,7 @@ export default function MainLayout() {
 
   return (
     <div>
+      <MainCarousel/>
       <ul>
         {
           products.map((product) => 
