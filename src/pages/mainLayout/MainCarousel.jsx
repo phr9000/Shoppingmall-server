@@ -1,23 +1,10 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
 export default function MainCarousel() {
-    const [carousels, setCarousel] = useState([]);
-
-    useEffect(()=>{
-      fetch('data/mainCarousel.json')
-      .then(res=>res.json())
-      .then(data=> {
-        console.log('ok');
-        setCarousel(data);
-      });
-      return () => {
-        console.log('unmount 될 때 청소하는 일을 담당');
-      };
-    }, []);
 
     var settings = {
       dots: true,
