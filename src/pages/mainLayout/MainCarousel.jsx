@@ -10,15 +10,18 @@ export default function MainCarousel() {
       dots: true,
       infinite: false,
       speed: 500,
-      slidesToShow: 3,
-      slideToScroll: 1
+      slidesToShow: 1,
+      slideToScroll: 1,
     };
 
     
     return (
       <div className='main-carousel'>
         <Slider {...settings}>
-          <div><img src="src/assets/pc_visual01.jpg" alt="" /></div>
+          <div><img src={require('../../assets/images/pc_visual01.jpg')} alt="" /></div>
+          <div><img src={require('../../assets/images/pc_visual02.jpg')} alt="" /></div>
+          <div><img src={require('../../assets/images/pc_visual03.jpg')} alt="" /></div>
+          <div><img src={require('../../assets/images/pc_visual04.jpg')} alt="" /></div>
         </Slider>
       </div>
     
