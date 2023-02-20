@@ -18,7 +18,7 @@ export default function MainLayout() {
   }, []);
 
   return (
-    <div>
+    <div className='main-layout-container'>
       <MainCarousel/>
       <ul>
         {

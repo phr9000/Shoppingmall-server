@@ -26,11 +26,13 @@
         margin: 0 auto; 
         ul {
             display: flex; 
+            align-items: center;
+            justify-content: center;
             li {
                 a {
                     display: block;
                     padding: 2rem;
-                    line-height: 20px; 
+                    line-height: 1.2rem; 
                 }
             }
             &:first-child {

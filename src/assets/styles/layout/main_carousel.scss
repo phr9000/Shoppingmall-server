@@ -10,7 +10,7 @@
     }
     .slick-dots {
         position: absolute;
-        bottom: 0;
+        bottom: 1.2rem;
     }
     .slick-arrow {
         position: absolute;
@@ -22,6 +22,29 @@
         }
         &.slick-next {
             right: 2rem;
+        }
+    }
+    .slick-prev {
+        &:before {
+            display: none;
+        }
+        &:after {
+            width: 100%;
+            display: block; 
+            content: '';
+            height: 56px;
+            background: url('/assets/images/btn_prev.png') no-repeat center center / 100%;
+        }
+    }
+    .slick-next {
+        &:before {
+            display: none;
+        }
+        &:after {
+            display: block;
+            content: '';
+            height: 56px; 
+            background: url('/assets/images/btn_next.png') no-repeat center center / 100%;
         }
     }
     img {

@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "url": "/assets/images/pc_visual01.jpg"
+        "url": "/images/pc_visual01.jpg"
     },
     {
         "id": 2,
-        "url": "/assets/images/pc_visual02.jpg"
+        "url": "/images/pc_visual02.jpg"
     }
 ]
