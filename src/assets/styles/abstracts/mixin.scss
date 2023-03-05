@@ -6,11 +6,20 @@
     color: $color;
     line-height: $height;
   }
-  
-  @mixin ellipsis() {
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
+
+  // 말줄임표
+  @mixin ellipsis($line) {
+    @if $line == 1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }@else {
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $line;
+    }
   }
 
   @mixin flex($direction:row, $justify:flex-start, $align:flex-start) {
