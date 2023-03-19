@@ -1,0 +1,54 @@
+// @import '/src/assets/styles/abstracts/variables.scss';
+
+.main-carousel {
+    position: relative;
+    width: 100%;
+    // height: 600px;
+    .slick-slider {
+        width: 100%;
+        height: 100%;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: 1.2rem;
+    }
+    .slick-arrow {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translate(-50, 0);
+        &.slick-prev {
+            left: 2rem;
+        }
+        &.slick-next {
+            right: 2rem;
+        }
+    }
+    .slick-prev {
+        &:before {
+            display: none;
+        }
+        &:after {
+            width: 100%;
+            display: block; 
+            content: '';
+            height: 56px;
+            background: url('/assets/images/btn_prev.png') no-repeat center center / 100%;
+        }
+    }
+    .slick-next {
+        &:before {
+            display: none;
+        }
+        &:after {
+            display: block;
+            content: '';
+            height: 56px; 
+            background: url('/assets/images/btn_next.png') no-repeat center center / 100%;
+        }
+    }
+    img {
+        width: 100%;
+        height: auto; 
+    }
+}    

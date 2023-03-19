@@ -1,0 +1,45 @@
+// ------- common ------- //
+html,
+body {
+  font-size: 10px;
+  letter-spacing: -0.5px;
+}
+body {
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+a {
+  color: inherit;
+}
+em {
+  font-style: normal; 
+}
+.ir {
+  position: absolute;
+  text-indent: -9999px;
+}
+.hidden {
+  display: none !important;
+}
+.bold {
+  font-weight: bold !important;
+}
+.display-block {
+  display: block; 
+}
+.display-inblock {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.w100 {
+  width: 100%; 
+}
