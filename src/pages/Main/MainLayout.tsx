@@ -1,12 +1,16 @@
 // import React, {useEffect, useState} from 'react'
 import React from 'react'
 import MainCarousel from './MainCarousel';
-import ProductIntro from 'components/ProductIntro';
+import TestPage from './test';
+// import ProductIntro from '../../components/ProductIntro';
 
 const MainLayout:React.FC = ()=>{
   return (
     <div className='main-layout-container'>
       <MainCarousel/>
+      <TestPage/>
+      
+      {/* <ProductIntro/> */}
       {/* <ul>
         {
           products.map((product) => 
