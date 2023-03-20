@@ -20,7 +20,7 @@ const SearchHeader:React.FC = ()=>{
         <div className='search-container'>
             <div className='search-area'>
                 <div className='flex align-center'>
-                    <input 
+                    <input
                         type="text"
                         onFocus={() => {
                             setIsInputClicked(true);
