@@ -1,8 +1,12 @@
 // ------- common ------- //
+* {
+  font-family: 'Noto Sans', sans-serif !important;
+}
 html,
 body {
   font-size: 10px;
   letter-spacing: -0.5px;
+  font-family: 'Noto Sans', sans-serif !important;
 }
 body {
   &.no-scroll {
