@@ -1,0 +1,32 @@
+.item-container {
+  width: 80%;
+  height: auto;
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 auto;
+
+  li {
+    border: 1px solid blue;
+    width: 30rem;
+    padding: 1%;
+    .title {
+      display: block;
+      width: 100%;
+      border: 1px solid red;
+      font-size: 1.6rem;
+      font-weight: 600;
+      padding: 1rem 0;
+    }
+    .detail {
+      display: block;
+    }
+    .price-wrap {
+      display: block;
+      .sale {
+        float: right;
+      }
+    }
+  }
+}
