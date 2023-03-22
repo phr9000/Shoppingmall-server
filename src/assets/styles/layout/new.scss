@@ -1,0 +1,12 @@
+.side_tag {
+    float: "left";
+    margin-right: "20px";
+    margin-left: "20px";
+    border: 1px solid red;
+}
+
+.hot_tag{
+    display: "flex";
+    flex-direction: "row";
+    align-items: "center";
+}
