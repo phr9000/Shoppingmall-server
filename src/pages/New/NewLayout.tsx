@@ -13,35 +13,37 @@ const NewLayout:React.FC = ()=>{
   const taglist = ["스웨트셔츠", "에코백", "메리제인", "원피스", "후디", "스니커즈", "착용", "미니백", "블라우스"]
     
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }} className="new-container">
       <div style={{ fontSize: "40px" }}>
         NEW
       </div>
-      <div className="hot_tag">
-        <h4>인기태그</h4>
-        <ul style={{ listStyle:"none" }}>
-          {
-            taglist.filter(value => value === "스웨트셔츠").map((value)=>
-              <li className="side_tag" data-hashtag={{value}}>
-                <button type="button">{value}</button>
-              </li>
-            )
-          }
-          {
-            taglist.filter(value => value !== "스웨트셔츠" && value !== "블라우스").map((value)=>
-              <li className="tag_items" style={{ float: "left", marginRight: "20px" }} data-hashtag={{value}}>
-                <button type="button">{value}</button>
-              </li>
-            )
-          }
-          {
-            taglist.filter(value => value === "블라우스").map((value)=>
-              <li className="side_tag" data-hashtag={{value}}>
-                <button type="button">{value}</button>
-              </li>
-            )
-          }
-        </ul>
+      <div className="hot-tag-container">
+        <div className='hot-tag-area'>
+          <h4>인기태그</h4>
+          <ul style={{ listStyle:"none" }} className="contents">
+            {
+              taglist.filter(value => value === "스웨트셔츠").map((value)=>
+                <li className="side-tag" data-hashtag={{value}}>
+                  <button type="button">{value}</button>
+                </li>
+              )
+            }
+            {
+              taglist.filter(value => value !== "스웨트셔츠" && value !== "블라우스").map((value)=>
+                <li className="tag_items" data-hashtag={{value}}>
+                  <button type="button">{value}</button>
+                </li>
+              )
+            }
+            {
+              taglist.filter(value => value === "블라우스").map((value)=>
+                <li className="side_tag" data-hashtag={{value}}>
+                  <button type="button">{value}</button>
+                </li>
+              )
+            }
+          </ul>
+        </div>
         <div className='search-container' style={{ borderBottom: "1px solid black", paddingRight:"10px" }}>
             <div className='search-area'>
                 <div className='flex align-center'>
