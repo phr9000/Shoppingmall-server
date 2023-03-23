@@ -30,4 +30,19 @@
    .contents {
        @include flex(row, center, center); 
    }
+
+
+   // 230323 phr: product list
+   .product-container {
+    width: 100%; 
+    max-width: auto !important;  
+    .product-inner {
+        max-width: auto; 
+        flex-wrap: wrap;
+    }
+    li {
+        margin-bottom: 20px; 
+        width: 16.6%; 
+    }
+   }
 }

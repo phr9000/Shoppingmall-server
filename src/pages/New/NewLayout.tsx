@@ -74,7 +74,7 @@ const NewLayout:React.FC = ()=>{
             </div>
         </div>
       </div>
-      <div style={{ display: "flex", flexDirection: "row", alignItems: "center",verticalAlign:"top", overflow: "hidden", height:"1500px", justifyContent: "space-between", marginTop:"50px" }}>
+      <div style={{ display: "flex", flexDirection: "row", alignItems: "start",verticalAlign:"top",  justifyContent: "space-between", marginTop:"50px" }}>
         <div style={{ display: "flex", flexDirection: "column",  width:"300px", height:"100%" }}>
             <div style={{ width:"300px", height:"155px", backgroundColor:"gray"}}>
               <h4 style={{ padding:"20px", fontSize:"28px", color:"white" }}>TODAY<br/>UPDATED</h4>
@@ -102,7 +102,7 @@ const NewLayout:React.FC = ()=>{
             </div>
         </div>
         <div>
-          <div style={{ display: "flex", flexDirection: "column", width:"1600px", height:"1500px" }}>
+          <div style={{ display: "flex", flexDirection: "column", width:"1600px",}}>
             <div style={{ display: "flex", flexDirection: "row", width:"97%", height:"55px", backgroundColor:"#FBFBFB", marginLeft:"20px", borderTop:"1px solid lightgrey", borderBottom:"3px solid black", justifyContent: "space-between" }}>
               <p style={{ padding:"18px", fontSize:"15px", fontWeight:"bold" }}>Filter +</p>
               <ul style={{ padding:"18px", listStyle:"none" }}>
