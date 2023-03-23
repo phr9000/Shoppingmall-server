@@ -1,12 +1,184 @@
 [
     {
-        "id": 1,
-        "name": "청바지",
-        "price": "$20"
+      "category": "HOME",
+      "id": 1,
+      "preview": "/images/pro_app04.jpg",
+      "item": "Mosser Glass",
+      "state": "케이크 스탠드 17cm 크라운 핑크",
+      "price": "99,000",
+      "before": "148,000",
+      "sale": "33%"
     },
     {
-        "id": 2,
-        "name": "티셔츠",
-        "price": "$40"
+      "category": "HOME",
+      "id": 2,
+      "preview": "/images/pro_app04.jpg",
+      "item": "nomia",
+      "state": "코비 러그",
+      "price": "36,900"
+    },
+    {
+      "category": "HOME",
+      "id": 3,
+      "preview": "/images/pro_app04.jpg",
+      "item": "FINCA",
+      "state": "블랙스트라이프&블루 레이어드 알러지케어 이불커버세트 SSQ",
+      "price": "196,000"
+    },
+    {
+      "category": "HOME",
+      "id": 4,
+      "preview": "/images/pro_app04.jpg",
+      "item": "LIVART",
+      "state": "멜바 수납 화장대",
+      "price": "194,000",
+      "before": "321,000",
+      "sale": "40%"
+    },
+    {
+      "category": "HOME",
+      "id": 5,
+      "preview": "/images/pro_app04.jpg",
+      "item": "dropdropdrop",
+      "state": "A-페이퍼커튼 LUCKY HEARTY BLACKBERRY",
+      "price": "124,200",
+      "before": "138,000",
+      "sale": "10%"
+    },
+    {
+      "category": "HOME",
+      "id": 6,
+      "preview": "/images/pro_app04.jpg",
+      "item": "COTTLY",
+      "state": "premium towel_ordinary_orange",
+      "price": "15,900",
+      "before": "19,900",
+      "sale": "20%"
+    },
+    {
+      "category": "HOME",
+      "id": 7,
+      "preview": "/images/pro_app04.jpg",
+      "item": "nubizio",
+      "state": "리얼슬립 이루잠 자이언트 순면 토퍼 2color",
+      "price": "71,900",
+      "before": "114,000",
+      "sale": "52%"
+    },
+    {
+      "category": "HOME",
+      "id": 8,
+      "preview": "/images/pro_app04.jpg",
+      "item": "PRIELLE",
+      "state": "헤일리 아일렛 레이스커튼 2Size",
+      "price": "18,900",
+      "before": "24,900",
+      "sale": "24%"
+    },
+    {
+      "category": "CULTURE",
+      "id": 9,
+      "preview": "/images/pro_app04.jpg",
+      "item": "ARCNBOOK",
+      "state": "삶으로서의 일: 일과 삶의 갈림길에 선 당신을 위한 철학",
+      "price": "13,500",
+      "before": "15,000",
+      "sale": "10%"
+    },
+    {
+      "category": "CULTURE",
+      "id": 10,
+      "preview": "/images/pro_app04.jpg",
+      "item": "YouWouldLoveThis",
+      "state": "콜렉티브 데일리 플래너(1개월)",
+      "price": "4,000"
+    },
+    {
+      "category": "CULTURE",
+      "id": 11,
+      "preview": "/images/pro_app04.jpg",
+      "item": "AY KASA",
+      "state": "아이카사 폴딩박스 M cherry blossom",
+      "price": "11,400",
+      "before": "12,000",
+      "sale": "5%"
+    },
+    {
+      "category": "CULTURE",
+      "id": 12,
+      "preview": "/images/pro_app04.jpg",
+      "item": "RIFLE PAPER",
+      "state": "라이플페이퍼 Color Black Love Card 사랑 카드",
+      "price": "8,000"
+    },
+    {
+      "category": "CULTURE",
+      "id": 13,
+      "preview": "/images/pro_app04.jpg",
+      "item": "BAN.DO",
+      "state": "get it together pencil pouch",
+      "price": "28,000"
+    },
+    {
+      "category": "CULTURE",
+      "id": 14,
+      "preview": "/images/pro_app04.jpg",
+      "item": "LAMY",
+      "state": "사파리 313 핑크 블루심 수성펜 4029824",
+      "price": "16,900",
+      "before": "42,000",
+      "sale": "60%"
+    },
+    {
+      "category": "FOOD",
+      "id": 15,
+      "preview": "/images/pro_app04.jpg",
+      "item": "COCOLAB",
+      "state": "코코랩 메가비타 콤부차 청포도맛 (5g'30개입)",
+      "price": "19,900",
+      "before": "24,900",
+      "sale": "20%"
+    },
+    {
+      "category": "FOOD",
+      "id": 16,
+      "preview": "/images/pro_app04.jpg",
+      "item": "Belmio",
+      "state": "벨미오 캡슐커피 10개입 6종 택1",
+      "price": "6,000"
+    },
+    {
+      "category": "FOOD",
+      "id": 17,
+      "preview": "/images/pro_app04.jpg",
+      "item": "madvanilla",
+      "state": "리얼바닐라시럽300ml 콜빈",
+      "price": "18,600"
+    },
+    {
+      "category": "FOOD",
+      "id": 18,
+      "preview": "/images/pro_app04.jpg",
+      "item": "coffelusso",
+      "state": "드립백 6주세트 420g",
+      "price": "47,610",
+      "before": "52,900",
+      "sale": "10%"
+    },
+    {
+      "category": "FOOD",
+      "id": 19,
+      "preview": "/images/pro_app04.jpg",
+      "item": "purrlng",
+      "state": "일본 수제 커스터드 푸딩",
+      "price": "4,500"
+    },
+    {
+      "category": "FOOD",
+      "id": 20,
+      "preview": "/images/pro_app04.jpg",
+      "item": "STEVEN SMITH TEAMAKER",
+      "state": "No.214 스미스티 러버스립 홍차 (15ea)",
+      "price": "29,000"
     }
-]
+  ]
