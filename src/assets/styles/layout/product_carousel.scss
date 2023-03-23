@@ -27,16 +27,16 @@
         word-break: keep-all;
     }
     .price-area {
-        @include flex(row, space-evenly, center);
+        @include flex(row, space-between, center);
         .discount {
-            @include font(18px, 600, #000, 1.5);
+            @include font(18px, 600, #333, 1.5);
         }
-        .origin-price {
-            @include font(18px, 400, #666, 1.5);
+        .original-price {
+            @include font(14px, 400, #808080, 1.5);
             text-decoration: line-through;
         }
         .percent {
-            @include font(16px, 600, red, 1.5);
+            @include font(16px, 600, #ff4000, 1.5);
         }
     }
     // carousel 
