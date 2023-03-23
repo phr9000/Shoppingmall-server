@@ -4,6 +4,7 @@ import MainCarousel from './MainCarousel';
 // import TestPage from './test';
 import ProductIntro from '../../components/ProductIntro';
 import styleStory from 'assets/data/styleStory.json';
+import ProductCarousel from '../../components/ProductCarousel';
 
 const MainLayout:React.FC = ()=>{
   return (
@@ -45,9 +46,7 @@ const MainLayout:React.FC = ()=>{
             </ul>
         </div>
         {/* what's new */}
-        <div className='whatsnew__container'>
-            
-        </div>
+        <ProductCarousel/>
         <ProductIntro/>
     </div>
   )
