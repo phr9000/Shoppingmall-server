@@ -8,6 +8,7 @@ const ProductCarousel: React.FC = ()=>{
 
     return (
       <div className='main-carousel'>
+        <div>test</div>
         {/* <Slider {...settings}>
             {
                 styleStory!.map((carousel) => 
