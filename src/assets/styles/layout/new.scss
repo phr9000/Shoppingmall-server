@@ -1,21 +1,6 @@
 .new-container {
     margin: 0 30px; 
     padding-top: 80px; 
-    
-    .side-tag {
-       float: "left";
-       margin-right: "20px";
-       margin-left: "20px";
-       border-radius: 30px;
-       border: 1px solid black;
-   }
-   
-   .tag_items{
-        float: "left";
-        margin-right: "20px";
-        border-radius: 30px;
-        border: 1px solid black;
-   }
 
    .hot-tag-container{
        width: 100%; 
@@ -24,8 +9,23 @@
    .hot-tag-area {
        @include flex(row, center, center); 
        h4 {
-           padding-right: 50px; 
+           padding-right: 30px; 
        }
+       .tag {
+            margin-left: 5px; 
+            padding: 0 20px; 
+            line-height: 40px;
+            border: 1px solid #d9d9d9;
+            border-radius: 30px;
+            cursor: pointer;
+            &:hover {
+                border: 1px solid #49C7DF;
+                background-color: #49C7DF;
+                button {
+                    color: #fff;
+                }
+            }
+        }
    }
    .contents {
        @include flex(row, center, center); 

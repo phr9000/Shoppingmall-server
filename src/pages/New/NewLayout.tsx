@@ -14,7 +14,7 @@ const NewLayout:React.FC = ()=>{
     
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }} className="new-container">
-      <div style={{ fontSize: "40px" }}>
+      <div style={{ fontSize: "40px", marginTop:"-20px", marginBottom:"20px" }}>
         NEW
       </div>
       <div className="hot-tag-container">
@@ -23,21 +23,21 @@ const NewLayout:React.FC = ()=>{
           <ul style={{ listStyle:"none" }} className="contents">
             {
               taglist.filter(value => value === "스웨트셔츠").map((value)=>
-                <li className="side-tag" data-hashtag={{value}}>
+                <li className="tag side-tag" data-hashtag={{value}}>
                   <button type="button">{value}</button>
                 </li>
               )
             }
             {
               taglist.filter(value => value !== "스웨트셔츠" && value !== "블라우스").map((value)=>
-                <li className="tag_items" data-hashtag={{value}}>
+                <li className="tag tag_items" data-hashtag={{value}}>
                   <button type="button">{value}</button>
                 </li>
               )
             }
             {
               taglist.filter(value => value === "블라우스").map((value)=>
-                <li className="side_tag" data-hashtag={{value}}>
+                <li className="tag side_tag" data-hashtag={{value}}>
                   <button type="button">{value}</button>
                 </li>
               )
@@ -64,6 +64,20 @@ const NewLayout:React.FC = ()=>{
                     <button className='icon search-icon' onClick={()=> handleSearch()}></button>
                 </div>
             </div>
+        </div>
+      </div>
+      <div style={{ display: "flex", flexDirection: "row", alignItems: "center", overflow: "hidden", height:"1200px" }}>
+        <div style={{ display: "flex", flexDirection: "column", position: "absolute", width:"300px", height:"1077px",left:"0"}}>
+            <div style={{ width:"300px", height:"155px", backgroundColor:"gray"}}>
+              <h4 style={{ padding:"20px", fontSize:"28px", color:"white" }}>TODAY<br/>UPDATED</h4>
+              <h4 style={{ padding:"20px", fontSize:"15px", color:"white" }}>오늘 등록된 신상품 191</h4>
+            </div>
+            <div style={{ width:"300px", height:"53px", backgroundColor:"lightgray"}}>
+              <h4 style={{ padding:"20px", fontSize:"18px" }}>날짜별 신상품</h4>
+            </div>
+        </div>
+        <div>
+
         </div>
       </div>
       <Pagination defaultCurrent={1} total={50} />
