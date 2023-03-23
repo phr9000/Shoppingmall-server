@@ -1,13 +1,27 @@
 import React from "react";
-import LifeData from "../../data/lifeData.json";
 
 // import { useState } from "react";
 
-const ItemComponent: React.FC = () => {
-  console.log(LifeData.filter((list) => list.category === "HOME"));
+type dataType = {
+  category: string,
+  id: number,
+  preview: string,
+  item: string,
+  state: string,
+  price: string,
+  before?: string,
+  sale?: string
+};
+
+type GreetingsProps = {
+  datalist: dataType[];
+  category: string
+};
+
+const ItemComponent: React.FC<GreetingsProps> = (data) => {
   return (
     <div className="item-container">
-      {LifeData.map((list) => (
+      {data.datalist.filter((list)=> list.category === data.category).map((list) => (
         <li key={list.category}>
           <img src={list.preview} alt="test" />
           <span className="title">{list.item}</span>
