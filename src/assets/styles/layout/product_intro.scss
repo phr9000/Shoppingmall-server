@@ -1,12 +1,12 @@
 .product-container {
-    max-width: 1240px;
-    margin: 0 auto; 
+    // max-width: 1240px;
+    // margin: 0 auto; 
 }
 .product-inner {
     @include flex(row, space-evenly, center);
-    margin: 0 auto; 
+    // margin: 0 auto; 
     margin-top: 1.5rem; 
-    max-width: 1138px;
+    // max-width: 1138px;
     li {
         margin: 0 12px; 
     }

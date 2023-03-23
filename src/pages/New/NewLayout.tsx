@@ -74,7 +74,7 @@ const NewLayout:React.FC = ()=>{
             </div>
         </div>
       </div>
-      <div style={{ display: "flex", flexDirection: "row", alignItems: "start",verticalAlign:"top",  justifyContent: "space-between", marginTop:"50px" }}>
+      <div style={{ display: "flex", flexDirection: "row", alignItems: "start",verticalAlign:"top",  justifyContent: "space-between", marginTop:"50px"}}>
         <div style={{ display: "flex", flexDirection: "column",  width:"300px", height:"100%" }}>
             <div style={{ width:"300px", height:"155px", backgroundColor:"gray"}}>
               <h4 style={{ padding:"20px", fontSize:"28px", color:"white" }}>TODAY<br/>UPDATED</h4>
@@ -143,7 +143,7 @@ const NewLayout:React.FC = ()=>{
                 />
               </div>
             </div>
-            <div style={{ marginLeft:"-400px" }}>
+            <div>
               <ProductIntro datalist={ProductList}/>
             </div>
           </div>
