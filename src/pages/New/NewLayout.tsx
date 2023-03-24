@@ -5,6 +5,7 @@ import newWeeklyData from 'assets/data/newWeeklyData.json'
 import { Select } from 'antd';
 import ProductIntro from 'components/ProductIntro';
 import ProductList from 'assets/data/products.json'
+
 const NewLayout:React.FC = ()=>{
   const [search, setSearch] = useState('');
   const handleSearch = () => {
@@ -51,7 +52,7 @@ const NewLayout:React.FC = ()=>{
             }
           </ul>
         </div>
-        <div className='search-container' style={{ borderBottom: "1px solid black", paddingRight:"10px" }}>
+        <div className='search-container' style={{ borderBottom: "1px solid black", marginRight:"50px" }}>
             <div className='search-area'>
                 <div className='flex align-center'>
                     <input
