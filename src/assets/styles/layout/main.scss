@@ -5,7 +5,7 @@
     // thumbnail 
     .thumbnail {
         &__container {
-            max-width: 1560px;
+            max-width: 1880px;
             margin: 100px auto 0; 
         }
         &__title {
@@ -21,6 +21,9 @@
             li {
                 margin-left: 16px; 
                 width: 25%; 
+                &:first-child {
+                    margin-left: 0;
+                }
                 img {
                     width: 100%; 
                 }
@@ -62,6 +65,11 @@
                     }
                 }
             } 
+        }
+    }
+    .whats-new-container {
+        .slick-dots {
+            display: none; 
         }
     }
 }

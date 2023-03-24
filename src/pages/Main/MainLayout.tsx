@@ -46,7 +46,11 @@ const MainLayout:React.FC = ()=>{
             </ul>
         </div>
         {/* what's new */}
-        <ProductCarousel/>
+        <div className='thumbnail__container whats-new-container'>
+          <h2 className='thumbnail__title'>WHAT'S NEW</h2>
+            <ProductCarousel/>
+        </div>
+        
         <ProductIntro/>
     </div>
   )

@@ -5,9 +5,9 @@
         "alt":"브랜드데이",
         "title": "NOTHING WRITTEN",
         "des":"기다렸던 낫띵리튼의 브랜드데이!",
-        "discount": "18000",
-        "originalPrice": "20000",
-        "percent":"10"
+        "discount": "18,000",
+        "originalPrice": "20,000",
+        "percent":"10%"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "alt":"브랜드데이",
         "title": "NOTHING WRITTEN",
         "des":"기다렸던 낫띵리튼의 브랜드데이!",
-        "originalPrice": "20000"
+        "originalPrice": "20,000"
     },
     {
         "id": 3,
@@ -23,9 +23,9 @@
         "alt":"브랜드데이",
         "title": "NOTHING WRITTEN",
         "des":"기다렸던 낫띵리튼의 브랜드데이!",
-        "discount": "18000",
-        "originalPrice": "20000",
-        "percent":"10"
+        "discount": "18,000",
+        "originalPrice": "20,000",
+        "percent":"10%"
     },
     {
         "id": 4,
@@ -33,9 +33,9 @@
         "alt":"브랜드데이",
         "title": "NOTHING WRITTEN",
         "des":"기다렸던 낫띵리튼의 브랜드데이!",
-        "discount": "18000",
-        "originalPrice": "20000",
-        "percent":"10"
+        "discount": "18,000",
+        "originalPrice": "20,000",
+        "percent":"10%"
     },
     {
         "id": 5,
@@ -43,9 +43,9 @@
         "alt":"브랜드데이",
         "title": "NOTHING WRITTEN",
         "des":"기다렸던 낫띵리튼의 브랜드데이!",
-        "discount": "18000",
-        "originalPrice": "20000",
-        "percent":"10"
+        "discount": "18,000",
+        "originalPrice": "20,000",
+        "percent":"10%"
     },
     {
         "id": 6,
@@ -53,9 +53,9 @@
         "alt":"브랜드데이",
         "title": "NOTHING WRITTEN",
         "des":"기다렸던 낫띵리튼의 브랜드데이!",
-        "discount": "18000",
-        "originalPrice": "20000",
-        "percent":"10"
+        "discount": "18,000",
+        "originalPrice": "20,000",
+        "percent":"10%"
     },
     {
         "id": 7,
@@ -63,8 +63,8 @@
         "alt":"브랜드데이",
         "title": "NOTHING WRITTEN",
         "des":"기다렸던 낫띵리튼의 브랜드데이!",
-        "discount": "18000",
-        "originalPrice": "20000",
-        "percent":"10"
+        "discount": "18,000",
+        "originalPrice": "20,000",
+        "percent":"10%"
     }
 ]

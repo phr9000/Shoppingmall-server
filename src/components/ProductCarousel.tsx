@@ -27,9 +27,9 @@ const ProductCarousel: React.FC = ()=>{
                       {carousel.des}
                     </div>
                     <div className='price-area'>
-                      <div className='flex'>
+                      <div className='flex align-center'>
                         <p className='discount'>{carousel.discount}</p>
-                        <p className='original-price'>{carousel.originalPrice}%</p>
+                        <p className='original-price ml5'>{carousel.originalPrice}%</p>
                       </div>
                       <div className='percent'>
                         {carousel.percent}
