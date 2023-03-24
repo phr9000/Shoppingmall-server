@@ -3,36 +3,44 @@ import React from "react";
 // import { useState } from "react";
 
 type dataType = {
-  category: string,
-  id: number,
-  preview: string,
-  item: string,
-  state: string,
-  price: string,
-  before?: string,
-  sale?: string
+  category: string;
+  id: number;
+  preview: string;
+  item: string;
+  state: string;
+  price: string;
+  before?: string;
+  sale?: string;
 };
 
 type GreetingsProps = {
   datalist: dataType[];
-  category: string
+  category: string;
 };
 
 const ItemComponent: React.FC<GreetingsProps> = (data) => {
   return (
     <div className="item-container">
-      {data.datalist.filter((list)=> list.category === data.category).map((list) => (
-        <li key={list.category}>
-          <img src={list.preview} alt="test" />
-          <span className="title">{list.item}</span>
-          <span className="detail">{list.state}</span>
-          <span className="price-wrap">
-            <span className="price-wrap__price">{list.price}</span>
-            <span className="price-wrap__discount">{list.before}</span>
-            <span className="sale">{list.sale}</span>
-          </span>
-        </li>
-      ))}
+      {data.datalist
+        .filter((list) => list.category === data.category)
+        .map((list) => (
+          <li key={list.category}>
+            <div className="item-preview">
+              <img src={list.preview} alt="test" />
+            </div>
+            <div className="item-description">
+              <h4 className="title">{list.item}</h4>
+              <p className="detail">{list.state}</p>
+              <div className="price-wrap">
+                <span className="price-wrap__price">{list.price}</span>
+                <span className="price-wrap__discount">
+                  <del>{list.before}</del>
+                </span>
+                <span className="price-wrap__sale">{list.sale}</span>
+              </div>
+            </div>
+          </li>
+        ))}
     </div>
   );
 };
