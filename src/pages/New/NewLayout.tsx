@@ -142,7 +142,7 @@ const NewLayout:React.FC = ()=>{
                 />
               </div>
             </div>
-            <div style={{ marginLeft:"120px" }}>
+            <div>
               <ProductIntro datalist={ProductList}/>
             </div>
           </div>
