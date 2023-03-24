@@ -2,21 +2,37 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import whatsNew from 'assets/data/whatsNew.json';
 
-const ProductCarousel: React.FC = ()=>{
-    const settings = {
-      dots: true,
-      infinite: false,
-      speed: 500,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-    };
+type Setting = {
+  dots: boolean,
+  infinite: boolean,
+  speed: number,
+  slidesToShow: number,
+  slidesToScroll: number,
+}
+
+type NewData = {
+  id: number,
+  url: string,
+  alt:string,
+  title: string,
+  des:string,
+  discount?: string,
+  originalPrice: string,
+  percent?:string
+}
+
+type PropsData = {
+  setting: Setting,
+  dataList: NewData[]
+}
+
+const ProductCarousel: React.FC<PropsData> = (data)=>{
     return (
       <div className='product-carousel'>
-        <Slider {...settings}>
+        <Slider {...data.setting}>
             {
-                whatsNew!.map((carousel) => 
+                data.dataList.map((carousel) => 
                 <li key={carousel.id} className='product-item'>
                   <div>
                     <p className='img-area'><img src={carousel.url} alt={carousel.alt} /></p>

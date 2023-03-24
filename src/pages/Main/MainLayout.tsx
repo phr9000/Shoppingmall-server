@@ -5,8 +5,16 @@ import MainCarousel from './MainCarousel';
 import ProductIntro from '../../components/ProductIntro';
 import styleStory from 'assets/data/styleStory.json';
 import ProductCarousel from '../../components/ProductCarousel';
+import whatsNew from 'assets/data/whatsNew.json';
 
 const MainLayout:React.FC = ()=>{
+  const settings = {
+      dots: false,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+  };
   return (
     <div className='main-layout-container'>
         <MainCarousel/>
@@ -48,7 +56,7 @@ const MainLayout:React.FC = ()=>{
         {/* what's new */}
         <div className='thumbnail__container whats-new-container'>
           <h2 className='thumbnail__title'>WHAT'S NEW</h2>
-            <ProductCarousel/>
+            <ProductCarousel setting={settings} dataList={whatsNew}/>
         </div>
         
         <ProductIntro/>
