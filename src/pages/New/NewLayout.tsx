@@ -11,7 +11,6 @@ const NewLayout:React.FC = ()=>{
     console.log(search);
   };
 
-  // input 호버시 placeholder 사라지게
   let [isInputClicked, setIsInputClicked] = useState(false);
 
   const handleChange = (value: string) => {
@@ -22,7 +21,7 @@ const NewLayout:React.FC = ()=>{
   const smallMenuList = ["CATEGORY", "BRAND", "PRICE", "BENEFIT", "COLOR", "DISCOUNT"]
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }} className="new-container">
-      <div style={{ fontSize: "40px", marginTop:"-20px", marginBottom:"20px" }}>
+      <div style={{ fontSize: "40px", marginTop:"-20px", marginBottom:"40px" }}>
         NEW
       </div>
       <div className="hot-tag-container">
@@ -74,7 +73,7 @@ const NewLayout:React.FC = ()=>{
             </div>
         </div>
       </div>
-      <div style={{ display: "flex", flexDirection: "row", alignItems: "start",verticalAlign:"top",  justifyContent: "space-between", marginTop:"50px"}}>
+      <div style={{ display: "flex", flexDirection: "row", alignItems: "start",verticalAlign:"top", width:"1780px", justifyContent: "space-between", marginTop:"50px"}}>
         <div style={{ display: "flex", flexDirection: "column",  width:"300px", height:"100%" }}>
             <div style={{ width:"300px", height:"155px", backgroundColor:"gray"}}>
               <h4 style={{ padding:"20px", fontSize:"28px", color:"white" }}>TODAY<br/>UPDATED</h4>
@@ -102,7 +101,7 @@ const NewLayout:React.FC = ()=>{
             </div>
         </div>
         <div>
-          <div style={{ display: "flex", flexDirection: "column", width:"1600px",}}>
+          <div style={{ display: "flex", flexDirection: "column", width:"1450px",}}>
             <div style={{ display: "flex", flexDirection: "row", width:"97%", height:"55px", backgroundColor:"#FBFBFB", marginLeft:"20px", borderTop:"1px solid lightgrey", borderBottom:"3px solid black", justifyContent: "space-between" }}>
               <p style={{ padding:"18px", fontSize:"15px", fontWeight:"bold" }}>Filter +</p>
               <ul style={{ padding:"18px", listStyle:"none" }}>
@@ -143,13 +142,13 @@ const NewLayout:React.FC = ()=>{
                 />
               </div>
             </div>
-            <div>
+            <div style={{ marginLeft:"120px" }}>
               <ProductIntro datalist={ProductList}/>
             </div>
           </div>
         </div>
       </div>
-      <Pagination defaultCurrent={1} total={50} />
+      <Pagination style={{ marginTop:"60px" }} defaultCurrent={1} total={50} />
     </div>
   )
 }
