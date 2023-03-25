@@ -20,7 +20,8 @@ type NewData = {
   des:string,
   discount: string,
   originalPrice?: string,
-  percent?:string
+  percent?:string,
+  cart: boolean
 }
 
 type PropsData = {
@@ -36,7 +37,10 @@ const ProductCarousel: React.FC<PropsData> = (data)=>{
                 data.dataList.map((carousel) => 
                 <li key={carousel.id} className='product-item'>
                   <div>
-                    <p className='img-area'><img src={carousel.url} alt={carousel.alt} /></p>
+                    <p className='img-area'>
+                        <img src={carousel.url} alt={carousel.alt} />
+                        <span className={'heart-icon' +  (carousel.cart ? 'active' : 'notActive') } ></span>
+                    </p>
                     <div className='title'>
                       {carousel.title}
                     </div>

@@ -6,8 +6,10 @@ import ProductIntro from '../../components/ProductIntro';
 import styleStory from 'assets/data/styleStory.json';
 import ProductCarousel from '../../components/ProductCarousel';
 import whatsNew from 'assets/data/whatsNew.json';
+import makeItNew from 'assets/data/makeItYours.json';
 
 const MainLayout:React.FC = ()=>{
+  // what's new 
   const settings = {
       dots: false,
       infinite: false,
@@ -16,6 +18,15 @@ const MainLayout:React.FC = ()=>{
       slidesToScroll: 1,
       spaceBetween: 10
   };
+  // make it yours 
+  const settings2 = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    spaceBetween: 10
+};
   return (
     <div className='main-layout-container'>
         <MainCarousel/>
@@ -59,8 +70,13 @@ const MainLayout:React.FC = ()=>{
           <h2 className='thumbnail__title'>WHAT'S NEW</h2>
             <ProductCarousel setting={settings} dataList={whatsNew}/>
         </div>
-        {/* make it yours */}
-        <ProductIntro/>
+        {/* make it yours */}<div className='thumbnail__container whats-new-container'>
+          <h2 className='thumbnail__title'>MAKE IT YOURS </h2>
+            <ProductCarousel setting={settings2} dataList={makeItNew}/>
+        </div>
+
+        {/* <ProductIntro/> */}
+        
     </div>
   )
 }
