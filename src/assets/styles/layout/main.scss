@@ -68,8 +68,57 @@
         }
     }
     .whats-new-container {
-        .slick-dots {
-            display: none; 
+        max-width: 1300px; 
+        // slick slide 
+        .slick-track {
+            display: flex;
         }
+        .slick-slide {
+            overflow: hidden;
+            margin: 0 5px; 
+        }
+        .slick-list {
+            margin: 0 -5px; 
+        }
+        .product-carousel {
+            .slick-arrow.slick-prev {
+                top: 67%; 
+                left: -8rem;
+                width: 70px;
+                height: 96px;
+                padding: 20px; 
+                &:after {
+                    display: block;
+                    height: 56px;
+                    content: '';
+                    background: url('/assets/images/spr-common.png') 0 0 no-repeat;
+                    background-position: -510px -31px;
+                }
+            }
+            .slick-arrow.slick-next {
+                top: 67%; 
+                right: -8rem;
+                width: 70px;
+                height: 96px;
+                padding: 20px; 
+                &:after {
+                    display: block;
+                    height: 56px;
+                    content: '';
+                    background: url('/assets/images/spr-common.png') 0 0 no-repeat;
+                    background-position: -540px -31px;
+                }
+            }
+            .title {
+                margin-top: 17px; 
+                font-size: 16px; 
+                color: #000;
+                font-weight: 600;
+            }
+            .price-area {
+                margin: 22px 0 12px 0;
+            }
+        }
+
     }
 }

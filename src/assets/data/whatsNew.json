@@ -3,8 +3,8 @@
         "id": 1,
         "url": "/images/style_story01.jpg",
         "alt":"브랜드데이",
-        "title": "NOTHING WRITTEN",
-        "des":"기다렸던 낫띵리튼의 브랜드데이!",
+        "title": "DAZE DAYZ",
+        "des":"KAILANI TUBE ONEPIECE",
         "discount": "18,000",
         "originalPrice": "20,000",
         "percent":"10%"
@@ -15,7 +15,7 @@
         "alt":"브랜드데이",
         "title": "NOTHING WRITTEN",
         "des":"기다렸던 낫띵리튼의 브랜드데이!",
-        "originalPrice": "20,000"
+        "discount": "20,000"
     },
     {
         "id": 3,

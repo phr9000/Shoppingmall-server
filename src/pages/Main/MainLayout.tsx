@@ -12,8 +12,9 @@ const MainLayout:React.FC = ()=>{
       dots: false,
       infinite: false,
       speed: 500,
-      slidesToShow: 5,
+      slidesToShow: 4,
       slidesToScroll: 1,
+      spaceBetween: 10
   };
   return (
     <div className='main-layout-container'>
@@ -58,7 +59,7 @@ const MainLayout:React.FC = ()=>{
           <h2 className='thumbnail__title'>WHAT'S NEW</h2>
             <ProductCarousel setting={settings} dataList={whatsNew}/>
         </div>
-        
+        {/* make it yours */}
         <ProductIntro/>
     </div>
   )
