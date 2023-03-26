@@ -39,7 +39,7 @@ const ProductCarousel: React.FC<PropsData> = (data)=>{
                   <div>
                     <p className='img-area'>
                         <img src={carousel.url} alt={carousel.alt} />
-                        <span className={'heart-icon' +  (carousel.cart ? 'active' : 'notActive') } ></span>
+                        <span className={'heart-icon ' + (carousel.cart ? 'active' : 'nonActive') } ></span>
                     </p>
                     <div className='title'>
                       {carousel.title}

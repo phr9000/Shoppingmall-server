@@ -1,124 +1,237 @@
-@import '/src/assets/styles/abstracts/variables.scss';
+@import "/src/assets/styles/abstracts/variables.scss";
 
-// main container 
+// main container
 .main-layout-container {
-    // thumbnail 
-    .thumbnail {
-        &__container {
-            max-width: 1880px;
-            margin: 100px auto 0; 
+  // thumbnail
+  .thumbnail {
+    &__container {
+      max-width: 1880px;
+      margin: 100px auto 0;
+    }
+    &__title {
+      margin-bottom: 40px;
+      text-align: center;
+      font-size: 4.8rem;
+      text-transform: uppercase;
+      font-weight: 200;
+    }
+    &__area {
+      display: flex;
+      text-align: center;
+      li {
+        margin-left: 16px;
+        width: 25%;
+        &:first-child {
+          margin-left: 0;
         }
-        &__title {
-            margin-bottom: 40px; 
-            text-align: center;
-            font-size: 4.8rem;
-            text-transform: uppercase;
-            font-weight: 200;
+        img {
+          width: 100%;
         }
-        &__area {
-            display: flex; 
-            text-align: center; 
-            li {
-                margin-left: 16px; 
-                width: 25%; 
-                &:first-child {
-                    margin-left: 0;
-                }
-                img {
-                    width: 100%; 
-                }
-                .title {
-                    margin-top: 34px; 
-                    display: block; 
-                    @include ellipsis(1);
-                    @include font(20px, 400, #333, 1);
-                }
-                .des {
-                    margin: 15px 50px 37px;
-                    height: 26px; 
-                    @include font(12px, 400, #666, 1.5);
-                    word-break: keep-all;
-                }
+        .title {
+          margin-top: 34px;
+          display: block;
+          @include ellipsis(1);
+          @include font(20px, 400, #333, 1);
+        }
+        .des {
+          margin: 15px 50px 37px;
+          height: 26px;
+          @include font(12px, 400, #666, 1.5);
+          word-break: keep-all;
+        }
+      }
+    }
+  }
+  .banner {
+    &__container {
+      margin-top: 77px;
+      ul {
+        @include flex(row, center, center);
+        li {
+          width: 50%;
+          &:first-child {
+            text-align: right;
+            background-color: #fbeded;
+          }
+          &:last-child {
+            background-color: #ededed;
+          }
+          a {
+            display: inline-block;
+            img {
+              width: 100%;
+              height: 100%;
             }
+          }
+        }
+      }
+    }
+  }
+  .whats-new-container {
+    max-width: 1300px;
+    // slick slide
+    .slick-track {
+      display: flex;
+    }
+    .slick-slide {
+      overflow: hidden;
+      margin: 0 5px;
+    }
+    .slick-list {
+      margin: 0 -5px;
+    }
+    .product-carousel {
+      .slick-arrow.slick-prev {
+        top: 38%;
+        left: -8rem;
+        width: 70px; 
+        height: 96px;
+        padding: 20px;
+        &:after {
+          display: block;
+          height: 56px;
+          content: "";
+          background: url("/assets/images/spr-common.png") 0 0 no-repeat;
+          background-position: -510px -31px;
+        }
+      }
+      .slick-arrow.slick-next {
+        top: 38%;
+        right: -8rem;
+        width: 70px;
+        height: 96px;
+        padding: 20px;
+        &:after {
+          display: block;
+          height: 56px;
+          content: "";
+          background: url("/assets/images/spr-common.png") 0 0 no-repeat;
+          background-position: -540px -31px;
+        }
+      }
+      .title {
+        margin-top: 17px;
+        font-size: 16px;
+        color: #000;
+        font-weight: 600;
+      }
+      .price-area {
+        margin: 22px 0 12px 0;
+      }
+    }
+  }
+  .exclusive-container {
+    margin: 100px auto 120px auto;
+    width: 1880px;
+    overflow: hidden; 
+    .plus {
+      position: relative;
+      display: inline-block;
+      width: 33px;
+      height: 33px;
+      cursor: pointer;
+      &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1px;
+        height: 35px;
+        background-color: #000;
+        transform: translate(-50%, -50%);
+      }
+      &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 35px;
+        height: 1px;
+        background-color: #000;
+        transform: translate(-50%, -50%);
+      }
+    }
+    // slick slide
+    .slick-track {
+        display: flex;
+      }
+    .slick-slide {
+        overflow: hidden;
+        margin: 0 25px;
+        img {
+            width: 100%; 
+        }
+      }
+    .slick-list {
+    margin: 0 -25px;
+    }
+    .slick-slide {
+        display: block; 
+        position: relative;
+        transform: scale(0.95);
+        transition: transform .5s ease-in-out;
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: 10; 
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rbga(0,0,0,0.5);
+          opacity: 0.8;
+          transition: background 0.5s ease-in-out; 
+        }
+        &.slick-current {
+            transform: scale(1);
         }
     }
-    .banner {
-        &__container {
-            margin-top: 77px;
-            ul {
-                @include flex(row, center, center);
-                li {
-                    width: 50%;
-                    &:first-child {
-                        text-align: right;
-                        background-color: #fbeded;
-                    }
-                    &:last-child {
-                        background-color: #ededed;
-                    }
-                    a {
-                        display: inline-block;
-                        img {
-                            width: 100%; 
-                            height: 100%; 
-                        }
-                    }
-                }
-            } 
+    .slide-item {
+        transform: scale(0.95);
+        &.slick-center {
+            transform: scale(1);
         }
     }
-    .whats-new-container {
-        max-width: 1300px; 
-        // slick slide 
-        .slick-track {
-            display: flex;
-        }
-        .slick-slide {
-            overflow: hidden;
-            margin: 0 5px; 
-        }
-        .slick-list {
-            margin: 0 -5px; 
-        }
-        .product-carousel {
-            .slick-arrow.slick-prev {
-                top: 67%; 
-                left: -8rem;
-                width: 70px;
-                height: 96px;
-                padding: 20px; 
-                &:after {
-                    display: block;
-                    height: 56px;
-                    content: '';
-                    background: url('/assets/images/spr-common.png') 0 0 no-repeat;
-                    background-position: -510px -31px;
-                }
-            }
-            .slick-arrow.slick-next {
-                top: 67%; 
-                right: -8rem;
-                width: 70px;
-                height: 96px;
-                padding: 20px; 
-                &:after {
-                    display: block;
-                    height: 56px;
-                    content: '';
-                    background: url('/assets/images/spr-common.png') 0 0 no-repeat;
-                    background-position: -540px -31px;
-                }
-            }
-            .title {
-                margin-top: 17px; 
-                font-size: 16px; 
-                color: #000;
-                font-weight: 600;
-            }
-            .price-area {
-                margin: 22px 0 12px 0;
-            }
-        }
-
+    .slick-arrow.slick-prev {
+      left: 300px; 
     }
+    .slick-arrow.slick-next {
+      right: 300px; 
+    }
+    .product-item {
+      position: relative;
+      &:after {
+        display: block;
+        content: '';
+        position: absolute; 
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+      }
+      .top {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #fff;
+        font-weight: 800; 
+        font-size: 15px; 
+      }
+      .center {
+        position: absolute; 
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-weight: 800; 
+        font-size: 80px; 
+      }
+    }
+  }
 }

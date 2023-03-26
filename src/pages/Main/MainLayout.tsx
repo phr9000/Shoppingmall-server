@@ -2,9 +2,9 @@
 import React from 'react'
 import MainCarousel from './MainCarousel';
 // import TestPage from './test';
-import ProductIntro from '../../components/ProductIntro';
 import styleStory from 'assets/data/styleStory.json';
 import ProductCarousel from '../../components/ProductCarousel';
+import ComCarousel from '../../components/ComCarousel';
 import whatsNew from 'assets/data/whatsNew.json';
 import makeItNew from 'assets/data/makeItYours.json';
 
@@ -70,13 +70,16 @@ const MainLayout:React.FC = ()=>{
           <h2 className='thumbnail__title'>WHAT'S NEW</h2>
             <ProductCarousel setting={settings} dataList={whatsNew}/>
         </div>
-        {/* make it yours */}<div className='thumbnail__container whats-new-container'>
+        {/* make it yours */}
+        <div className='thumbnail__container whats-new-container'>
           <h2 className='thumbnail__title'>MAKE IT YOURS </h2>
             <ProductCarousel setting={settings2} dataList={makeItNew}/>
         </div>
-
-        {/* <ProductIntro/> */}
-        
+        {/* EXCLUSIVE */}
+        <div className='thumbnail__container exclusive-container'>
+          <h2 className='thumbnail__title'>EXCLUSIVE <span className='plus'></span></h2>
+            <ComCarousel/>
+        </div>
     </div>
   )
 }
