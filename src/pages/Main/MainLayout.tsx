@@ -8,6 +8,7 @@ import ComCarousel from '../../components/ComCarousel';
 import whatsNew from 'assets/data/whatsNew.json';
 import makeItNew from 'assets/data/makeItYours.json';
 import BeautyPick from './BeautyPick';
+import TrendLayout from './TrendLayout';
 
 const MainLayout:React.FC = ()=>{
   // what's new 
@@ -93,7 +94,7 @@ const MainLayout:React.FC = ()=>{
           <h2 className='thumbnail__title'>W<span className='small-txt'>컨셉</span> TV <span className='plus'></span></h2>
             <ComCarousel/>
         </div>
-        {/* edirorial-wrap */}
+        {/* edirorial */}
         <div className='edirorial-container'>
             <ul>
               <li>
@@ -115,55 +116,63 @@ const MainLayout:React.FC = ()=>{
                 </a>
               </li>
               <li>
-                <img src={process.env.PUBLIC_URL + '/images/main_edition02.jpg'} alt="edition02" />
-                <div className='txt-area'>
-                    <strong className='title'>
-                      HI SEOUL SHOWROOM
-                    </strong>
-                    <em className='des'>
-                      SOLE's WONDERLAND
-                    </em>
+                <a href="!#" className='display-block'>
+                  <img src={process.env.PUBLIC_URL + '/images/main_edition02.jpg'} alt="edition02" />
+                  <div className='txt-area'>
+                      <strong className='title'>
+                        HI SEOUL SHOWROOM
+                      </strong>
+                      <em className='des'>
+                        SOLE's WONDERLAND
+                      </em>
                   </div>
                   <div className='view-detail-area'>
                     <a href="!#">
                       VIEW DETAIL &gt;
                     </a>
                   </div>
+                </a>
               </li>
               <li>
-                <img src={process.env.PUBLIC_URL + '/images/main_edition03.jpg'} alt="edition03" />
-                <div className='txt-area'>
-                    <strong className='title'>
-                      EENK GLOBAL CAMPAIGN
-                    </strong>
-                    <em className='des'>
-                      잉크와 함께한 리앤드라 메딘의 유토피아
-                    </em>
+                <a href="!#" className='display-block'>
+                  <img src={process.env.PUBLIC_URL + '/images/main_edition03.jpg'} alt="edition03" />
+                  <div className='txt-area'>
+                      <strong className='title'>
+                        EENK GLOBAL CAMPAIGN
+                      </strong>
+                      <em className='des'>
+                        잉크와 함께한 리앤드라 메딘의 유토피아
+                      </em>
                   </div>
                   <div className='view-detail-area'>
                     <a href="!#">
                       VIEW DETAIL &gt;
                     </a>
                   </div>
+                </a>
               </li>
               <li>
-                <img src={process.env.PUBLIC_URL + '/images/main_edition04.jpg'} alt="edition04" />
-                <div className='txt-area'>
-                    <strong className='title'>
-                      HI SEOULSHOWROOM
-                    </strong>
-                    <em className='des'>
-                      유라X하이 서울쇼룸 드림라이브
-                    </em>
+                <a href="!#" className='display-block'>
+                  <img src={process.env.PUBLIC_URL + '/images/main_edition04.jpg'} alt="edition04" />
+                  <div className='txt-area'>
+                      <strong className='title'>
+                        HI SEOULSHOWROOM
+                      </strong>
+                      <em className='des'>
+                        유라X하이 서울쇼룸 드림라이브
+                      </em>
                   </div>
                   <div className='view-detail-area'>
                     <a href="!#">
                       VIEW DETAIL &gt;
                     </a>
                   </div>
+                </a>
               </li>
             </ul>
         </div>
+        {/* trend */}
+        <TrendLayout/>
         {/* footer banner */}
         <div className='footer-banner-container'>
           <ul>
@@ -183,6 +192,11 @@ const MainLayout:React.FC = ()=>{
               </a>
             </li>
           </ul>
+        </div>
+        {/* footer info */}
+        <div className='footer-info-container'>
+          <div className='left'></div>
+          <div className='right'></div>
         </div>
     </div>
   )
