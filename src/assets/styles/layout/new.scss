@@ -6,6 +6,16 @@
        width: 100%; 
        @include flex(row, space-between, space-between); 
    }
+   .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: black;
+        border-color: black;
+    }
+
+    .ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled):after{
+        border-color: black;
+    }
+
+    .ant-checkbox-inner:hover{ color:yellow}
    .hot-tag-area {
        @include flex(row, center, center); 
        h4 {

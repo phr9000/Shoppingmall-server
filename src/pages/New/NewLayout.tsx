@@ -5,6 +5,8 @@ import newWeeklyData from 'assets/data/newWeeklyData.json'
 import { Select } from 'antd';
 import ProductIntro from 'components/ProductIntro';
 import ProductList from 'assets/data/products.json'
+import { Checkbox } from 'antd';
+import type { CheckboxChangeEvent } from 'antd/es/checkbox';
 
 const NewLayout:React.FC = ()=>{
   const [search, setSearch] = useState('');
@@ -18,8 +20,15 @@ const NewLayout:React.FC = ()=>{
     console.log(`selected ${value}`);
   };
 
+  const onChange = (e: CheckboxChangeEvent) => {
+    console.log(`checked = ${e.target.checked}`);
+  };
+  
   const taglist = ["스웨트셔츠", "에코백", "메리제인", "원피스", "후디", "스니커즈", "착용", "미니백", "블라우스"]
   const smallMenuList = ["CATEGORY", "BRAND", "PRICE", "BENEFIT", "COLOR", "DISCOUNT"]
+  const FilterMenuList = ["WOMEN", "MEN", "LIFE", "BEAUTY"]
+  const LuxuryList = ["LUXURY", "럭셔리백", "럭셔리어패럴", "럭셔리슈즈", "럭셔리액세서리", "럭셔리키즈"]
+
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }} className="new-container">
       <div style={{ fontSize: "40px", marginTop:"-20px", marginBottom:"40px" }}>
@@ -114,6 +123,28 @@ const NewLayout:React.FC = ()=>{
                   )
                 }
               </ul>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", width:"97%", height:"700px", backgroundColor:"#FBFBFB", marginLeft:"20px", justifyContent:"flex-start" }}>
+                <ul style={{ padding:"18px", listStyle:"none" }}>
+                {
+                    FilterMenuList.map((value)=>
+                    <li style={{ display: "inline", marginRight:"40px" }} data-hashtag={{value}} key={value}>
+                      <button style={{ fontSize:"15px", fontWeight:"bold" }}type="button">{value}</button>
+                    </li>
+                  )
+                }
+              </ul>
+              <div style={{ marginLeft:"40px", display: "flex", flexDirection: "column", width:"94%", height:"532px", backgroundColor:"white" }}>
+                <ul style={{ padding:"18px", listStyle:"none", marginLeft:"30px", width:"95%", height:"60px",borderBottom:"1px solid lightgrey" }}>
+                  {
+                    LuxuryList.map((value)=>
+                    <li style={{ display: "inline", marginRight:"90px" }} data-hashtag={{value}} key={value}>
+                      <Checkbox style={{ marginLeft:"20px",fontSize:"13px" }} onChange={onChange}>{value}</Checkbox>
+                    </li>
+                  )
+                }
+                </ul>
+              </div>
             </div>
             <div style={{ display: "flex", flexDirection: "row", width:"97%", height:"55px", marginLeft:"20px", justifyContent: "space-between" }}>
               <p style={{ padding:"18px", fontSize:"15px" }}>108,652 개의 상품</p>
