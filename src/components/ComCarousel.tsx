@@ -10,7 +10,9 @@ const ComCarousel: React.FC = (data)=>{
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: '425px'
+        centerPadding: '425px',
+        autoplay:true,
+        autoplaySpeed: 3000,
       };
 
     return (
@@ -48,7 +50,7 @@ const ComCarousel: React.FC = (data)=>{
                         <img src={process.env.PUBLIC_URL + '/images/main_exclusive04.jpg'} alt="exclude04" />
                         <div className='txt-wrap'>
                             <span className='top'>앤유의 뮤즈 김나영 PICK! 최대 20% 세일</span>
-                            <span className='center'>AND YOU</span>
+                            <span className='center'>ANDYOU</span>
                         </div>
                     </div>
                 </li>
