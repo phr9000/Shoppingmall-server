@@ -6,6 +6,7 @@ import Login from "pages/Login/LoginLayout";
 import NewLayout from "pages/New/NewLayout";
 import Guide from "components/Guide";
 import LifeLayout from "pages/Life/LifeLayout";
+import DesignerLayout from "pages/Designer/DesignerLayout";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: "/login", element: <Login /> },
       { path: "/new", element: <NewLayout /> },
       { path: "/life", element: <LifeLayout /> },
+      { path: "/designer", element: <DesignerLayout /> },
     ],
   },
 ]);

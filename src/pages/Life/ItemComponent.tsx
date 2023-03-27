@@ -26,6 +26,7 @@ const ItemComponent: React.FC<GreetingsProps> = (data) => {
         .map((list) => (
           <li key={list.category}>
             <div className="item-preview">
+              <p>&#9825;</p>
               <img src={list.preview} alt="test" />
             </div>
             <div className="item-description">
