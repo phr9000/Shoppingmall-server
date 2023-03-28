@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Pagination } from 'antd';
+import { Col, Pagination, Row } from 'antd';
 import newDailyData from 'assets/data/newDailyData.json'
 import newWeeklyData from 'assets/data/newWeeklyData.json'
 import { Select } from 'antd';
@@ -10,6 +10,7 @@ import type { CheckboxChangeEvent } from 'antd/es/checkbox';
 
 const NewLayout:React.FC = ()=>{
   const [search, setSearch] = useState('');
+  const [isFilter, setFilter] = useState(false);
   const handleSearch = () => {
     console.log(search);
   };
@@ -20,6 +21,14 @@ const NewLayout:React.FC = ()=>{
     console.log(`selected ${value}`);
   };
 
+  const filterClick = () => {
+    if(isFilter)
+      setFilter(false)
+    else
+      setFilter(true)
+  }
+
+
   const onChange = (e: CheckboxChangeEvent) => {
     console.log(`checked = ${e.target.checked}`);
   };
@@ -27,7 +36,12 @@ const NewLayout:React.FC = ()=>{
   const taglist = ["스웨트셔츠", "에코백", "메리제인", "원피스", "후디", "스니커즈", "착용", "미니백", "블라우스"]
   const smallMenuList = ["CATEGORY", "BRAND", "PRICE", "BENEFIT", "COLOR", "DISCOUNT"]
   const FilterMenuList = ["WOMEN", "MEN", "LIFE", "BEAUTY"]
-  const LuxuryList = ["LUXURY", "럭셔리백", "럭셔리어패럴", "럭셔리슈즈", "럭셔리액세서리", "럭셔리키즈"]
+  const LuxuryList = ["럭셔리백", "럭셔리어패럴", "럭셔리슈즈", "럭셔리액세서리", "럭셔리키즈"]
+  const APPARELList = ["티셔츠", "아우터", "팬츠", "니트", "원피스", "스커트", "셔츠", "데님", "블라우스", "언더웨어", "라운지웨어", "키즈어패럴"]
+  const ACCList = ["주얼리", "모자", "헤어액세서리", "패션엑세서리", "아이웨어", "14K골드", "스카프/머플러", "시계"]
+  const BagList = ["숄더백", "토트백", "크로스백", "지갑", "백팩", "에코/캔버스팩", "클러치", "기타가방", "백액세서리","키즈백"]
+  const ActiveList = ["스포츠웨어", "골프", "에슬레저", "스윔웨어"]
+  const ShoesList = ["플랫슈즈", "펌프스", "샌들", "뮬/슬리퍼", "로퍼", "스니커즈", "부츠", "슈즈액세서리", "시즈널슈즈", "키즈슈즈"]
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }} className="new-container">
@@ -113,39 +127,131 @@ const NewLayout:React.FC = ()=>{
         <div>
           <div style={{ display: "flex", flexDirection: "column", width:"1450px",}}>
             <div style={{ display: "flex", flexDirection: "row", width:"97%", height:"55px", backgroundColor:"#FBFBFB", marginLeft:"20px", borderTop:"1px solid lightgrey", borderBottom:"3px solid black", justifyContent: "space-between" }}>
-              <p style={{ padding:"18px", fontSize:"15px", fontWeight:"bold" }}>Filter +</p>
+              <button type="button" onClick={() => filterClick()} style={{ padding:"18px", fontSize:"15px", fontWeight:"bold" }}>Filter +</button>
               <ul style={{ padding:"18px", listStyle:"none" }}>
                 {
                     smallMenuList.map((value)=>
                     <li style={{ display: "inline", marginRight:"40px" }} data-hashtag={{value}} key={value}>
-                      <button style={{ fontSize:"15px", fontWeight:"bold" }}type="button">{value}</button>
+                      <button style={{ fontSize:"15px", fontWeight:"bold" }} type="button">{value}</button>
                     </li>
                   )
                 }
               </ul>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", width:"97%", height:"700px", backgroundColor:"#FBFBFB", marginLeft:"20px", justifyContent:"flex-start" }}>
-                <ul style={{ padding:"18px", listStyle:"none" }}>
-                {
-                    FilterMenuList.map((value)=>
-                    <li style={{ display: "inline", marginRight:"40px" }} data-hashtag={{value}} key={value}>
-                      <button style={{ fontSize:"15px", fontWeight:"bold" }}type="button">{value}</button>
-                    </li>
-                  )
-                }
+            {
+              isFilter === true ?
+              <div style={{ display: "flex", flexDirection: "column", width:"97%", height:"700px", backgroundColor:"#FBFBFB", marginLeft:"20px", justifyContent:"flex-start", borderBottom:"3px solid black" }}>
+              <ul style={{ padding:"18px", listStyle:"none" }}>
+              {
+                  FilterMenuList.map((value)=>
+                  <li style={{ display: "inline", marginRight:"40px" }} data-hashtag={{value}} key={value}>
+                    <button style={{ fontSize:"15px", fontWeight:"bold" }}type="button">{value}</button>
+                  </li>
+                )
+              }
               </ul>
               <div style={{ marginLeft:"40px", display: "flex", flexDirection: "column", width:"94%", height:"532px", backgroundColor:"white" }}>
-                <ul style={{ padding:"18px", listStyle:"none", marginLeft:"30px", width:"95%", height:"60px",borderBottom:"1px solid lightgrey" }}>
-                  {
-                    LuxuryList.map((value)=>
-                    <li style={{ display: "inline", marginRight:"90px" }} data-hashtag={{value}} key={value}>
-                      <Checkbox style={{ marginLeft:"20px",fontSize:"13px" }} onChange={onChange}>{value}</Checkbox>
-                    </li>
-                  )
-                }
-                </ul>
+                <div style={{ marginLeft:"40px", width:"94%", display: "flex", flexDirection: "row", borderBottom:"1px solid lightgrey"}}>
+                  <Checkbox style={{ padding:"18px", marginLeft:"20px",fontSize:"13px" }} onChange={onChange}>LUXURY</Checkbox>
+                  <ul style={{ padding:"18px", listStyle:"none", marginLeft:"30px", width:"95%", height:"60px" }}>
+                    {
+                      LuxuryList.map((value)=>
+                      <li style={{ display: "inline", marginRight:"90px" }} data-hashtag={{value}} key={value}>
+                        <Checkbox style={{ marginLeft:"20px",fontSize:"13px" }} onChange={onChange}>{value}</Checkbox>
+                      </li>
+                    )
+                  }
+                  </ul>
+                </div>
+                <div style={{ marginLeft:"40px", width:"94%", display: "flex", flexDirection: "row", borderBottom:"1px solid lightgrey"}}>
+                  <Checkbox style={{ padding:"18px", marginLeft:"20px",fontSize:"13px" }} onChange={onChange}>APPARE</Checkbox>
+                  <ul style={{ alignItems: "center", padding:"18px", listStyle:"none", marginLeft:"30px", width:"95%", height:"100px" }}>
+                    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+                    {
+                      APPARELList.map((value)=>
+                        <Col className="gutter-row" span={6}>
+                          <li data-hashtag={{value}} key={value}>
+                            <Checkbox  onChange={onChange}>{value}</Checkbox>
+                          </li>
+                        </Col>
+                      )
+                    }
+                    </Row>
+                  </ul>
+                </div>
+                <div style={{ marginLeft:"40px", width:"94%", display: "flex", flexDirection: "row", borderBottom:"1px solid lightgrey"}}>
+                  <Checkbox style={{ padding:"18px", marginLeft:"20px",fontSize:"13px" }} onChange={onChange}>ACC</Checkbox>
+                  <ul style={{ alignItems: "center", padding:"18px", listStyle:"none", marginLeft:"30px", width:"95%", height:"80px" }}>
+                    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+                    {
+                      ACCList.map((value)=>
+                        <Col className="gutter-row" span={6}>
+                          <li data-hashtag={{value}} key={value}>
+                            <Checkbox  onChange={onChange}>{value}</Checkbox>
+                          </li>
+                        </Col>
+                      )
+                    }
+                    </Row>
+                  </ul>
+                </div>
+                <div style={{ marginLeft:"40px", width:"94%", display: "flex", flexDirection: "row", borderBottom:"1px solid lightgrey"}}>
+                  <Checkbox style={{ padding:"18px", marginLeft:"20px",fontSize:"13px" }} onChange={onChange}>BAG</Checkbox>
+                  <ul style={{ alignItems: "center", padding:"18px", listStyle:"none", marginLeft:"30px", width:"95%", height:"100px" }}>
+                    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+                    {
+                      BagList.map((value)=>
+                        <Col className="gutter-row" span={6}>
+                          <li data-hashtag={{value}} key={value}>
+                            <Checkbox  onChange={onChange}>{value}</Checkbox>
+                          </li>
+                        </Col>
+                      )
+                    }
+                    </Row>
+                  </ul>
+                </div>
+                <div style={{ marginLeft:"40px", width:"94%", display: "flex", flexDirection: "row", borderBottom:"1px solid lightgrey"}}>
+                  <Checkbox style={{ padding:"18px", marginLeft:"20px",fontSize:"13px" }} onChange={onChange}>ACTIVE</Checkbox>
+                  <ul style={{ alignItems: "center", padding:"18px", listStyle:"none", marginLeft:"30px", width:"95%", height:"50px" }}>
+                    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+                    {
+                      ActiveList.map((value)=>
+                        <Col className="gutter-row" span={6}>
+                          <li data-hashtag={{value}} key={value}>
+                            <Checkbox  onChange={onChange}>{value}</Checkbox>
+                          </li>
+                        </Col>
+                      )
+                    }
+                    </Row>
+                  </ul>
+                </div>
+                <div style={{ marginLeft:"40px", width:"94%", display: "flex", flexDirection: "row", borderBottom:"1px solid lightgrey"}}>
+                  <Checkbox style={{ padding:"18px", marginLeft:"20px",fontSize:"13px" }} onChange={onChange}>SHOES</Checkbox>
+                  <ul style={{ alignItems: "center", padding:"18px", listStyle:"none", marginLeft:"30px", width:"95%", height:"100px" }}>
+                    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+                    {
+                      ShoesList.map((value)=>
+                        <Col className="gutter-row" span={6}>
+                          <li data-hashtag={{value}} key={value}>
+                            <Checkbox  onChange={onChange}>{value}</Checkbox>
+                          </li>
+                        </Col>
+                      )
+                    }
+                    </Row>
+                  </ul>
+                </div>
               </div>
-            </div>
+              <div style={{ height:"50px",marginTop:"20px" ,display: "flex", flexDirection: "row", justifyContent:"center"}}>
+                <button style={{ backgroundColor:"gray", width:"80px", color:"white", fontSize:"15px", marginRight:"20px" }}>초기화</button>
+                <button style={{ backgroundColor:"black", width:"80px", color:"white", fontSize:"15px", marginRight:"20px" }}>필터 적용</button>
+              </div>
+              </div>
+              :
+              null
+            }
             <div style={{ display: "flex", flexDirection: "row", width:"97%", height:"55px", marginLeft:"20px", justifyContent: "space-between" }}>
               <p style={{ padding:"18px", fontSize:"15px" }}>108,652 개의 상품</p>
               <div  style={{ marginTop:"18px" }} >
