@@ -219,23 +219,134 @@ const MainLayout:React.FC = ()=>{
             <div className={`tab-content ${getActiveClass(1, "active-content")}`}>
               <ul>
                 <li>
-                  <div>
-                    <p></p>
-                    <p></p>
+                  <div className='flex align-center justify-between'>
+                    <div className='flex align-center'>
+                      <i className='maker'></i>
+                      <p>[안내] 개인정보 안내</p>
+                    </div>
+                    <p>2023-08-23</p>
                   </div>
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                  <div className='flex align-center justify-between'>
+                    <div className='flex align-center'>
+                      <i className='maker'></i>
+                      <p>[안내] 개인정보 안내</p>
+                    </div>
+                    <p>2023-08-23</p>
+                  </div>
+                </li>
+                <li>
+                    <div className='flex align-center justify-between'>
+                      <div className='flex align-center'>
+                        <i className='maker'></i>
+                        <p>[안내] 개인정보 안내</p>
+                      </div>
+                      <p>2023-08-23</p>
+                    </div>
+                </li>
+                <li>
+                    <div className='flex align-center justify-between'>
+                      <div className='flex align-center'>
+                        <i className='maker'></i>
+                        <p>[안내] 개인정보 안내</p>
+                      </div>
+                      <p>2023-08-23</p>
+                    </div>
+                </li>
+                <li>
+                  <div className='flex align-center justify-between'>
+                    <div className='flex align-center'>
+                      <i className='maker'></i>
+                      <p>[안내] 개인정보 안내</p>
+                    </div>
+                    <p>2023-08-23</p>
+                  </div>
+                </li>
               </ul>
             </div>
             <div className={`tab-content ${getActiveClass(2, "active-content")}`}>
-              tab2의 내용
+            <ul>
+                <li>
+                  <div className='flex align-center justify-between'>
+                    <div className='flex align-center'>
+                      <i className='maker'></i>
+                      <p>[W컨셉] 개인정보 안내</p>
+                    </div>
+                    <p>2023-08-23</p>
+                  </div>
+                </li>
+                <li>
+                  <div className='flex align-center justify-between'>
+                    <div className='flex align-center'>
+                      <i className='maker'></i>
+                      <p>[W컨셉] 개인정보 안내</p>
+                    </div>
+                    <p>2023-08-23</p>
+                  </div>
+                </li>
+                <li>
+                    <div className='flex align-center justify-between'>
+                      <div className='flex align-center'>
+                        <i className='maker'></i>
+                        <p>[W컨셉] 개인정보 안내</p>
+                      </div>
+                      <p>2023-08-23</p>
+                    </div>
+                </li>
+                <li>
+                    <div className='flex align-center justify-between'>
+                      <div className='flex align-center'>
+                        <i className='maker'></i>
+                        <p>[W컨셉] 개인정보 안내</p>
+                      </div>
+                      <p>2023-08-23</p>
+                    </div>
+                </li>
+                <li>
+                  <div className='flex align-center justify-between'>
+                    <div className='flex align-center'>
+                      <i className='maker'></i>
+                      <p>[W컨셉] 개인정보 안내</p>
+                    </div>
+                    <p>2023-08-23</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
 
-          <div className='right'></div>
+          <div className='right'>
+            <h1>
+              <span>고객센터</span>
+              <span className='phone'>1566-5027</span>
+            </h1>
+            <div className='info'>
+              <p>운영시간 : 평일 09:00~18:00 (점심시간 : 12:30~13:30)</p>
+              <p>cs_help@wconcept.co.kr</p>
+            </div>
+            <div className='btn-wrap'>
+              <div className='btn-wrap__left'>
+                <a href="!#">FAQ</a>
+                <a href="!#">1:1 문의</a>
+              </div>
+              <ul className='btn-wrap__right'>
+                <li>
+                  <a href="!#" className='icon facebook-icon'>.</a>
+                </li>
+                <li>
+                  <a href="!#" className='icon insta-icon'>.</a>
+                </li>
+                <li> 
+                  <a href="!#" className='icon pinter-icon'>.</a>
+                </li>
+                <li>
+                  <a href="!#" className='icon youtube-icon'>.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
         </div>
     </div>
   )
