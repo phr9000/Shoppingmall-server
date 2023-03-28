@@ -23,8 +23,13 @@ const ProductIntro:React.FC = ()=>{
                         <div className="percent">10%</div>
                     </div>
                     <div className="label-area">
-                        <div className='line'>뉴시즌</div>
-                        <div className='multi-line'>단독</div>
+                        <p>
+                            <span className='line clearance'>뉴시즌</span>
+                            <span className='line make_reservation'>예약</span>
+                        </p>
+                        <p>
+                            <span className='multi-line general_info'>단독</span>
+                        </p>
                     </div>
                 </div>
             </a>
@@ -48,8 +53,13 @@ const ProductIntro:React.FC = ()=>{
                         <p className="percent">10%</p>
                     </div>
                     <div className="label-area">
-                        <p className='line'>뉴시즌</p>
-                        <p className='multi-line'>단독</p>
+                        <p>
+                            <span className='line clearance'>뉴시즌</span>
+                            <span className='line make_reservation'>예약</span>
+                        </p>
+                        <p>
+                            <span className='multi-line general_info'>단독</span>
+                        </p>
                     </div>
                 </div>
             </a>
@@ -73,8 +83,13 @@ const ProductIntro:React.FC = ()=>{
                         <p className="percent">10%</p>
                     </div>
                     <div className="label-area">
-                        <p className='line'>뉴시즌</p>
-                        <p className='multi-line'>단독</p>
+                        <p>
+                            <span className='line clearance'>뉴시즌</span>
+                            <span className='line make_reservation'>예약</span>
+                        </p>
+                        <p>
+                            <span className='multi-line general_info'>단독</span>
+                        </p>
                     </div>
                 </div>
             </a>
@@ -101,8 +116,13 @@ const ProductIntro:React.FC = ()=>{
                         <p className="percent">10%</p>
                     </div>
                     <div className="label-area">
-                        <p className='line'>뉴시즌</p>
-                        <p className='multi-line'>단독</p>
+                        <p>
+                            <span className='line clearance'>뉴시즌</span>
+                            <span className='line make_reservation'>예약</span>
+                        </p>
+                        <p>
+                            <span className='multi-line general_info'>단독</span>
+                        </p>
                     </div>
                 </div>
             </a>
@@ -126,8 +146,13 @@ const ProductIntro:React.FC = ()=>{
                         <p className="percent">10%</p>
                     </div>
                     <div className="label-area">
-                        <p className='line'>뉴시즌</p>
-                        <p className='multi-line'>단독</p>
+                        <p>
+                            <span className='line clearance'>뉴시즌</span>
+                            <span className='line make_reservation'>예약</span>
+                        </p>
+                        <p>
+                            <span className='multi-line general_info'>단독</span>
+                        </p>
                     </div>
                 </div>
             </a>
