@@ -5,6 +5,7 @@ import MainLayout from "pages/Main/MainCarousel";
 import Login from "pages/Login/LoginLayout";
 import NewLayout from "pages/New/NewLayout";
 import Guide from "components/Guide";
+import { ConfigProvider } from "antd";
 
 
 const router = createBrowserRouter([
@@ -23,7 +24,15 @@ const router = createBrowserRouter([
 ]);
 
 const App: React.FC = () => {
-    return <RouterProvider router={router} />;
+    return <ConfigProvider
+    theme={{
+      token: {
+        colorPrimary: '#000000',
+      },
+    }}
+  >
+    <RouterProvider router={router} />
+  </ConfigProvider>;
 }
 
 export default App
