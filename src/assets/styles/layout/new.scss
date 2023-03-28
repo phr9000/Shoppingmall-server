@@ -15,7 +15,15 @@
         border-color: black;
     }
 
-    .ant-checkbox-inner:hover{ color:yellow}
+    // .ant-checkbox-inner{
+    //     border: 1px solid red !important;
+    //     &:hover {
+    //         border: 1px solid #000 !important;
+    //     }
+    //     &:after {
+    //         display: none;
+    //     }
+    // }
    .hot-tag-area {
        @include flex(row, center, center); 
        h4 {

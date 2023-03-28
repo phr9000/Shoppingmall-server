@@ -125,7 +125,7 @@ const NewLayout:React.FC = ()=>{
             </div>
         </div>
         <div>
-          <div style={{ display: "flex", flexDirection: "column", width:"1450px",}}>
+          <div style={{ position: 'relative', display: "flex", flexDirection: "column", width:"1450px"}}>
             <div style={{ display: "flex", flexDirection: "row", width:"97%", height:"55px", backgroundColor:"#FBFBFB", marginLeft:"20px", borderTop:"1px solid lightgrey", borderBottom:"3px solid black", justifyContent: "space-between" }}>
               <button type="button" onClick={() => filterClick()} style={{ padding:"18px", fontSize:"15px", fontWeight:"bold" }}>Filter +</button>
               <ul style={{ padding:"18px", listStyle:"none" }}>
@@ -140,7 +140,7 @@ const NewLayout:React.FC = ()=>{
             </div>
             {
               isFilter === true ?
-              <div style={{ display: "flex", flexDirection: "column", width:"97%", height:"700px", backgroundColor:"#FBFBFB", marginLeft:"20px", justifyContent:"flex-start", borderBottom:"3px solid black" }}>
+              <div style={{ display: "flex", flexDirection: "column", width:"97%", height:"700px", backgroundColor:"#FBFBFB", marginLeft:"20px", justifyContent:"flex-start", borderBottom:"3px solid black", position: "absolute", zIndex: 2, top: 60, left: 0 }}>
               <ul style={{ padding:"18px", listStyle:"none" }}>
               {
                   FilterMenuList.map((value)=>
