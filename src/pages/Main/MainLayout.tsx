@@ -1,5 +1,4 @@
-// import React, {useEffect, useState} from 'react'
-import React from 'react'
+import React, {useState} from 'react'
 import MainCarousel from './MainCarousel';
 // import TestPage from './test';
 import styleStory from 'assets/data/styleStory.json';
@@ -30,7 +29,14 @@ const MainLayout:React.FC = ()=>{
     slidesToShow: 6,
     slidesToScroll: 1,
     spaceBetween: 10
-};
+  };
+  const [ToggleState, setToggleState] = useState(1);
+  const toggleTab = (index:any) => {
+    setToggleState(index);
+  };
+  const getActiveClass = (index:any, className:string) =>
+    ToggleState === index ? className : "";
+
   return (
     <div className='main-layout-container'>
         <MainCarousel/>
@@ -195,7 +201,40 @@ const MainLayout:React.FC = ()=>{
         </div>
         {/* footer info */}
         <div className='footer-info-container'>
-          <div className='left'></div>
+          <div className='left'>
+            <ul className='tab-list'>
+              <li 
+                className={`tabs ${getActiveClass(1, "active-tabs")}`}
+                onMouseEnter={() => toggleTab(1)}
+              >
+                news
+              </li>
+              <li   
+                className={`tabs ${getActiveClass(2, "active-tabs")}`}
+                onMouseEnter={() => toggleTab(2)}
+              >
+                이벤트발표
+              </li>
+            </ul>
+            <div className={`tab-content ${getActiveClass(1, "active-content")}`}>
+              <ul>
+                <li>
+                  <div>
+                    <p></p>
+                    <p></p>
+                  </div>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <div className={`tab-content ${getActiveClass(2, "active-content")}`}>
+              tab2의 내용
+            </div>
+          </div>
+
           <div className='right'></div>
         </div>
     </div>
