@@ -266,11 +266,6 @@
           margin-top: 0;
         }
       }
-      .product-inner {
-        .img-area {
-          height: 254px; 
-        }
-      }
     }
     &:after {
       clear: both;
@@ -471,6 +466,7 @@
                 background-size: 800%;
               }
               &.facebook-icon {
+                position: relative;
                 &:after {
                   width: 41px;
                   height: 41px;
