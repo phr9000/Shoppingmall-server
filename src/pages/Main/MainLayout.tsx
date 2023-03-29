@@ -332,16 +332,16 @@ const MainLayout:React.FC = ()=>{
               </div>
               <ul className='btn-wrap__right'>
                 <li>
-                  <a href="!#" className='icon facebook-icon'>.</a>
+                  <a href="!#" className='icon facebook-icon ir'>facebook</a>
                 </li>
                 <li>
-                  <a href="!#" className='icon insta-icon'>.</a>
+                  <a href="!#" className='icon insta-icon ir'>insta</a>
                 </li>
                 <li> 
-                  <a href="!#" className='icon pinter-icon'>.</a>
+                  <a href="!#" className='icon pinter-icon ir'>pinterest</a>
                 </li>
                 <li>
-                  <a href="!#" className='icon youtube-icon'>.</a>
+                  <a href="!#" className='icon youtube-icon ir'>youtube</a>
                 </li>
               </ul>
             </div>

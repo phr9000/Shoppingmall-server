@@ -266,6 +266,11 @@
           margin-top: 0;
         }
       }
+      .product-inner {
+        .img-area {
+          height: 254px; 
+        }
+      }
     }
     &:after {
       clear: both;
@@ -410,7 +415,7 @@
       }
     }
     .right {
-      padding: 45px 60px;
+      padding: 25px 60px;
       width: 50%;
       h1 {
         height: 60px;
@@ -448,12 +453,51 @@
           @include flex(row, center, center); 
           li {
             .icon {
+              position: relative;
               display: inline-block;
               margin-left: 9px; 
               width: 31px;
               height: 31px; 
               background-color: #000;
               border-radius: 26px;
+              // after 공통
+              &:after {
+                display: block;
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: url("/assets/images/spr-footer.png") 0 0 no-repeat;
+                background-size: 800%;
+              }
+              &.facebook-icon {
+                &:after {
+                  width: 41px;
+                  height: 41px;
+                  background-position: -1px -67px;
+                }
+              }
+              &.insta-icon {
+                &:after {
+                  width: 41px;
+                  height: 41px;
+                  background-position: -67px -67px;
+                }
+              }
+              &.pinter-icon {
+                &:after {
+                  width: 41px;
+                  height: 41px;
+                  background-position: -132px -67px;
+                }
+              }
+              &.youtube-icon {
+                &:after {
+                  width: 41px;
+                  height: 41px;
+                  background-position: -198px -67px;
+                }
+              }
             }
             &:first-child {
               .icon {
