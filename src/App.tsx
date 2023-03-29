@@ -8,6 +8,8 @@ import Guide from "components/Guide";
 
 import { ConfigProvider } from "antd";
 import SaleLayout from "pages/Sale/SaleLayout";
+import LifeLayout from "pages/Life/LifeLayout";
+import DesignerLayout from "pages/Designer/DesignerLayout";
 
 const router = createBrowserRouter([
     {
