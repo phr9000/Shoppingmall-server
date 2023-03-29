@@ -1,16 +1,20 @@
 import React, { useState } from 'react'
 import { Col, Pagination, Row } from 'antd';
-import newDailyData from 'assets/data/newDailyData.json'
-import newWeeklyData from 'assets/data/newWeeklyData.json'
+import saleDiscountData from 'assets/data/saleDiscountData.json'
 import { Select } from 'antd';
 import ProductIntro from 'components/ProductIntro';
 import ProductList from 'assets/data/products.json'
 import { Checkbox } from 'antd';
 import type { CheckboxChangeEvent } from 'antd/es/checkbox';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import data from 'assets/data/mainCarousel.json';
 
-const NewLayout:React.FC = ()=>{
+const SaleLayout:React.FC = ()=>{
   const [search, setSearch] = useState('');
   const [isFilter, setFilter] = useState(false);
+  const [isDiscount, setDiscount] = useState(true);
   const handleSearch = () => {
     console.log(search);
   };
@@ -28,12 +32,26 @@ const NewLayout:React.FC = ()=>{
       setFilter(true)
   }
 
+  const DiscountClick = () => {
+    if(isDiscount)
+      setDiscount(false)
+    else
+      setDiscount(true)
+  }
+
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slideToScroll: 1,
+  };
 
   const onChange = (e: CheckboxChangeEvent) => {
     console.log(`checked = ${e.target.checked}`);
   };
   
-  const taglist = ["스웨트셔츠", "에코백", "메리제인", "원피스", "후디", "스니커즈", "착용", "미니백", "블라우스"]
+  const taglist = ["가디건", "스웨트셔츠", "에코백", "메리제인", "원피스", "후디", "스니커즈", "착용", "미니백", "블라우스"]
   const smallMenuList = ["CATEGORY", "BRAND", "PRICE", "BENEFIT", "COLOR", "DISCOUNT"]
   const FilterMenuList = ["WOMEN", "MEN", "LIFE", "BEAUTY"]
   const LuxuryList = ["럭셔리백", "럭셔리어패럴", "럭셔리슈즈", "럭셔리액세서리", "럭셔리키즈"]
@@ -46,9 +64,18 @@ const NewLayout:React.FC = ()=>{
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }} className="new-container">
       <div style={{ fontSize: "40px", marginTop:"-20px", marginBottom:"40px" }}>
-        NEW
+        SALE
       </div>
-      <div className="hot-tag-container">
+      <div className='main-carousel'>
+        <Slider {...settings}>
+            {
+              data!.map((carousel) => 
+                <li key={carousel.id}><img src={carousel.url} alt="test" /></li>
+              )
+            }
+        </Slider>
+      </div>
+      <div className="hot-tag-container" style={{ marginTop:"50px" }}>
         <div className='hot-tag-area'>
           <h4>인기태그</h4>
           <ul style={{ listStyle:"none" }} className="contents">
@@ -100,26 +127,28 @@ const NewLayout:React.FC = ()=>{
       <div style={{ display: "flex", flexDirection: "row", alignItems: "start",verticalAlign:"top", width:"1780px", justifyContent: "space-between", marginTop:"50px"}}>
         <div style={{ display: "flex", flexDirection: "column",  width:"300px", height:"100%" }}>
             <div style={{ width:"300px", height:"155px", backgroundColor:"gray"}}>
-              <h4 style={{ padding:"20px", fontSize:"28px", color:"white" }}>TODAY<br/>UPDATED</h4>
-              <h4 style={{ padding:"20px", fontSize:"15px", color:"white" }}>오늘 등록된 신상품 191</h4>
+              <h4 style={{ padding:"20px", fontSize:"28px", color:"white" }}>NEW<br/>MARKDOWN</h4>
+              <h4 style={{ padding:"20px", fontSize:"15px", color:"white" }}>최근 일주일 41,279</h4>
             </div>
-            <div style={{ width:"300px", height:"53px", backgroundColor:"lightgray"}}>
-              <h4 style={{ padding:"20px", fontSize:"18px" }}>날짜별 신상품</h4>
+            <div style={{ display: "flex", flexDirection: "row", width:"300px", height:"53px", backgroundColor:"#F2F2F2"}}>
+              <h4 style={{ padding:"20px", fontSize:"18px" }}>세일중인 브랜드</h4>
+              <div style={{ height:"30px",marginTop:"10px" ,display: "flex", flexDirection: "row", justifyContent:"center"}}>
+                {
+                  isDiscount === true ?
+                    <button style={{ backgroundColor:"#DFDFDF", width:"60px", color:"black", fontSize:"13px"}}>할인율</button>:
+                    <button onClick={() => DiscountClick()} style={{ backgroundColor:"#F2F2F2", width:"60px", color:"black", fontSize:"13px"}}>할인율</button>
+                }
+                {
+                  isDiscount === true ?
+                    <button onClick={() => DiscountClick()} style={{ backgroundColor:"#F2F2F2", width:"60px", color:"black", fontSize:"13px"}}>상품수</button>:
+                    <button style={{ backgroundColor:"#DFDFDF", width:"60px", color:"black", fontSize:"13px"}}>상품수</button>
+                }
+              </div>
             </div>
             <div style={{ width:"300px", height:"370px", overflow: "auto",backgroundColor:"#FBFBFB" }}>
               {
-                newDailyData.map(
-                  (value)=><div key={value.date} style={{ gap: "1rem", padding:"10px",height:"37px",fontSize:"15px", borderBottom:"1px solid lightgray", display: "flex", flexDirection: "row", justifyContent: "space-between" }}><p style={{ color:"grey" }}> {value.date} </p> <p> {value.count} </p></div>
-                )
-              }
-            </div>
-            <div style={{ width:"300px", height:"53px", backgroundColor:"lightgray"}}>
-              <h4 style={{ padding:"20px", fontSize:"18px" }}>주간별 신상품</h4>
-            </div>
-            <div style={{ width:"300px", height:"370px", overflow: "auto", backgroundColor:"#FBFBFB" }}>
-              {
-                newWeeklyData.map(
-                  (value)=><div  key={value.name} style={{ padding:"10px",height:"37px",fontSize:"15px", borderBottom:"1px solid lightgray", display: "flex", flexDirection: "row", justifyContent: "space-between" }}><p style={{ color:"grey" }}> {value.name} </p> <p style={{ textAlign: "right" }}> {value.count} </p></div>
+                saleDiscountData.map(
+                  (value)=><div key={value.name} style={{ gap: "1rem", padding:"10px",height:"37px",fontSize:"15px", borderBottom:"1px solid lightgray", display: "flex", flexDirection: "row", justifyContent: "space-between" }}><p style={{ color:"grey" }}> {value.name} </p> <p> {value.persent} </p></div>
                 )
               }
             </div>
@@ -291,4 +320,4 @@ const NewLayout:React.FC = ()=>{
   )
 }
 
-export default NewLayout;
+export default SaleLayout;

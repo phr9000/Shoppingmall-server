@@ -5,7 +5,8 @@ import MainLayout from "pages/Main/MainLayout";
 import Login from "pages/Login/LoginLayout";
 import NewLayout from "pages/New/NewLayout";
 import Guide from "components/Guide";
-
+import { ConfigProvider } from "antd";
+import SaleLayout from "pages/Sale/SaleLayout";
 
 const router = createBrowserRouter([
     {
@@ -18,12 +19,21 @@ const router = createBrowserRouter([
             {path: '/login', element:<Login/>},
             {path: '/login', element:<Login/>},
             {path: '/new', element:<NewLayout/>},
+            {path: '/sale', element:<SaleLayout/>},
         ]
     }
 ]);
 
 const App: React.FC = () => {
-    return <RouterProvider router={router} />;
+    return <ConfigProvider
+    theme={{
+      token: {
+        colorPrimary: '#000000',
+      },
+    }}
+  >
+    <RouterProvider router={router} />
+  </ConfigProvider>;
 }
 
 export default App
