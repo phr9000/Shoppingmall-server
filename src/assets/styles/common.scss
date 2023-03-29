@@ -41,9 +41,16 @@ em {
 .align-center {
   align-items: center;
 }
+.justify-between {
+  justify-content: space-between;
+}
 .wrap {
   flex-wrap: wrap;
 }
 .w100 {
   width: 100%; 
+}
+.ir {
+  overflow: hidden;
+  text-indent: -9999px;
 }

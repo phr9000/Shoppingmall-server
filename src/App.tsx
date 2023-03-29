@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Root from './pages/Root'
 import JoinLayout from "pages/Join/JoinLayout";
-import MainLayout from "pages/Main/MainCarousel";
+import MainLayout from "pages/Main/MainLayout";
 import Login from "pages/Login/LoginLayout";
 import NewLayout from "pages/New/NewLayout";
 import Guide from "components/Guide";

@@ -1,0 +1,78 @@
+.product-container {
+    max-width: 1240px;
+    margin: 0 auto; 
+}
+.product-inner {
+    @include flex(row, space-evenly, center);
+    margin: 0 auto; 
+    margin-top: 1.5rem; 
+    max-width: 1138px;
+    li {
+        margin: 0 12px; 
+    }
+    .img-area {
+        margin-bottom: 15px; 
+        height: 272px;
+        > img {
+            height: 100%; 
+        }
+    }
+    .text-container {
+        .brand {
+            margin-bottom: 1rem; 
+            @include font(16px, 600, $black);
+        }
+        .product-name {
+            margin-bottom: 0.5rem; 
+            @include font(14px, 400, $color-gray-05);
+            @include ellipsis(1);
+        }
+        .sub-heading {
+            margin-bottom: 0.5rem;
+            height: 34px; 
+            @include font(12px, 400, $color-gray-05);
+            @include ellipsis(2);
+        }
+        .price-area {
+            @include flex(row, space-between, center);
+            font-size: 16px;
+            font-weight: 600;
+            .price {
+                color: $black; 
+            }
+            .percent {
+                color: $color-red-01;
+            }
+        }
+    }
+    .label-area {
+        margin-top: 3px; 
+        p {
+            &:not(:first-child) {
+                margin-top: 5px; 
+            }
+        }
+        span {
+            display: inline-block;
+            padding: 2px 4px;
+                &:not(:first-child) {
+                margin-left: 5px; 
+            }
+        }
+        .clearance {
+            background-color: red; 
+            color: #fff;
+            border: 1px solid red;
+        }
+        .general_info {
+            background-color: #fff; 
+            color: #000;
+            border: 1px solid #000;
+        }
+        .make_reservation {
+            background-color: #000; 
+            color: #fff;
+            border: 1px solid #000;
+        }
+    }
+}

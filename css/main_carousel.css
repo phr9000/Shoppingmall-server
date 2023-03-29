@@ -44,4 +44,6 @@
 .main-carousel img {
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main_carousel.css.map */
