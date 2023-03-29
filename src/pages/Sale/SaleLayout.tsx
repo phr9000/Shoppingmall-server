@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Col, Pagination, Row } from 'antd';
-import newDailyData from 'assets/data/newDailyData.json'
-import newWeeklyData from 'assets/data/newWeeklyData.json'
+import saleDiscountData from 'assets/data/saleDiscountData.json'
 import { Select } from 'antd';
 import ProductIntro from 'components/ProductIntro';
 import ProductList from 'assets/data/products.json'
@@ -15,6 +14,7 @@ import data from 'assets/data/mainCarousel.json';
 const SaleLayout:React.FC = ()=>{
   const [search, setSearch] = useState('');
   const [isFilter, setFilter] = useState(false);
+  const [isDiscount, setDiscount] = useState(true);
   const handleSearch = () => {
     console.log(search);
   };
@@ -30,6 +30,13 @@ const SaleLayout:React.FC = ()=>{
       setFilter(false)
     else
       setFilter(true)
+  }
+
+  const DiscountClick = () => {
+    if(isDiscount)
+      setDiscount(false)
+    else
+      setDiscount(true)
   }
 
   var settings = {
@@ -120,26 +127,28 @@ const SaleLayout:React.FC = ()=>{
       <div style={{ display: "flex", flexDirection: "row", alignItems: "start",verticalAlign:"top", width:"1780px", justifyContent: "space-between", marginTop:"50px"}}>
         <div style={{ display: "flex", flexDirection: "column",  width:"300px", height:"100%" }}>
             <div style={{ width:"300px", height:"155px", backgroundColor:"gray"}}>
-              <h4 style={{ padding:"20px", fontSize:"28px", color:"white" }}>TODAY<br/>UPDATED</h4>
-              <h4 style={{ padding:"20px", fontSize:"15px", color:"white" }}>오늘 등록된 신상품 191</h4>
+              <h4 style={{ padding:"20px", fontSize:"28px", color:"white" }}>NEW<br/>MARKDOWN</h4>
+              <h4 style={{ padding:"20px", fontSize:"15px", color:"white" }}>최근 일주일 41,279</h4>
             </div>
-            <div style={{ width:"300px", height:"53px", backgroundColor:"lightgray"}}>
-              <h4 style={{ padding:"20px", fontSize:"18px" }}>날짜별 신상품</h4>
+            <div style={{ display: "flex", flexDirection: "row", width:"300px", height:"53px", backgroundColor:"#F2F2F2"}}>
+              <h4 style={{ padding:"20px", fontSize:"18px" }}>세일중인 브랜드</h4>
+              <div style={{ height:"30px",marginTop:"10px" ,display: "flex", flexDirection: "row", justifyContent:"center"}}>
+                {
+                  isDiscount === true ?
+                    <button style={{ backgroundColor:"#DFDFDF", width:"60px", color:"black", fontSize:"13px"}}>할인율</button>:
+                    <button onClick={() => DiscountClick()} style={{ backgroundColor:"#F2F2F2", width:"60px", color:"black", fontSize:"13px"}}>할인율</button>
+                }
+                {
+                  isDiscount === true ?
+                    <button onClick={() => DiscountClick()} style={{ backgroundColor:"#F2F2F2", width:"60px", color:"black", fontSize:"13px"}}>상품수</button>:
+                    <button style={{ backgroundColor:"#DFDFDF", width:"60px", color:"black", fontSize:"13px"}}>상품수</button>
+                }
+              </div>
             </div>
             <div style={{ width:"300px", height:"370px", overflow: "auto",backgroundColor:"#FBFBFB" }}>
               {
-                newDailyData.map(
-                  (value)=><div key={value.date} style={{ gap: "1rem", padding:"10px",height:"37px",fontSize:"15px", borderBottom:"1px solid lightgray", display: "flex", flexDirection: "row", justifyContent: "space-between" }}><p style={{ color:"grey" }}> {value.date} </p> <p> {value.count} </p></div>
-                )
-              }
-            </div>
-            <div style={{ width:"300px", height:"53px", backgroundColor:"lightgray"}}>
-              <h4 style={{ padding:"20px", fontSize:"18px" }}>주간별 신상품</h4>
-            </div>
-            <div style={{ width:"300px", height:"370px", overflow: "auto", backgroundColor:"#FBFBFB" }}>
-              {
-                newWeeklyData.map(
-                  (value)=><div  key={value.name} style={{ padding:"10px",height:"37px",fontSize:"15px", borderBottom:"1px solid lightgray", display: "flex", flexDirection: "row", justifyContent: "space-between" }}><p style={{ color:"grey" }}> {value.name} </p> <p style={{ textAlign: "right" }}> {value.count} </p></div>
+                saleDiscountData.map(
+                  (value)=><div key={value.name} style={{ gap: "1rem", padding:"10px",height:"37px",fontSize:"15px", borderBottom:"1px solid lightgray", display: "flex", flexDirection: "row", justifyContent: "space-between" }}><p style={{ color:"grey" }}> {value.name} </p> <p> {value.persent} </p></div>
                 )
               }
             </div>
