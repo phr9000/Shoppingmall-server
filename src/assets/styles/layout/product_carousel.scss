@@ -1,0 +1,185 @@
+.product-carousel {
+    .product-item {
+        width: 20%;
+        margin-left: 20px;
+        &:first-child {
+            margin-left: 0;
+        } 
+        .img-area {
+            position: relative; 
+            width: 100%; 
+            img {
+                width: 100%; 
+            }
+            .heart-icon {
+                display: block;
+                position: absolute;
+                cursor: pointer; 
+                width: 18px;
+                height: 17px;
+                z-index: 2;
+                top: 10px;
+                right: 10px; 
+                background: url('/assets/images/spr-common.png') 0 0 no-repeat;
+                background-position: -330px 0px;
+                &.active {
+                    display: block; 
+                }
+                &.nonActive {
+                    display: none; 
+                }
+            }
+        }
+    }
+    
+    .title {
+        margin-top: 34px; 
+        @include ellipsis(1);
+        @include font(20px, 400, #333, 1);
+        text-align: left;
+    }
+    .des-area {
+        margin-top: 10px;
+        height: 26px; 
+        @include font(12px, 400, #666, 1.5);
+        text-align: left;
+        word-break: keep-all;
+    }
+    .price-area {
+        @include flex(row, space-between, center);
+        .discount {
+            @include font(18px, 600, #333, 1.5);
+        }
+        .original-price {
+            @include font(14px, 400, #808080, 1.5);
+            text-decoration: line-through;
+        }
+        .percent {
+            @include font(16px, 600, #ff4000, 1.5);
+        }
+    }
+    // carousel 
+    .slick-slider {
+        width: 100%;
+        height: 100%;
+    }
+    .slick-dots {
+        display: none; 
+    }
+    .slick-arrow {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translate(-50, 0);
+        &.slick-prev {
+            left: 2rem;
+        }
+        &.slick-next {
+            right: 2rem;
+        }
+    }
+    .slick-prev {
+        &:before {
+            display: none;
+        }
+        &:after {
+            width: 100%;
+            display: block; 
+            content: '';
+            height: 56px;
+            background: url('/assets/images/btn_prev.png') no-repeat center center / 100%;
+        }
+    }
+    .slick-next {
+        &:before {
+            display: none;
+        }
+        &:after {
+            display: block;
+            content: '';
+            height: 56px; 
+            background: url('/assets/images/btn_next.png') no-repeat center center / 100%;
+        }
+    }
+    .product-container {
+        max-width: 1450px;
+        margin: 0 auto;
+    }
+    .product-inner {
+        @include flex(row, space-evenly, center);
+        margin: 0 auto; 
+        margin-top: 1.5rem;
+        max-width: 1300px;
+        li {
+            margin-right: 40px;
+            margin-top: 40px;
+        }
+        .img-area {
+            margin-bottom: 15px;
+            height: 272px;
+            > img {
+                height: 100%;
+                object-fit: fill;
+                width: 220px;
+            }
+        }
+        .text-container {
+            .brand {
+                margin-bottom: 1rem; 
+                @include font(16px, 600, $black);
+            }
+            .product-name {
+                margin-bottom: 0.5rem; 
+                @include font(14px, 400, $color-gray-05);
+                @include ellipsis(1);
+            }
+            .sub-heading {
+                margin-bottom: 0.5rem;
+                height: 34px; 
+                @include font(12px, 400, $color-gray-05);
+                @include ellipsis(2);
+            }
+            .price-area {
+                @include flex(row, space-between, center);
+                font-size: 16px;
+                font-weight: 600;
+                .price {
+                    color: $black; 
+                }
+                .percent {
+                    color: $color-red-01;
+                }
+            }
+        }
+        .label-area {
+            margin-top: 3px; 
+            p {
+                &:not(:first-child) {
+                    margin-top: 5px; 
+                }
+            }
+            span {
+                display: inline-block;
+                padding: 2px 4px;
+                    &:not(:first-child) {
+                    margin-left: 5px; 
+                }
+            }
+            .clearance {
+                background-color: red; 
+                color: #fff;
+                border: 1px solid red;
+            }
+            .general_info {
+                background-color: #fff; 
+                color: #000;
+                border: 1px solid #000;
+            }
+            .make_reservation {
+                background-color: #000; 
+                color: #fff;
+                border: 1px solid #000;
+            }
+        }
+    }
+}

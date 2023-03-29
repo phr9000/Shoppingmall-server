@@ -22,4 +22,9 @@
         height: 25px;
         background: url('/assets/images/icon-bag-dark.png') center center /100% 100% no-repeat;
     }
+    &.del-icon {
+        width: 25px;
+        height: 25px;
+        background: url('/assets/images/btn_del.png') center center /100% 100% no-repeat;
+    }
 }

@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "url": "/images/style_story01.jpg",
+        "alt":"브랜드데이",
+        "title": "DAZE DAYZ111",
+        "des":"KAILANI TUBE ONEPIECE",
+        "discount": "18,000",
+        "originalPrice": "20,000",
+        "percent":"10%",
+        "cart": true
+    },
+    {
+        "id": 2,
+        "url": "/images/style_story02.jpg",
+        "alt":"브랜드데이",
+        "title": "NOTHING WRITTEN",
+        "des":"기다렸던 낫띵리튼의 브랜드데이!",
+        "discount": "20,000",
+        "cart": true
+    },
+    {
+        "id": 3,
+        "url": "/images/style_story03.jpg",
+        "alt":"브랜드데이",
+        "title": "NOTHING WRITTEN",
+        "des":"기다렸던 낫띵리튼의 브랜드데이!",
+        "discount": "18,000",
+        "originalPrice": "20,000",
+        "percent":"10%",
+        "cart": true
+    },
+    {
+        "id": 4,
+        "url": "/images/style_story04.jpg",
+        "alt":"브랜드데이",
+        "title": "NOTHING WRITTEN",
+        "des":"기다렸던 낫띵리튼의 브랜드데이!",
+        "discount": "18,000",
+        "originalPrice": "20,000",
+        "percent":"10%",
+        "cart": true
+    },
+    {
+        "id": 5,
+        "url": "/images/style_story01.jpg",
+        "alt":"브랜드데이",
+        "title": "NOTHING WRITTEN",
+        "des":"기다렸던 낫띵리튼의 브랜드데이!",
+        "discount": "18,000",
+        "originalPrice": "20,000",
+        "percent":"10%",
+        "cart": true
+    },
+    {
+        "id": 6,
+        "url": "/images/style_story02.jpg",
+        "alt":"브랜드데이",
+        "title": "NOTHING WRITTEN",
+        "des":"기다렸던 낫띵리튼의 브랜드데이!",
+        "discount": "18,000",
+        "originalPrice": "20,000",
+        "percent":"10%",
+        "cart": true
+    },
+    {
+        "id": 7,
+        "url": "/images/style_story03.jpg",
+        "alt":"브랜드데이",
+        "title": "NOTHING WRITTEN",
+        "des":"기다렸던 낫띵리튼의 브랜드데이!",
+        "discount": "18,000",
+        "originalPrice": "20,000",
+        "percent":"10%",
+        "cart": false
+    }
+]
