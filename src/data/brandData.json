@@ -1,0 +1,492 @@
+[
+  {
+    "id": 1,
+    "engName": "A BIT MOR",
+    "korName": "어빗모어",
+    "categoryEng": "A",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 2,
+    "engName": "A Gold E",
+    "korName": "에이골디",
+    "categoryEng": "A",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 3,
+    "engName": "A HAUTE",
+    "korName": "어오트",
+    "categoryEng": "A",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 4,
+    "engName": "A Little Tickle",
+    "korName": "어리틀티클",
+    "categoryEng": "A",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 5,
+    "engName": "a mon",
+    "korName": "아몽",
+    "categoryEng": "A",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 6,
+    "engName": "A NORMAL",
+    "korName": "에이노멀",
+    "categoryEng": "A",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 7,
+    "engName": "A NOTHING",
+    "korName": "어낫띵",
+    "categoryEng": "A",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 8,
+    "engName": "A PAPER CUT",
+    "korName": "어페이퍼컷",
+    "categoryEng": "A",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 9,
+    "engName": "A propos",
+    "korName": "아프로포",
+    "categoryEng": "A",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 10,
+    "engName": "A STUPID PORTER",
+    "korName": "어 스투피드 포터",
+    "categoryEng": "A",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 11,
+    "engName": "b able two",
+    "korName": "비에이블투",
+    "categoryEng": "B",
+    "categoryKor": "ㅂ"
+  },
+  {
+    "id": 12,
+    "engName": "B Project",
+    "korName": "비프로젝트",
+    "categoryEng": "B",
+    "categoryKor": "ㅂ"
+  },
+  {
+    "id": 13,
+    "engName": "B SLASH B",
+    "korName": "비슬래쉬비",
+    "categoryEng": "B",
+    "categoryKor": "ㅂ"
+  },
+  {
+    "id": 14,
+    "engName": "B,LINE",
+    "korName": "비라인",
+    "categoryEng": "B",
+    "categoryKor": "ㅂ"
+  },
+  {
+    "id": 15,
+    "engName": "B.FRAME",
+    "korName": "비프레임",
+    "categoryEng": "B",
+    "categoryKor": "ㅂ"
+  },
+  {
+    "id": 16,
+    "engName": "B.MOTTO LIVING",
+    "korName": "비모토리빙",
+    "categoryEng": "B",
+    "categoryKor": "ㅂ"
+  },
+  {
+    "id": 17,
+    "engName": "b.oq",
+    "korName": "비옥",
+    "categoryEng": "B",
+    "categoryKor": "ㅂ"
+  },
+  {
+    "id": 18,
+    "engName": "b1project",
+    "korName": "비원프로젝트",
+    "categoryEng": "B",
+    "categoryKor": "ㅂ"
+  },
+  {
+    "id": 19,
+    "engName": "BA&SH",
+    "korName": "바쉬",
+    "categoryEng": "B",
+    "categoryKor": "ㅂ"
+  },
+  {
+    "id": 20,
+    "engName": "BAAN",
+    "korName": "반",
+    "categoryEng": "B",
+    "categoryKor": "ㅂ"
+  },
+  {
+    "id": 21,
+    "engName": "c d˚l",
+    "korName": "씨디엘",
+    "categoryEng": "C",
+    "categoryKor": "ㅆ"
+  },
+  {
+    "id": 22,
+    "engName": "C Logue",
+    "korName": "씨로그",
+    "categoryEng": "C",
+    "categoryKor": "ㅆ"
+  },
+  {
+    "id": 23,
+    "engName": "c.c.kim",
+    "korName": "씨씨킴",
+    "categoryEng": "C",
+    "categoryKor": "ㅆ"
+  },
+  {
+    "id": 24,
+    "engName": "C.O.M.E",
+    "korName": "씨오엠이 바이 컬러 오브 마스 프롬 어스",
+    "categoryEng": "C",
+    "categoryKor": "ㅆ"
+  },
+  {
+    "id": 25,
+    "engName": "C.ROUTINE",
+    "korName": "씨루틴",
+    "categoryEng": "C",
+    "categoryKor": "ㅆ"
+  },
+  {
+    "id": 26,
+    "engName": "c'noir",
+    "korName": "카페느와르",
+    "categoryEng": "C",
+    "categoryKor": "ㅋ"
+  },
+  {
+    "id": 27,
+    "engName": "CAANC",
+    "korName": "칸크",
+    "categoryEng": "C",
+    "categoryKor": "ㅋ"
+  },
+  {
+    "id": 28,
+    "engName": "CABEZA",
+    "korName": "카베자",
+    "categoryEng": "C",
+    "categoryKor": "ㅋ"
+  },
+  {
+    "id": 29,
+    "engName": "Cabin Zero",
+    "korName": "캐빈제로",
+    "categoryEng": "C",
+    "categoryKor": "ㅋ"
+  },
+  {
+    "id": 30,
+    "engName": "cachare",
+    "korName": "까사렐",
+    "categoryEng": "C",
+    "categoryKor": "ㄲ"
+  },
+  {
+    "id": 31,
+    "engName": "d good real",
+    "korName": "디굿리얼",
+    "categoryEng": "D",
+    "categoryKor": "ㄷ"
+  },
+  {
+    "id": 32,
+    "engName": "D Hand",
+    "korName": "디핸드",
+    "categoryEng": "D",
+    "categoryKor": "ㄷ"
+  },
+  {
+    "id": 33,
+    "engName": "D.A.T.E",
+    "korName": "데이트",
+    "categoryEng": "D",
+    "categoryKor": "ㄷ"
+  },
+  {
+    "id": 34,
+    "engName": "D.CRAFT",
+    "korName": "디크래프트",
+    "categoryEng": "D",
+    "categoryKor": "ㄷ"
+  },
+  {
+    "id": 35,
+    "engName": "D.FLEUR",
+    "korName": "디플레르",
+    "categoryEng": "D",
+    "categoryKor": "ㄷ"
+  },
+  {
+    "id": 36,
+    "engName": "D.O.T.",
+    "korName": "디오티",
+    "categoryEng": "D",
+    "categoryKor": "ㄷ"
+  },
+  {
+    "id": 37,
+    "engName": "D.PRIQUE",
+    "korName": "디프리크",
+    "categoryEng": "D",
+    "categoryKor": "ㄷ"
+  },
+  {
+    "id": 38,
+    "engName": "D`ALBA",
+    "korName": "달바",
+    "categoryEng": "D",
+    "categoryKor": "ㄷ"
+  },
+  {
+    "id": 39,
+    "engName": "D`ORSAY BOPS",
+    "korName": "도르세이 밥스",
+    "categoryEng": "D",
+    "categoryKor": "ㄷ"
+  },
+  {
+    "id": 40,
+    "engName": "DA:EL",
+    "korName": "다엘",
+    "categoryEng": "D",
+    "categoryKor": "ㄷ"
+  },
+  {
+    "id": 41,
+    "engName": "E DE",
+    "korName": "이드",
+    "categoryEng": "E",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 42,
+    "engName": "EAAH",
+    "korName": "이아",
+    "categoryEng": "E",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 43,
+    "engName": "earfit",
+    "korName": "얼핏",
+    "categoryEng": "E",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 44,
+    "engName": "EARP EARP",
+    "korName": "어프어프",
+    "categoryEng": "E",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 45,
+    "engName": "EARTHUS",
+    "korName": "어더스",
+    "categoryEng": "E",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 46,
+    "engName": "ease",
+    "korName": "이즈",
+    "categoryEng": "E",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 47,
+    "engName": "EASTINDIGO",
+    "korName": "이스트인디고",
+    "categoryEng": "E",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 48,
+    "engName": "EASTLOGUE",
+    "korName": "이스트로그",
+    "categoryEng": "E",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 49,
+    "engName": "EASTPAK",
+    "korName": "이스트팩",
+    "categoryEng": "E",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 50,
+    "engName": "eastsea",
+    "korName": "이스트씨",
+    "categoryEng": "E",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 51,
+    "engName": "F.cocoromiz",
+    "korName": "에프코코로미즈",
+    "categoryEng": "F",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 52,
+    "engName": "F.FAN",
+    "korName": "핑거팬",
+    "categoryEng": "F",
+    "categoryKor": "ㅍ"
+  },
+  {
+    "id": 53,
+    "engName": "F_by_IHM",
+    "korName": "에프바이아이에이치엠",
+    "categoryEng": "F",
+    "categoryKor": "ㅇ"
+  },
+  {
+    "id": 54,
+    "engName": "FABER FINGER",
+    "korName": "파베르핑거",
+    "categoryEng": "F",
+    "categoryKor": "ㅍ"
+  },
+  {
+    "id": 55,
+    "engName": "Fabiana Filippi",
+    "korName": "파비아나 필리피",
+    "categoryEng": "F",
+    "categoryKor": "ㅍ"
+  },
+  {
+    "id": 56,
+    "engName": "Fabricology",
+    "korName": "패브릭컬러지",
+    "categoryEng": "F",
+    "categoryKor": "ㅍ"
+  },
+  {
+    "id": 57,
+    "engName": "FABULOUS ARCHIVE",
+    "korName": "패블러스아카이브",
+    "categoryEng": "F",
+    "categoryKor": "ㅍ"
+  },
+  {
+    "id": 58,
+    "engName": "FFACADE PATTERN ",
+    "korName": "파사드패턴",
+    "categoryEng": "F",
+    "categoryKor": "ㅍ"
+  },
+  {
+    "id": 59,
+    "engName": "FACE FACTORY",
+    "korName": "페이스팩토리",
+    "categoryEng": "F",
+    "categoryKor": "ㅍ"
+  },
+  {
+    "id": 60,
+    "engName": "FACE NONE",
+    "korName": "페이스넌",
+    "categoryEng": "F",
+    "categoryKor": "ㅍ"
+  },
+  {
+    "id": 61,
+    "engName": "G.R.b",
+    "korName": "지알비",
+    "categoryEng": "G",
+    "categoryKor": "ㅈ"
+  },
+  {
+    "id": 62,
+    "engName": "G.ROLL",
+    "korName": "지롤",
+    "categoryEng": "G",
+    "categoryKor": "ㅈ"
+  },
+  {
+    "id": 63,
+    "engName": "G/FORE",
+    "korName": "지포어",
+    "categoryEng": "G",
+    "categoryKor": "ㅈ"
+  },
+  {
+    "id": 64,
+    "engName": "gaave",
+    "korName": "가베",
+    "categoryEng": "G",
+    "categoryKor": "ㄱ"
+  },
+  {
+    "id": 65,
+    "engName": "gabinyang",
+    "korName": "가벵양",
+    "categoryEng": "G",
+    "categoryKor": "ㄱ"
+  },
+  {
+    "id": 66,
+    "engName": "GABRIEL LEE",
+    "korName": "가브리엘 리",
+    "categoryEng": "G",
+    "categoryKor": "ㄱ"
+  },
+  {
+    "id": 67,
+    "engName": "GAC",
+    "korName": "객",
+    "categoryEng": "G",
+    "categoryKor": "ㄱ"
+  },
+  {
+    "id": 68,
+    "engName": "gaimo",
+    "korName": "가이모",
+    "categoryEng": "G",
+    "categoryKor": "ㄱ"
+  },
+  {
+    "id": 69,
+    "engName": "GAINSBORO",
+    "korName": "게인스보로",
+    "categoryEng": "G",
+    "categoryKor": "ㄱ"
+  },
+  {
+    "id": 70,
+    "engName": "Gait",
+    "korName": "게이트",
+    "categoryEng": "G",
+    "categoryKor": "ㄱ"
+  }
+]

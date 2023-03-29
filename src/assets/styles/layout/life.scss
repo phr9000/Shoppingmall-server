@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.life-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  h2 {
+    height: 14rem;
+    padding-top: 4.7rem;
+    font-size: 4.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    // font-family: "Pretendard-Regular" !important;
+  }
+  h3 {
+    height: 10rem;
+    padding: 2.4rem;
+    font-size: 3.5rem;
+    text-align: left;
+    font-weight: 200;
+  }
+
+  .tab-list {
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 19%;
+      height: 9rem;
+      border: 1px solid #000;
+      box-sizing: border-box;
+      button {
+        font-size: 2.6rem;
+        width: 100%;
+        height: 100%;
+        &:hover {
+          background-color: #000;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .life-section {
+    list-style: none;
+    width: 80%;
+
+    overflow: hidden;
+    margin: 5rem auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    .side-banner {
+      width: 40%;
+
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+    &.life-section-1 {
+      .life-section__home {
+        width: 60%;
+        height: auto;
+        margin-left: 2rem;
+        .item-container {
+          justify-content: flex-end;
+          li {
+            min-width: 200px;
+          }
+        }
+      }
+    }
+
+    &.life-section-2 {
+      .life-section__culture,
+      .life-section__food {
+        width: 30%;
+        height: 88rem;
+        margin-left: 20px;
+      }
+      .life-section__food {
+        margin-left: 0;
+        .item-container {
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    &.life-section-3 {
+      height: 80rem;
+      .life-section__travel,
+      .life-section__digital {
+        width: 48.5%;
+
+        overflow: hidden;
+
+        h3 {
+          border-bottom: 1px solid #000;
+        }
+        .item-container {
+          justify-content: space-between;
+          li {
+            width: 23rem;
+            .item-preview {
+              width: 23rem;
+            }
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .sm-banner {
+          width: 100%;
+          height: 30rem;
+          display: flex;
+          justify-content: space-between;
+          padding: 0 5rem;
+          p {
+            width: 30rem;
+            align-self: center;
+            font-size: 2rem;
+
+            h4 {
+              font-size: 3rem;
+            }
+          }
+          span {
+            width: 30rem;
+            display: inline-block;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .life-section__story {
+      width: 100%;
+      height: auto;
+      .life-section__story--wrap {
+        display: flex;
+        justify-content: space-between;
+      }
+      .life-section__story--sec-1 {
+        width: 24%;
+        padding-bottom: 50px;
+        border: 1px solid #dbdbdb;
+        .side-banner {
+          width: 100%;
+        }
+
+        .life-section__story__des {
+          width: 95%;
+          margin: 0 auto;
+          height: 180px;
+          padding: 30px 15px;
+          border-bottom: 1px solid #dbdbdb;
+          strong {
+            font-size: 2rem;
+            font-weight: 600;
+          }
+          p {
+            margin-top: 20px;
+            font-size: 1.3rem;
+            color: #808080;
+            line-height: 20px;
+          }
+        }
+        .item-container {
+          margin-top: 30px;
+          li {
+            margin-top: 15px;
+            width: 40rem;
+            height: auto;
+            display: flex;
+            .item-preview {
+              flex: 1.5;
+              padding-left: 15px;
+            }
+            .item-description {
+              padding-top: 0;
+              flex: 2.5;
+              justify-self: flex-end;
+              padding: 0 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mid-banner {
+    width: 80%;
+    height: 56rem;
+    margin: 5rem auto;
+    overflow: hidden;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}

@@ -1,12 +1,13 @@
 // ------- common ------- //
 * {
-  font-family: 'Noto Sans', sans-serif !important;
+  font-family: "Noto Sans", sans-serif !important;
 }
 html,
 body {
   font-size: 10px;
   letter-spacing: -0.5px;
-  font-family: 'Noto Sans', sans-serif !important;
+  font-family: "Noto Sans", sans-serif !important;
+  min-width: 1920px;
 }
 body {
   &.no-scroll {
@@ -17,7 +18,7 @@ a {
   color: inherit;
 }
 em {
-  font-style: normal; 
+  font-style: normal;
 }
 .ir {
   position: absolute;
@@ -30,7 +31,7 @@ em {
   font-weight: bold !important;
 }
 .display-block {
-  display: block; 
+  display: block;
 }
 .display-inblock {
   display: inline-block;
@@ -48,7 +49,7 @@ em {
   flex-wrap: wrap;
 }
 .w100 {
-  width: 100%; 
+  width: 100%;
 }
 .ir {
   overflow: hidden;

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "url": "/images/life-sidebanner-1.jpg"
+  },
+  {
+    "id": 2,
+    "url": "/images/life-sidebanner-2.jpg"
+  },
+  {
+    "id": 3,
+    "url": "/images/life-sidebanner-3.jpg"
+  },
+  {
+    "id": 10,
+    "url": "/images/life-midbanner-1.jpg"
+  },
+  {
+    "id": 11,
+    "url": "/images/life-midbanner-2.jpg"
+  },
+  {
+    "id": 12,
+    "url": "/images/life-midbanner-3.jpg"
+  },
+  {
+    "id": 13,
+    "url": "/images/life-midbanner-4.jpg"
+  }
+]

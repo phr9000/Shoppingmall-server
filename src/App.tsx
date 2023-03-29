@@ -1,10 +1,11 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import Root from './pages/Root'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Root from "./pages/Root";
 import JoinLayout from "pages/Join/JoinLayout";
 import MainLayout from "pages/Main/MainLayout";
 import Login from "pages/Login/LoginLayout";
 import NewLayout from "pages/New/NewLayout";
 import Guide from "components/Guide";
+
 import { ConfigProvider } from "antd";
 import SaleLayout from "pages/Sale/SaleLayout";
 
@@ -20,6 +21,8 @@ const router = createBrowserRouter([
             {path: '/login', element:<Login/>},
             {path: '/new', element:<NewLayout/>},
             {path: '/sale', element:<SaleLayout/>},
+            { path: "/life", element: <LifeLayout /> },
+            { path: "/designer", element: <DesignerLayout /> },
         ]
     }
 ]);
@@ -36,4 +39,4 @@ const App: React.FC = () => {
   </ConfigProvider>;
 }
 
-export default App
+export default App;
