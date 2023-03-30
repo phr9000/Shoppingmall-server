@@ -4,6 +4,7 @@ import JoinLayout from "pages/Join/JoinLayout";
 import MainLayout from "pages/Main/MainLayout";
 import Login from "pages/Login/LoginLayout";
 import NewLayout from "pages/New/NewLayout";
+import BeautyLayout from "pages/Beauty/BeautyLayout";
 import Guide from "components/Guide";
 
 import { ConfigProvider } from "antd";
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
             {path: '/sale', element:<SaleLayout/>},
             { path: "/life", element: <LifeLayout /> },
             { path: "/designer", element: <DesignerLayout /> },
+            { path: "/beauty", element: <BeautyLayout/> }
         ]
     }
 ]);

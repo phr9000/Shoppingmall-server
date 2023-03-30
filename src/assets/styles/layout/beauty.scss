@@ -1,0 +1,14 @@
+.beauty-container {
+    &__inner {
+        margin: 0 auto; 
+        width: 1880px; 
+        @media (max-width: 1919px) {
+            width: 1560px; 
+        }
+    }
+    &__title {
+        padding: 47px 0 100px 0;
+        text-align: center;
+        @include font(44px, 200, #000, 54px);
+    }
+}
