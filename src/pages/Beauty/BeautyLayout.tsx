@@ -240,7 +240,7 @@ const BeautyLayout:React.FC = ()=>{
                   <a className='top-one-item'  href="!#">
                     <div className='img-area'>
                       <p className='seller-bage-icon'>
-                        <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="top1" />
+                        <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
                         <span>1</span>
                       </p>
                       <img src={process.env.PUBLIC_URL + '/images/top_seller01.png'} alt="top1" />
@@ -262,20 +262,245 @@ const BeautyLayout:React.FC = ()=>{
                   {/* 만약 디비에 월마다 저장되있고, 10개씩만 가가져져오오면면? */}
                   <ul className='top-etc-item-list'>
                     <li className='top-etc-item'>
-                      <div className="img-area">
-
-                      </div>
-                      <div className="txt-wrap"></div>
+                      <a href="!#">
+                        <div className="img-area">
+                        <p className='seller-bage-icon'>
+                          <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
+                          <span>2</span>
+                        </p>
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                        </div>
+                        <div className='txt-wrap'>
+                          <div className='brand'>MUZIGAE MANSION</div>
+                          <div className='product ellipsis-two'>
+                            피팅 블러쉬 5종 택 1
+                          </div>
+                          <div className='price'>
+                            <p>
+                              <span className='discount_price'>14,400</span>
+                              <span className='base_price'>18,000</span>
+                            </p>
+                            <span className='discount_rate'>20%</span>
+                          </div>
+                        </div>
+                      </a>
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li className='top-etc-item'>
+                      <a href="!#">
+                        <div className="img-area">
+                          <p className='seller-bage-icon'>
+                            <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
+                            <span>3</span>
+                          </p>
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                        </div>
+                        <div className='txt-wrap'>
+                          <div className='brand'>MUZIGAE MANSION</div>
+                          <div className='product ellipsis-two'>
+                            피팅 블러쉬 5종 택 1
+                          </div>
+                          <div className='price'>
+                            <p>
+                              <span className='discount_price'>14,400</span>
+                              <span className='base_price'>18,000</span>
+                            </p>
+                            <span className='discount_rate'>20%</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li className='top-etc-item'>
+                      <a href="!#">
+                        <div className="img-area">
+                          <p className='seller-bage-icon'>
+                            <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
+                            <span>4</span>
+                          </p>
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                        </div>
+                        <div className='txt-wrap'>
+                          <div className='brand'>MUZIGAE MANSION</div>
+                          <div className='product ellipsis-two'>
+                            피팅 블러쉬 5종 택 1
+                          </div>
+                          <div className='price'>
+                            <p>
+                              <span className='discount_price'>14,400</span>
+                              <span className='base_price'>18,000</span>
+                            </p>
+                            <span className='discount_rate'>20%</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li className='top-etc-item'>
+                      <a href="!#">
+                        <div className="img-area">
+                          <p className='seller-bage-icon'>
+                            <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
+                            <span>5</span>
+                          </p>
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                        </div>
+                        <div className='txt-wrap'>
+                          <div className='brand'>MUZIGAE MANSION</div>
+                          <div className='product ellipsis-two'>
+                            피팅 블러쉬 5종 택 1
+                          </div>
+                          <div className='price'>
+                            <p>
+                              <span className='discount_price'>14,400</span>
+                              <span className='base_price'>18,000</span>
+                            </p>
+                            <span className='discount_rate'>20%</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li className='top-etc-item'>
+                      <a href="!#">
+                        <div className="img-area">
+                          <p className='seller-bage-icon'>
+                            <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
+                            <span>6</span>
+                          </p>
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                        </div>
+                        <div className='txt-wrap'>
+                          <div className='brand'>MUZIGAE MANSION</div>
+                          <div className='product ellipsis-two'>
+                            피팅 블러쉬 5종 택 1
+                          </div>
+                          <div className='price'>
+                            <p>
+                              <span className='discount_price'>14,400</span>
+                              <span className='base_price'>18,000</span>
+                            </p>
+                            <span className='discount_rate'>20%</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li className='top-etc-item'>
+                      <a href="!#">
+                        <div className="img-area">
+                            <p className='seller-bage-icon'>
+                              <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
+                              <span>7</span>
+                            </p>
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                        </div>
+                        <div className='txt-wrap'>
+                          <div className='brand'>MUZIGAE MANSION</div>
+                          <div className='product ellipsis-two'>
+                            피팅 블러쉬 5종 택 1
+                          </div>
+                          <div className='price'>
+                            <p>
+                              <span className='discount_price'>14,400</span>
+                              <span className='base_price'>18,000</span>
+                            </p>
+                            <span className='discount_rate'>20%</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li className='top-etc-item'>
+                      <a href="!#">
+                        <div className="img-area">
+                        <p className='seller-bage-icon'>
+                              <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
+                              <span>8</span>
+                            </p>
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                        </div>
+                        <div className='txt-wrap'>
+                          <div className='brand'>MUZIGAE MANSION</div>
+                          <div className='product ellipsis-two'>
+                            피팅 블러쉬 5종 택 1
+                          </div>
+                          <div className='price'>
+                            <p>
+                              <span className='discount_price'>14,400</span>
+                              <span className='base_price'>18,000</span>
+                            </p>
+                            <span className='discount_rate'>20%</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li className='top-etc-item'>
+                      <a href="!#">
+                        <div className="img-area">
+                          <p className='seller-bage-icon'>
+                            <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
+                            <span>9</span>
+                          </p>
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                        </div>
+                        <div className='txt-wrap'>
+                          <div className='brand'>MUZIGAE MANSION</div>
+                          <div className='product ellipsis-two'>
+                            피팅 블러쉬 5종 택 1
+                          </div>
+                          <div className='price'>
+                            <p>
+                              <span className='discount_price'>14,400</span>
+                              <span className='base_price'>18,000</span>
+                            </p>
+                            <span className='discount_rate'>20%</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li className='top-etc-item'>
+                      <a href="!#">
+                        <div className="img-area">
+                          <p className='seller-bage-icon'>
+                            <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
+                            <span>10</span>
+                          </p>
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                        </div>
+                        <div className='txt-wrap'>
+                          <div className='brand'>MUZIGAE MANSION</div>
+                          <div className='product ellipsis-two'>
+                            피팅 블러쉬 5종 택 1
+                          </div>
+                          <div className='price'>
+                            <p>
+                              <span className='discount_price'>14,400</span>
+                              <span className='base_price'>18,000</span>
+                            </p>
+                            <span className='discount_rate'>20%</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li className='top-etc-item'>
+                      <a href="!#">
+                        <div className="img-area">
+                          <p className='seller-bage-icon'>
+                            <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
+                            <span>11</span>
+                          </p>
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                        </div>
+                        <div className='txt-wrap'>
+                          <div className='brand'>MUZIGAE MANSION</div>
+                          <div className='product ellipsis-two'>
+                            피팅 블러쉬 5종 택 1
+                          </div>
+                          <div className='price'>
+                            <p>
+                              <span className='discount_price'>14,400</span>
+                              <span className='base_price'>18,000</span>
+                            </p>
+                            <span className='discount_rate'>20%</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
                   </ul>
                 </div>
             </div>
