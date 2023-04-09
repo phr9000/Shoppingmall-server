@@ -69,7 +69,7 @@ const BeautyLayout:React.FC = ()=>{
             <div className='main-carousel beauty-container__banner'>
                 <Slider {...settings}>
                 {
-                  beautyData!.map((carousel) => 
+                  beautyData.banner!.map((carousel) => 
                     <li key={carousel.id}><img src={carousel.url} alt="test" /></li>
                   )
                 }
@@ -103,9 +103,181 @@ const BeautyLayout:React.FC = ()=>{
               </a>
             </div>
             {/* make it yours */}
-            <div className='thumbnail__container whats-new-container'>
+            <div className='thumbnail__container whats-new-container make-it-yours-container'>
               <h2 className='thumbnail__title'>MAKE IT YOURS </h2>
                 <ProductCarousel setting={settings2} dataList={bestPickData}/>
+            </div>
+            {/* sub banner */}
+            <div className='sub-banner-container'>
+              <ul>
+                <li>
+                  <a href="!#" className='display-inblock'>
+                  <img src={process.env.PUBLIC_URL + '/images/beauty_section03.jpg'} alt="beauty01" />
+                    <div className='float-txt'>
+                      <strong> MOREMO_</strong>
+                      <p>건강하고 아름다운 헤어 라이프</p>
+                      <em>최대 61% 할인</em>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="!#" className='display-inblock'>
+                  <img src={process.env.PUBLIC_URL + '/images/beauty_section04.jpg'} alt="beauty02" />
+                      <div className='float-txt'>
+                        <strong> Piccasso</strong>
+                        <p>극강의 부드러운 터치</p>
+                        <em>최대 52% 할인</em>
+                      </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="!#" className='display-inblock'>
+                  <img src={process.env.PUBLIC_URL + '/images/beauty_section05.jpg'} alt="beauty03" />
+                    <div className='float-txt'>
+                      <strong>MENOKIN</strong>
+                      <p>가장 효과적인 스킨케어 브랜드</p>
+                      <em>최대 30% 할인</em>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            {/* top rank container */}
+            <div className='top-rank-container'>
+                <div className='left'>
+                  <div className='list top-brand-area'>
+                    <h2>TOP BRAND</h2>
+                    <ul>
+                      <li>
+                        <span className='num'>1</span>
+                        <a href="!#" className='title'>hersteller</a>
+                      </li>
+                      <li>
+                        <span className='num'>2</span>
+                        <a href="!#" className='title'>LOMA</a>
+                      </li>
+                      <li>
+                        <span className='num'>3</span>
+                        <a href="!#" className='title'>Piccasso</a>
+                      </li>
+                      <li>
+                        <span className='num'>4</span>
+                        <a href="!#" className='title'>NAMING.</a>
+                      </li>
+                      <li>
+                        <span className='num'>5</span>
+                        <a href="!#" className='title'>HERA</a>
+                      </li>
+                      <li>
+                        <span className='num'>6</span>
+                        <a href="!#" className='title'>ABOUT ME</a>
+                      </li>
+                      <li>
+                        <span className='num'>7</span>
+                        <a href="!#" className='title'>dasique</a>
+                      </li>
+                      <li>
+                        <span className='num'>8</span>
+                        <a href="!#" className='title'>JAVIN DE SEOUL</a>
+                      </li>
+                      <li>
+                        <span className='num'>9</span>
+                        <a href="!#" className='title'>B Project</a>
+                      </li>
+                      <li>
+                        <span className='num'>10</span>
+                        <a href="!#" className='title'>PRO8 CHEONGDAM</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className='list best-keyword-area'>
+                    <h2>best keyword</h2>
+                    <ul>
+                      <li>
+                        <span className='num'>1</span>
+                        <a href="!#" className='title'>뷰티 디바이스</a>
+                      </li>
+                      <li>
+                        <span className='num'>2</span>
+                        <a href="!#" className='title'>매트 립스틱</a>
+                      </li>
+                      <li>
+                        <span className='num'>3</span>
+                        <a href="!#" className='title'>페이스오일</a>
+                      </li>
+                      <li>
+                        <span className='num'>4</span>
+                        <a href="!#" className='title'>세럼</a>
+                      </li>
+                      <li>
+                        <span className='num'>5</span>
+                        <a href="!#" className='title'>피부 보습</a>
+                      </li>
+                      <li>
+                        <span className='num'>6</span>
+                        <a href="!#" className='title'>페이스롤러</a>
+                      </li>
+                      <li>
+                        <span className='num'>7</span>
+                        <a href="!#" className='title'>아이라이너</a>
+                      </li>
+                      <li>
+                        <span className='num'>8</span>
+                        <a href="!#" className='title'>쿠션</a>
+                      </li>
+                      <li>
+                        <span className='num'>9</span>
+                        <a href="!#" className='title'>핸드크림</a>
+                      </li>
+                      <li>
+                        <span className='num'>10</span>
+                        <a href="!#" className='title'>샴푸</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className='right'>
+                  <a className='top-one-item'  href="!#">
+                    <div className='img-area'>
+                      <p className='seller-bage-icon'>
+                        <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="top1" />
+                        <span>1</span>
+                      </p>
+                      <img src={process.env.PUBLIC_URL + '/images/top_seller01.png'} alt="top1" />
+                    </div>
+                    <div className='txt-wrap'>
+                      <div className='brand'>MUZIGAE MANSION</div>
+                      <div className='product ellipsis-two'>
+                        피팅 블러쉬 5종 택 1
+                      </div>
+                      <div className='price'>
+                        <p>
+                          <span className='discount_price'>14,400</span>
+                          <span className='base_price'>18,000</span>
+                        </p>
+                        <span className='discount_rate'>20%</span>
+                      </div>
+                    </div>
+                  </a>
+                  {/* 만약 디비에 월마다 저장되있고, 10개씩만 가가져져오오면면? */}
+                  <ul className='top-etc-item-list'>
+                    <li className='top-etc-item'>
+                      <div className="img-area">
+
+                      </div>
+                      <div className="txt-wrap"></div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
             </div>
             {/* slider test */}
             <div className="brands-menu-area">
@@ -120,14 +292,14 @@ const BeautyLayout:React.FC = ()=>{
               ))}
             </div>
             <Slider {...settings} ref={sliderRef}>
-            {slides.map((slide) => (
-              <div key={slide.id}>
-                <h3>{slide.text}</h3>
-              </div>
-            ))}
+              {slides.map((slide) => (
+                <div key={slide.id}>
+                  <h3>{slide.text}</h3>
+                </div>
+              ))}
             </Slider>
-            </div>
-        
+            
+        </div>
     </div>
     
   )

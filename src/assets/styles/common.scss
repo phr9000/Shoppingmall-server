@@ -55,3 +55,10 @@ em {
   overflow: hidden;
   text-indent: -9999px;
 }
+
+.ellipsis-one {
+  @include ellipsis(1);
+}
+.ellipsis-two {
+  @include ellipsis(2);
+}

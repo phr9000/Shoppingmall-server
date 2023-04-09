@@ -1,4 +1,5 @@
-[
+
+{"banner" : [
     {
         "id": 1,
         "url": "/images/beauty_banner01.jpg"
@@ -19,4 +20,26 @@
         "id": 5,
         "url": "/images/beauty_banner02.jpg"
     }
-]
+],
+"topSeller" : [
+    {
+        "id": 1,
+        "url": "/images/beauty_banner01.jpg"
+    },
+    {
+        "id": 2,
+        "url": "/images/beauty_banner02.jpg"
+    },
+    {
+        "id": 3,
+        "url": "/images/beauty_banner03.jpg"
+    },
+    {
+        "id": 4,
+        "url": "/images/beauty_banner01.jpg"
+    },
+    {
+        "id": 5,
+        "url": "/images/beauty_banner02.jpg"
+    }
+]}
