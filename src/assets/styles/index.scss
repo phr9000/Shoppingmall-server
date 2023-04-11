@@ -10,25 +10,30 @@
 @import "./common.scss";
 
 // // layout
-@import '/src/assets/styles/layout/header.scss';
-@import '/src/assets/styles/layout/search_header.scss';
-@import '/src/assets/styles/layout/space.scss';
-@import '/src/assets/styles/layout/main.scss';
-@import '/src/assets/styles/layout/join.scss';
-@import '/src/assets/styles/layout/login.scss';
-@import '/src/assets/styles/layout/footer.module.scss';
-@import '/src/assets/styles/layout/main_carousel.scss';
-@import '/src/assets/styles/layout/product_intro.scss';
-@import '/src/assets/styles/layout/new.scss';
-@import '/src/assets/styles/layout/product_carousel.scss';
+@import "/src/assets/styles/layout/header.scss";
+@import "/src/assets/styles/layout/search_header.scss";
+@import "/src/assets/styles/layout/space.scss";
+@import "/src/assets/styles/layout/main.scss";
+@import "/src/assets/styles/layout/join.scss";
+@import "/src/assets/styles/layout/login.scss";
+@import "/src/assets/styles/layout/footer.module.scss";
+@import "/src/assets/styles/layout/main_carousel.scss";
+@import "/src/assets/styles/layout/product_intro.scss";
+@import "/src/assets/styles/layout/new.scss";
+@import "/src/assets/styles/layout/product_carousel.scss";
 @import "/src/assets/styles/layout/life_carousel.scss";
 @import "/src/assets/styles/layout/life.scss";
 @import "/src/assets/styles/layout/designer.scss";
 @import "/src/assets/styles/layout/designer_carousel.scss";
 @import "/src/assets/styles/layout/brandlist.scss";
+@import "/src/assets/styles/layout/event.scss";
+@import "/src/assets/styles/layout/event_carousel.scss";
+@import "/src/assets/styles/layout/best.scss";
+@import "/src/assets/styles/layout/shopbag.scss";
 
 // // components
 @import "/src/assets/styles/components/form.scss";
 @import "/src/assets/styles/components/guide.scss";
 @import "/src/assets/styles/components/icon.scss";
 @import "/src/assets/styles/components/item.scss";
+@import "/src/assets/styles/components/bestItem.scss";

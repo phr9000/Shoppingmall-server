@@ -1,9 +1,9 @@
 import React from "react";
 import LifeCarousel from "pages/Life/LifeCarousel";
 // import ItemComponent from "pages/Life/ItemComponent";
-import LifeData from "../../data/lifeData.json";
-import bannerData from "../../data/bannerData.json";
-import ItemComponent from "./ItemComponent";
+import LifeData from "assets/data/lifeData.json";
+import bannerData from "assets/data/bannerData.json";
+import ItemComponent from "../../components/ItemComponent";
 import SideComponent from "./SideComponent";
 
 // import { useState } from "react";

@@ -1,0 +1,343 @@
+[
+  {
+    "category": "WOMEN",
+    "id": 1,
+    "preview": "/images/best-item-women-01.png",
+    "name": "WAAR",
+    "promotion": "[랜더스데이]",
+    "des": "[-6cm 숏버전 추가] W53 LONG SEMI BOOTS CUT DENIM PANTS_BLACK",
+    "price": "49,900",
+    "before": "74,000",
+    "sale": "33%",
+    "preorder": "예약상품",
+    "new": "뉴시즌",
+    "celeb": "셀럽착용"
+  },
+  {
+    "category": "WOMEN",
+    "id": 2,
+    "preview": "/images/best-item-women-02.png",
+    "name": "LOSSYROW",
+    "promotion": "[04/07 예약배송]",
+    "des": "[단독][1+1] Signature Logo Half-Sleeve T-shirt",
+    "price": "39,000",
+    "before": "78,000",
+    "sale": "50%",
+    "preorder": "예약상품",
+    "new": "뉴시즌",
+    "celeb": "셀럽착용",
+    "only": "단독"
+  },
+  {
+    "category": "WOMEN",
+    "id": 3,
+    "preview": "/images/best-item-women-03.png",
+    "name": "LEMEME",
+    "promotion": "[Black, Bunt Red_4/14, Mocha_4/10 예약배송]",
+    "des": "[단독]Sac Petit Nouvelle_4colors",
+    "price": "278,000",
+    "preorder": "예약상품",
+    "new": "뉴시즌",
+    "celeb": "셀럽착용",
+    "only": "단독"
+  },
+  {
+    "category": "WOMEN",
+    "id": 4,
+    "preview": "/images/best-item-women-04.png",
+    "name": "FRONTROW",
+    "promotion": "[묵화PICK] | [단독 재입고]",
+    "des": "[Drama Signature] Pleated Semi-Wide Trousers_3color",
+    "price": "134,100",
+    "before": "149,000",
+    "sale": "10%",
+
+    "new": "뉴시즌",
+    "celeb": "셀럽착용",
+    "only": "단독"
+  },
+  {
+    "category": "WOMEN",
+    "id": 5,
+    "preview": "/images/best-item-women-05.png",
+    "name": "NIKE",
+    "promotion": "[랜더스데이] | [SP23]",
+    "des": "[DN1791-100] W NIKE CORTEZ",
+    "price": "109,000",
+    "new": "뉴시즌"
+  },
+  {
+    "category": "WOMEN",
+    "id": 6,
+    "preview": "/images/best-item-women-06.png",
+    "name": "NIKE",
+    "promotion": "[랜더스데이] | [SU22]",
+    "des": "[DD9682-100] W NIKE TC 7900",
+    "price": "97,300",
+    "before": "139,000",
+    "sale": "30%",
+
+    "new": "뉴시즌"
+  },
+  {
+    "category": "WOMEN",
+    "id": 7,
+    "preview": "/images/best-item-women-07.png",
+    "name": "CITYBREEZE",
+    "promotion": "[BLUE, PINK 4/7 예약배송]",
+    "des": "링클프리 오버핏 셔츠_4COLOR",
+    "price": "39,000",
+    "before": "79,000",
+    "sale": "51%",
+    "preorder": "예약상품",
+
+    "celeb": "셀럽착용"
+  },
+
+  {
+    "category": "MEN",
+    "id": 1,
+    "preview": "/images/best-item-men-01.png",
+    "name": "MINIMAL PROJECT",
+    "promotion": "[랜더스데이]",
+    "des": "로버스트 헤비 오버핏 반팔티셔츠 MST127 / 8color",
+    "price": "19,400",
+    "before": "35,800",
+    "sale": "46%",
+    "new": "뉴시즌",
+
+    "only": "단독"
+  },
+  {
+    "category": "MEN",
+    "id": 2,
+    "preview": "/images/best-item-men-02.png",
+    "name": "ISLAND SLIPPER",
+    "promotion": "[23SS][본사정품]",
+    "des": "PT203SL-TPTN",
+    "price": "125,685",
+    "before": "189,000",
+    "sale": "34%",
+    "preorder": "예약상품",
+    "new": "뉴시즌",
+    "celeb": "셀럽착용",
+    "coupon": "쿠폰",
+    "only": "단독"
+  },
+  {
+    "category": "MEN",
+    "id": 3,
+    "preview": "/images/best-item-men-03.png",
+    "name": "Josepht",
+    "promotion": "[UNISEX] | [04/07 예약배송]",
+    "des": "Smith",
+    "price": "93,100",
+
+    "preorder": "예약상품",
+    "new": "뉴시즌",
+
+    "coupon": "쿠폰"
+  },
+  {
+    "category": "MEN",
+    "id": 4,
+    "preview": "/images/best-item-men-04.png",
+    "name": "FRONTROW MEN",
+
+    "des": "Half Sleeve Polo Knit",
+    "price": "51,200",
+    "before": "128,000",
+    "sale": "60%",
+
+    "only": "단독"
+  },
+  {
+    "category": "MEN",
+    "id": 5,
+    "preview": "/images/best-item-men-05.png",
+    "name": "PAPERBOY",
+    "promotion": "[랜더스데이]",
+    "des": "코지 써클 스웨트 셋업 4color",
+    "price": "52,800",
+    "before": "96,000",
+    "sale": "45%",
+
+    "new": "뉴시즌"
+  },
+  {
+    "category": "MEN",
+    "id": 6,
+    "preview": "/images/best-item-men-06.png",
+    "name": "ANDERSSON BELL for MEN",
+    "promotion": "[랜더스데이] | [EXCLUSIVE]",
+    "des": "SUUNY VARSITY CARDIGAN JACKET awa483m(BLUE)",
+    "price": "400,140",
+    "before": "468,000",
+    "sale": "15%",
+
+    "new": "뉴시즌",
+
+    "coupon": "쿠폰",
+    "only": "단독"
+  },
+  {
+    "category": "MEN",
+    "id": 7,
+    "preview": "/images/best-item-men-07.png",
+    "name": "NEWBALANCE",
+
+    "des": "뉴발란스 530 스니커즈 운동화 MR530AD",
+    "price": "159,000",
+    "before": "228,000",
+    "sale": "30%"
+  },
+  {
+    "category": "BEAUTY",
+    "id": 1,
+    "preview": "/images/best-item-beauty-01.png",
+    "name": "LOMA",
+    "promotion": "[CHICOR]",
+    "des": "너리싱 샴푸 1L (펌프포함)",
+    "price": "51,000",
+    "before": "60,000",
+    "sale": "15%"
+  },
+  {
+    "category": "BEAUTY",
+    "id": 2,
+    "preview": "/images/best-item-beauty-02.png",
+    "name": "Piccasso",
+    "promotion": "[뷰티특가]",
+    "des": "피카소 위시 브러쉬 아이템 컬렉션 (5SET](+듀얼미러 증정)",
+    "price": "99,000",
+    "before": "208,000",
+    "sale": "52%"
+  },
+  {
+    "category": "BEAUTY",
+    "id": 3,
+    "preview": "/images/best-item-beauty-03.png",
+    "name": "HERA",
+    "promotion": "[먼데이문]",
+    "des": "실키 스테이 파운데이션 + 본품 동일 사양 브러쉬+컨튜어링듀오+선크림 30ml 증정",
+    "price": "57,800",
+    "before": "68,000",
+    "sale": "15%"
+  },
+  {
+    "category": "BEAUTY",
+    "id": 4,
+    "preview": "/images/best-item-beauty-04.png",
+    "name": "dirt phobia",
+
+    "des": "이펙텀 디: 솔루션 앰플 100ml",
+    "price": "46,200"
+  },
+  {
+    "category": "BEAUTY",
+    "id": 5,
+    "preview": "/images/best-item-beauty-05.png",
+    "name": "Pra.L",
+    "promotion": "[뷰티특가] | [04/13 예약배송]",
+    "des": "LG 프라엘 인텐시브 멀티케어 BLP1 (탄력, 쿨링)",
+    "price": "645,000",
+    "before": "799,000",
+    "sale": "19%"
+  },
+  {
+    "category": "BEAUTY",
+    "id": 6,
+    "preview": "/images/best-item-beauty-06.png",
+    "name": "NAMING.",
+    "promotion": "[뷰티특가] | [무료배송]",
+    "des": "레이어드 핏 쿠션",
+    "price": "22,400",
+    "before": "28,000",
+    "sale": "20%",
+
+    "new": "뉴시즌"
+  },
+  {
+    "category": "BEAUTY",
+    "id": 7,
+    "preview": "/images/best-item-beauty-07.png",
+    "name": "Klairs",
+    "promotion": "[뷰티특가]",
+    "des": "클레어스 보습 케어 세트",
+    "price": "31,800",
+    "before": "39,800",
+    "sale": "20%"
+  },
+  {
+    "category": "LIFE",
+    "id": 1,
+    "preview": "/images/best-item-life-01.png",
+    "name": "SAMSUNG",
+    "des": "비스포크 1도어 오토오픈도어 키친핏 냉동고 RZ34A7905AP (설치배송/인증점)",
+    "price": "1,030,000",
+    "before": "1,050,000",
+    "sale": "2%"
+  },
+  {
+    "category": "LIFE",
+    "id": 2,
+    "preview": "/images/best-item-life-02.png",
+    "name": "SAMSUNG",
+    "des": "갤럭시버즈2/라이브/프로 무선 블루투스 이어폰 (SM-R180/SM-R177N/SM-R510N) (인증점)",
+    "price": "89,000",
+    "before": "199,000",
+    "sale": "55%",
+    "new": "뉴시즌"
+  },
+  {
+    "category": "LIFE",
+    "id": 3,
+    "preview": "/images/best-item-life-03.png",
+    "name": "SONY",
+    "promotion": "[재입고]",
+    "des": "소니 블루투스 노이즈캔슬링 헤드폰 WH-1000XM4",
+    "price": "399,000"
+  },
+  {
+    "category": "LIFE",
+    "id": 4,
+    "preview": "/images/best-item-life-04.png",
+    "name": "SAMSUNG",
+    "promotion": "[재입고]",
+    "des": "갤럭시 S23 256GB/512GB SM-S911N 자급제 5G/LTE 유심호환 (인증점)",
+    "price": "1,039,500",
+    "before": "1,155,000",
+    "sale": "10%",
+    "new": "뉴시즌"
+  },
+  {
+    "category": "LIFE",
+    "id": 5,
+    "preview": "/images/best-item-life-05.png",
+    "name": "odense",
+    "promotion": "OD_시손느 6인조 35P",
+
+    "price": "459,000"
+  },
+  {
+    "category": "LIFE",
+    "id": 6,
+    "preview": "/images/best-item-life-06.png",
+    "name": "SAMSUNG",
+    "des": "삼성 비스포크 제트 무선청소기 210W VS20A957E3W 화이트 (인증점)",
+    "price": "789,000"
+  },
+  {
+    "category": "LIFE",
+    "id": 7,
+    "preview": "/images/best-item-life-07.png",
+    "name": "KIKO",
+    "promotion": "[월간라이프]",
+    "des": "스마트 다소니 24인치 중대형 캐리어",
+    "price": "197,100",
+    "before": "420,000",
+    "sale": "53%",
+
+    "new": "뉴시즌"
+  }
+]

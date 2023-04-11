@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // import BrandList from "./BrandList";
-import BrandData from "../../data/brandData.json";
+import BrandData from "assets/data/brandData.json";
 import DesignerCarousel from "pages/Designer/DesignerCarousel";
 
 // type dataType = {
