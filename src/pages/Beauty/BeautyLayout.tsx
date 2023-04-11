@@ -268,7 +268,7 @@ const BeautyLayout:React.FC = ()=>{
                           <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
                           <span>2</span>
                         </p>
-                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc2" />
                         </div>
                         <div className='txt-wrap'>
                           <div className='brand'>MUZIGAE MANSION</div>
@@ -292,7 +292,7 @@ const BeautyLayout:React.FC = ()=>{
                             <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
                             <span>3</span>
                           </p>
-                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller03.jpg'} alt="top seller etc3" />
                         </div>
                         <div className='txt-wrap'>
                           <div className='brand'>MUZIGAE MANSION</div>
@@ -316,7 +316,7 @@ const BeautyLayout:React.FC = ()=>{
                             <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
                             <span>4</span>
                           </p>
-                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller04.jpg'} alt="top seller etc4" />
                         </div>
                         <div className='txt-wrap'>
                           <div className='brand'>MUZIGAE MANSION</div>
@@ -340,7 +340,7 @@ const BeautyLayout:React.FC = ()=>{
                             <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
                             <span>5</span>
                           </p>
-                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller05.jpg'} alt="top seller etc5" />
                         </div>
                         <div className='txt-wrap'>
                           <div className='brand'>MUZIGAE MANSION</div>
@@ -364,7 +364,7 @@ const BeautyLayout:React.FC = ()=>{
                             <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
                             <span>6</span>
                           </p>
-                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc6" />
                         </div>
                         <div className='txt-wrap'>
                           <div className='brand'>MUZIGAE MANSION</div>
