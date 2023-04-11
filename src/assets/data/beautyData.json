@@ -42,4 +42,59 @@
         "id": 5,
         "url": "/images/beauty_banner02.jpg"
     }
-]}
+],
+"brands" : [
+    {
+        "id": 1,
+        "title": "Doctors",
+        "wrapImg": "/images/beauty_brand_wrap01.jpg",
+        "wrapAlt": "doctor-wrap",
+        "smallImg1": "/images/beauty_brand1_1.jpg",
+        "smallAlt1": "doctor-img1",
+        "smallImg2": "/images/beauty_brand1_2.jpg",
+        "smallAlt2": "doctor-img2",
+        "smallImg3": "/images/beauty_brand1_3.jpg",
+        "smallAlt3": "doctor-img3",
+        "backgroundColor": "#ffffeb"
+    },
+    {
+        "id": 2,
+        "title": "haruharu wonder",
+        "wrapImg": "/images/beauty_brand_wrap02.jpg",
+        "wrapAlt": "haruharu-wrap",
+        "smallImg1": "/images/beauty_brand2_1.jpg",
+        "smallAlt1": "haruharu-img1",
+        "smallImg2": "/images/beauty_brand2_2.jpg",
+        "smallAlt2": "haruharu-img2",
+        "smallImg3": "/images/beauty_brand2_3.jpg",
+        "smallAlt3": "haruharu-img3",
+        "backgroundColor": "#ecffeb"
+    },
+    {
+        "id": 3,
+        "title": "ROSLYN",
+        "wrapImg": "/images/beauty_brand_wrap03.jpg",
+        "wrapAlt": "ROSLYN-wrap",
+        "smallImg1": "/images/beauty_brand3_1.jpg",
+        "smallAlt1": "roslyn-img1",
+        "smallImg2": "/images/beauty_brand3_2.jpg",
+        "smallAlt2": "roslyn-img2",
+        "smallImg3": "/images/beauty_brand3_3.jpg",
+        "smallAlt3": "roslyn-img3",
+        "backgroundColor": "#feebff"
+    },
+    {
+        "id": 4,
+        "title": "hersteller",
+        "wrapImg": "/images/beauty_brand_wrap04.jpg",
+        "wrapAlt": "hersteller-wrap",
+        "smallImg1": "/images/beauty_brand4_1.jpg",
+        "smallAlt1": "hersteller-img1",
+        "smallImg2": "/images/beauty_brand4_2.jpg",
+        "smallAlt2": "hersteller-img2",
+        "smallImg3": "/images/beauty_brand4_3.jpg",
+        "smallAlt3": "hersteller-img3",
+        "backgroundColor": "#c7c7bf"
+    }
+]
+}

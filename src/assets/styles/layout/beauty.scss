@@ -91,7 +91,12 @@
             margin-left: 10px; 
         }
         .active {
-            color: red; 
+            color: #333; 
+            text-decoration: underline;
+        }
+        .non-active {
+            color: #c0c0c0;
+            height: 25px; 
         }
     }
     // make-it-yours-container
@@ -131,7 +136,7 @@
     .top-rank-container {
         display: flex; 
         flex: 1; 
-        margin-bottom: 100px; 
+        margin-bottom: 20px; 
         .left {
             width: 315px; 
             border-right: 1px solid #ccc; 
@@ -255,6 +260,16 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    // beauty__brand-container
+    .beauty-container {
+        &__brand-container {
+            margin-top: 0 !important;
+            .thumbnail__title {
+                margin-bottom: 15px !important; 
             }
         }
     }

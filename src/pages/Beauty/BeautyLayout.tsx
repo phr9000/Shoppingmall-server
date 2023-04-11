@@ -23,14 +23,6 @@ const BeautyLayout:React.FC = ()=>{
           handleSlideChange(newIndex),
       };
 
-    const slides: Slide[] = [
-      { id: 1, text: 'Slide 1' },
-      { id: 2, text: 'Slide 2' },
-      { id: 3, text: 'Slide 3' },
-      { id: 4, text: 'Slide 4' },
-      { id: 5, text: 'Slide 5' },
-    ];
-
       const [currentSlideIndex, setCurrentSlideIndex] = useState<number>(0);
       const sliderRef = useRef<Slider>(null);
     
@@ -364,7 +356,7 @@ const BeautyLayout:React.FC = ()=>{
                             <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
                             <span>6</span>
                           </p>
-                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc6" />
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller06.jpg'} alt="top seller etc6" />
                         </div>
                         <div className='txt-wrap'>
                           <div className='brand'>MUZIGAE MANSION</div>
@@ -388,7 +380,7 @@ const BeautyLayout:React.FC = ()=>{
                               <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
                               <span>7</span>
                             </p>
-                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller03.jpg'} alt="top seller etc7" />
                         </div>
                         <div className='txt-wrap'>
                           <div className='brand'>MUZIGAE MANSION</div>
@@ -412,7 +404,7 @@ const BeautyLayout:React.FC = ()=>{
                               <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
                               <span>8</span>
                             </p>
-                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller04.jpg'} alt="top seller etc1" />
                         </div>
                         <div className='txt-wrap'>
                           <div className='brand'>MUZIGAE MANSION</div>
@@ -460,7 +452,7 @@ const BeautyLayout:React.FC = ()=>{
                             <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
                             <span>10</span>
                           </p>
-                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
+                          <img src={process.env.PUBLIC_URL + '/images/top_seller06.jpg'} alt="top seller etc1" />
                         </div>
                         <div className='txt-wrap'>
                           <div className='brand'>MUZIGAE MANSION</div>
@@ -505,24 +497,31 @@ const BeautyLayout:React.FC = ()=>{
                 </div>
             </div>
             {/* slider test */}
-            <div className="brands-menu-area">
-              {slides.map((slide, index) => (
-                <button
-                  key={slide.id}
-                  className={currentSlideIndex === index ? 'active' : ''}
-                  onClick={() => handleButtonClick(index)}
-                >
-                  Button {slide.id}
-                </button>
-              ))}
-            </div>
-            <Slider {...settings} ref={sliderRef}>
-              {slides.map((slide) => (
-                <div key={slide.id}>
-                  <h3>{slide.text}</h3>
+            <div className="thumbnail__container beauty-container__brand-container">
+              <h2 className='thumbnail__title'>style story</h2>
+              <div className='brands-menu-area'>
+                {beautyData.brands.map((slide, index) => (
+                  <button
+                    key={index}
+                    className={currentSlideIndex === index ? 'active' : 'non-active'}
+                    onClick={() => handleButtonClick(index)}
+                  >
+                    {slide.title}
+                  </button>
+                ))}
+              </div>
+              <Slider {...settings} ref={sliderRef}>
+              {beautyData.brands.map((slide) => (
+                <div className='flex'>
+                  <div className='wrapImg'><img src={slide.wrapImg} alt={slide.wrapAlt} /></div>
+                  <div className='smallImg' style={{"backgroundColor": slide.backgroundColor}}>
+                    test 
+                  </div>
                 </div>
-              ))}
-            </Slider>
+                ))}
+              </Slider>
+            </div>
+            
             
         </div>
     </div>
