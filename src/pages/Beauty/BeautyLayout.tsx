@@ -629,7 +629,7 @@ const BeautyLayout: React.FC = () => {
                             <div className="price-area">
                               <div className="flex align-center">
                                 <span className="discount_price">{slide.discountPrice2}</span>
-                                <span className="base_price">{slide.basePrice2}</span>
+                                {/* <span className={slide.isDiscount === true ? 'base_price' : '' }>{slide.basePrice2}</span> */}
                               </div>
                               <div className="discount_percent">{slide.discountRate2}</div>
                             </div>

@@ -67,7 +67,8 @@
         "discountPrice3":"24,700",
         "discountRate1": "20%",
         "discountRate2": "15%",
-        "discountRate3": "35%"
+        "discountRate3": "35%",
+        "isDiscount": "true"
     },
     {
         "id": 2,
@@ -92,7 +93,8 @@
         "discountPrice3":"",
         "discountRate1": "",
         "discountRate2": "",
-        "discountRate3": ""
+        "discountRate3": "",
+        "isDiscount": "false"
     },
     {
         "id": 3,
@@ -117,7 +119,8 @@
         "discountPrice3": "16,000",
         "discountRate1": "20%",
         "discountRate2": "20%",
-        "discountRate3": "20%"
+        "discountRate3": "20%",
+        "isDiscount": "true"
     },
     {
         "id": 4,
@@ -142,7 +145,8 @@
         "discountPrice3": "",
         "discountRate1": "",
         "discountRate2": "",
-        "discountRate3": ""
+        "discountRate3": "",
+        "isDiscount": "false"
     }
 ]
 }
