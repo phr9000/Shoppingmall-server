@@ -445,54 +445,6 @@ const BeautyLayout:React.FC = ()=>{
                         </div>
                       </a>
                     </li>
-                    <li className='top-etc-item'>
-                      <a href="!#">
-                        <div className="img-area">
-                          <p className='seller-bage-icon'>
-                            <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
-                            <span>10</span>
-                          </p>
-                          <img src={process.env.PUBLIC_URL + '/images/top_seller06.jpg'} alt="top seller etc1" />
-                        </div>
-                        <div className='txt-wrap'>
-                          <div className='brand'>MUZIGAE MANSION</div>
-                          <div className='product ellipsis-two'>
-                            피팅 블러쉬 5종 택 1
-                          </div>
-                          <div className='price'>
-                            <p>
-                              <span className='discount_price'>14,400</span>
-                              <span className='base_price'>18,000</span>
-                            </p>
-                            <span className='discount_rate'>20%</span>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li className='top-etc-item'>
-                      <a href="!#">
-                        <div className="img-area">
-                          <p className='seller-bage-icon'>
-                            <img src={process.env.PUBLIC_URL + '/images/bg_top_seller.png'} alt="셀러아이콘" />
-                            <span>11</span>
-                          </p>
-                          <img src={process.env.PUBLIC_URL + '/images/top_seller02.jpg'} alt="top seller etc1" />
-                        </div>
-                        <div className='txt-wrap'>
-                          <div className='brand'>MUZIGAE MANSION</div>
-                          <div className='product ellipsis-two'>
-                            피팅 블러쉬 5종 택 1
-                          </div>
-                          <div className='price'>
-                            <p>
-                              <span className='discount_price'>14,400</span>
-                              <span className='base_price'>18,000</span>
-                            </p>
-                            <span className='discount_rate'>20%</span>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
                   </ul>
                 </div>
             </div>
@@ -512,10 +464,28 @@ const BeautyLayout:React.FC = ()=>{
               </div>
               <Slider {...settings} ref={sliderRef}>
               {beautyData.brands.map((slide) => (
-                <div className='flex'>
-                  <div className='wrapImg'><img src={slide.wrapImg} alt={slide.wrapAlt} /></div>
-                  <div className='smallImg' style={{"backgroundColor": slide.backgroundColor}}>
-                    test 
+                <div>
+                  <div className='flex'>
+                    <div className='wrap-img'><img src={slide.wrapImg} alt={slide.wrapAlt} /></div>
+                    <div className='small-img' style={{"backgroundColor": slide.backgroundColor}}>
+                      <ul className='small-img-inner flex'>
+                        <li>
+                          <a href="!#">
+                            <img src={slide.smallImg1} alt={slide.smallAlt1} />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="!#">
+                            <img src={slide.smallImg2} alt={slide.smallAlt2} />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="!#">
+                            <img src={slide.smallImg3} alt={slide.smallAlt3} />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 ))}
