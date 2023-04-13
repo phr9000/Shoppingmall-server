@@ -10,6 +10,8 @@ import { ConfigProvider } from "antd";
 import SaleLayout from "pages/Sale/SaleLayout";
 import LifeLayout from "pages/Life/LifeLayout";
 import DesignerLayout from "pages/Designer/DesignerLayout";
+import PreShowLayout from "pages/PreShow/PreshowLayout";
+
 
 const router = createBrowserRouter([
     {
@@ -25,6 +27,7 @@ const router = createBrowserRouter([
             {path: '/sale', element:<SaleLayout/>},
             { path: "/life", element: <LifeLayout /> },
             { path: "/designer", element: <DesignerLayout /> },
+            { path: "/preshow", element: <PreShowLayout /> },
         ]
     }
 ]);

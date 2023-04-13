@@ -16,7 +16,7 @@ const Header: React.FC = ()=>{
             <li><a href="/designer">DESIGNER</a></li>
           </ul>
           <ul>
-            <li><a href="/pre-show">PRE-SHOW</a></li>
+            <li><a href="/preshow">PRE-SHOW</a></li>
             <li><a href="/origin">ORIGINAL</a></li>
             <li><a href="/event">EVENT</a></li>
             <li><a href="/best">BEST</a></li>
