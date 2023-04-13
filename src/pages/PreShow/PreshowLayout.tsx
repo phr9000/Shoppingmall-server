@@ -19,16 +19,33 @@ const PreShowLayout:React.FC = ()=>{
             <div className='preshow-tab'>
                 <ul>
                     <li>
-                        <button {() => setData(preShowtData)}></button>
+                        <button onClick={() => setData(preShowtData)}>all</button>
                     </li>
                     <li>
-                        <button onClick={hasModern}></button>
+                        <button onClick={hasModern}>modern</button>
                     </li>
                     <li></li>
                     <li></li>
                     <li></li>
                     <li></li>
                 </ul>
+            </div>
+            <div className='preshow-content'>
+            <div className="event-list-wrap">
+                {data.map((list) => {
+                return (
+                    <ul className="event-list">
+                    <li key={list.id}>
+                        <div className="event-preview">
+                        </div>
+                        <div className="event-wrap">
+                        <li className="event-name">{list.title}</li>
+                        </div>
+                    </li>
+                    </ul>
+                );
+                })}
+            </div>
             </div>
         </div>
     )
