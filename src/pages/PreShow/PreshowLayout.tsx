@@ -8,6 +8,30 @@ const PreShowLayout:React.FC = ()=>{
         );
         setData(resultModern);
       };
+      const hasCasual = () => {
+        const resultCasual = preShowtData.filter((list) =>
+          list.category.includes("casual")
+        );
+        setData(resultCasual);
+      };  
+      const hasFeminine = () => {
+        const resultFeminine = preShowtData.filter((list) =>
+          list.category.includes("feminine")
+        );
+        setData(resultFeminine);
+      };  
+      const hasBasic = () => {
+        const resultBasic = preShowtData.filter((list) =>
+          list.category.includes("basic")
+        );
+        setData(resultBasic);
+      };  
+      const hasRomantic = () => {
+        const resultRomantic = preShowtData.filter((list) =>
+          list.category.includes("romantic")
+        );
+        setData(resultRomantic);
+      };  
     return (
         <div className='main-layout-container preshow-container'>
             <div className='title-area'>
@@ -19,32 +43,39 @@ const PreShowLayout:React.FC = ()=>{
             <div className='preshow-tab'>
                 <ul>
                     <li>
-                        <button onClick={() => setData(preShowtData)}>all</button>
+                        <button onClick={() => setData(preShowtData)} className="active">#ALL</button>
                     </li>
                     <li>
-                        <button onClick={hasModern}>modern</button>
+                        <button onClick={hasModern}>#모던</button>
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <button onClick={hasFeminine}>#페미닌</button>
+                    </li>
+                    <li>
+                        <button onClick={hasCasual}>#캐주얼</button>
+                    </li>
+                    <li>
+                        <button onClick={hasBasic}>#베이직</button>
+                    </li>
+                    <li>
+                        <button onClick={hasRomantic}>#로맨틱</button>
+                    </li>
                 </ul>
             </div>
             <div className='preshow-content'>
             <div className="event-list-wrap">
+                <ul className="event-list">
                 {data.map((list) => {
                 return (
-                    <ul className="event-list">
+                    
                     <li key={list.id}>
-                        <div className="event-preview">
-                        </div>
-                        <div className="event-wrap">
-                        <li className="event-name">{list.title}</li>
-                        </div>
+                        <a href="!#">
+                            <img src={list.img} alt="" />
+                        </a>
                     </li>
-                    </ul>
                 );
                 })}
+                </ul>
             </div>
             </div>
         </div>
