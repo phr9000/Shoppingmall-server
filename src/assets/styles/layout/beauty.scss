@@ -335,9 +335,13 @@
                     justify-content: center;
                     height: 100%; 
                     li {
-                        margin-right: 22px; 
+                        position: relative;
+                        margin-right: 22px;
                         &:last-child {
                             margin-right: 0;
+                        }
+                        .heart-icon {
+                            position: absolute;
                         }
                     }
                 }

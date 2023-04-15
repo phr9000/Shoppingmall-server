@@ -68,7 +68,7 @@
         "discountRate1": "20%",
         "discountRate2": "15%",
         "discountRate3": "35%",
-        "isDiscount": "true"
+        "isDiscount": true
     },
     {
         "id": 2,
@@ -94,7 +94,7 @@
         "discountRate1": "",
         "discountRate2": "",
         "discountRate3": "",
-        "isDiscount": "false"
+        "isDiscount": false
     },
     {
         "id": 3,
@@ -120,7 +120,7 @@
         "discountRate1": "20%",
         "discountRate2": "20%",
         "discountRate3": "20%",
-        "isDiscount": "true"
+        "isDiscount": true
     },
     {
         "id": 4,
@@ -146,7 +146,7 @@
         "discountRate1": "",
         "discountRate2": "",
         "discountRate3": "",
-        "isDiscount": "false"
+        "isDiscount": false
     }
 ]
 }

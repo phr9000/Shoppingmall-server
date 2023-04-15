@@ -62,6 +62,10 @@ const BeautyLayout: React.FC = () => {
     text: string;
   }
 
+  const heartClick = () => {
+    alert('장바구니로 이동됩니다.');
+  }
+
   return (
     <div className="main-layout-container beauty-container">
       <div className="beauty-container__inner">
@@ -601,6 +605,7 @@ const BeautyLayout: React.FC = () => {
                   >
                     <ul className="small-img-inner flex">
                       <li>
+                        <button className="icon heart-icon" onClick={() => heartClick()}></button>
                         <a href="!#">
                           <div className="small-img-area">
                             <img src={slide.smallImg1} alt={slide.smallAlt1} />
@@ -611,7 +616,7 @@ const BeautyLayout: React.FC = () => {
                             <div className="price-area">
                               <div className="flex align-center">
                                 <span className="discount_price">{slide.discountPrice1}</span>
-                                <span className="base_price">{slide.basePrice1}</span>
+                                <span className={slide.isDiscount ? 'base_price' : 'discount_price' }>{slide.basePrice1}</span>
                               </div>
                               <div className="discount_percent">{slide.discountRate1}</div>
                             </div>
@@ -619,6 +624,7 @@ const BeautyLayout: React.FC = () => {
                         </a>
                       </li>
                       <li>
+                        <button className="icon heart-icon" onClick={() => heartClick()}></button>
                         <a href="!#">
                           <div className="small-img-area">
                             <img src={slide.smallImg2} alt={slide.smallAlt2} />
@@ -628,8 +634,8 @@ const BeautyLayout: React.FC = () => {
                             <p className="desc">{slide.desc2}</p>
                             <div className="price-area">
                               <div className="flex align-center">
-                                <span className="discount_price">{slide.discountPrice2}</span>
-                                {/* <span className={slide.isDiscount === true ? 'base_price' : '' }>{slide.basePrice2}</span> */}
+                              <span className="discount_price">{slide.discountPrice2}</span>
+                                <span className={slide.isDiscount ? 'base_price' : 'discount_price' }>{slide.basePrice2}</span>
                               </div>
                               <div className="discount_percent">{slide.discountRate2}</div>
                             </div>
@@ -637,6 +643,7 @@ const BeautyLayout: React.FC = () => {
                         </a>
                       </li>
                       <li>
+                        <button className="icon heart-icon" onClick={() => heartClick()}></button>
                         <a href="!#">
                           <div className="small-img-area">
                             <img src={slide.smallImg3} alt={slide.smallAlt3} />
@@ -646,8 +653,8 @@ const BeautyLayout: React.FC = () => {
                             <p className="desc">{slide.desc3}</p>
                             <div className="price-area">
                               <div className="flex align-center">
-                                <span className="discount_price">{slide.discountPrice3}</span>
-                                <span className="base_price">{slide.basePrice3}</span>
+                              <span className="discount_price">{slide.discountPrice3}</span>
+                                <span className={slide.isDiscount ? 'base_price' : 'discount_price' }>{slide.basePrice3}</span>
                               </div>
                               <div className="discount_percent">{slide.discountRate3}</div>
                             </div>
