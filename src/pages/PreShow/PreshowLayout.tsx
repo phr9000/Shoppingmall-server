@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
 import preShowtData from "assets/data/preshowData.json";
 const PreShowLayout:React.FC = ()=>{
+  // tab 관련
+  const tabItems = ['ALL', '모던', '페미닌', '캐주얼', '베이직', '로맨틱'];
+  const [clickedIndex, setClickedIndex] = useState<number>(0);
+  const handleClick = (index: number) => {
+    setClickedIndex(index);
+  };
     const [data, setData] = useState(preShowtData);
     const hasModern = () => {
         const resultModern = preShowtData.filter((list) =>
@@ -42,8 +48,21 @@ const PreShowLayout:React.FC = ()=>{
             </div>
             <div className='preshow-tab'>
                 <ul>
+                  {tabItems.map((item, index) => (
+                    <li
+                      key={index}
+                      className={index === clickedIndex? 'active': ''}
+                      onClick={()=> handleClick(index)}
+                    >
+                      <button>
+                        #{item}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+                <ul>
                     <li>
-                        <button onClick={() => setData(preShowtData)} className="active">#ALL</button>
+                        <button onClick={() => setData(preShowtData)}>#ALL</button>
                     </li>
                     <li>
                         <button onClick={hasModern}>#모던</button>
@@ -67,7 +86,6 @@ const PreShowLayout:React.FC = ()=>{
                 <ul className="event-list">
                 {data.map((list) => {
                 return (
-                    
                     <li key={list.id}>
                         <a href="!#">
                             <img src={list.img} alt="" />
