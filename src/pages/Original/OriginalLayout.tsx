@@ -1,17 +1,37 @@
-import { stringify } from 'rc-field-form/es/useWatch';
 import React, {useState} from 'react'
 
 const OriginalLayout:React.FC = ()=>{
-    const tabs = ['all', 'brand', 'trend', 'women'];
+    const tabs = [
+        {
+            category: 'all',
+            name: 'all'
+        }, 
+        {
+            category: 'brand',
+            name: 'brand-tab'
+        }, 
+        {
+            category: 'trend',
+            name: 'trend-tab'
+        }, 
+        {
+            category: 'women',
+            name: 'women-tab'
+        }
+    ];
+    type tabs = any;
+    const [clickedIndex, setClickedIndex] = useState<number>(0);
+
     const [selectedCategory, setSelectedCategory] = useState<string>('all');
     const [filteredProducts, setFilteredProducts] = useState<Product[]>();
     const [products, setProducts] = useState<Product[]>([
-        {id: 1, name: 'product1', category:'brand'},
-        {id: 2, name: 'product2', category:'trend'},
-        {id: 1, name: 'product3', category:'women'}
+        {id: 1, name: 'brand-product', category:'brand'},
+        {id: 2, name: 'trend-product', category:'trend'},
+        {id: 3, name: 'women-prduct', category:'women'}
     ]);
     type Product = any;
-    const handleTabClick = (category: string) => {
+    const handleTabClick = (category: string, index: number) => {
+        setClickedIndex(index);
         setSelectedCategory(category);
         if(category === 'all') {
             setFilteredProducts(undefined);
@@ -28,9 +48,12 @@ const OriginalLayout:React.FC = ()=>{
                 ORIGINAL
             </h2>
             <div className='tab-area'>
-            {tabs.map((category) => (
-                <button key={category} onClick={() => handleTabClick(category)}>
-                    {category}
+            {tabs.map((category, index) => (
+                <button key={category.category}
+                        className={index === clickedIndex? 'active': ''}
+                        onClick={() => handleTabClick(category.category, index)}
+                    >
+                    {category.name}
                 </button>
                 ))}
             </div>
