@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import preShowtData from "assets/data/preshowData.json";
+import {Pagination} from 'antd';
 const PreShowLayout:React.FC = ()=>{
   // tab 관련
   const tabItems = ['ALL', '모던', '페미닌', '캐주얼', '베이직', '로맨틱'];
@@ -82,20 +83,47 @@ const PreShowLayout:React.FC = ()=>{
                 </ul>
             </div>
             <div className='preshow-content'>
-            <div className="event-list-wrap">
-                <ul className="event-list">
-                {data.map((list) => {
-                return (
-                    <li key={list.id}>
-                        <a href="!#">
-                            <img src={list.img} alt="" />
-                        </a>
-                    </li>
-                );
-                })}
-                </ul>
+              <div className="event-list-wrap">
+                  <ul className="event-list">
+                  {data.map((list) => {
+                  return (
+                      <li key={list.id}>
+                          <a href="!#">
+                            <div className='img-area'>
+                              <div className='category-tag-area'>
+                              {list.categoryTag1&&(
+                                <span>{list.categoryTag1}</span>
+                              )}
+                                {list.categoryTag2&&(
+                                <span>{list.categoryTag2}</span>
+                              )}
+                              </div>
+                              <img src={list.img} alt={list.title} />
+                            </div>
+                            <div className='txt-area'>
+                              <strong>
+                                {list.title}
+                              </strong>
+                              <p className='desc'>
+                                {list.desc}
+                              </p>
+                              <dl className='flex align-center'>
+                                  <dt className='mini-tag'>
+                                    {list.miniTag}
+                                  </dt>
+                                  <dd className='date'>
+                                    {list.date}
+                                  </dd>
+                              </dl>
+                            </div>
+                          </a>
+                      </li>
+                  );
+                  })}
+                  </ul>
+              </div>
             </div>
-            </div>
+            <Pagination style={{ marginTop:"60px" }} defaultCurrent={1} total={50} />
         </div>
     )
 }
