@@ -1,6 +1,10 @@
 import React, {useState} from 'react'
 
-const OriginalLayout:React.FC = ()=>{
+const OriginalLayout:React.FC = ()=> {
+    type tabs = {
+        category: string,
+        name: string
+    };
     const tabs = [
         {
             category: 'all',
@@ -19,7 +23,7 @@ const OriginalLayout:React.FC = ()=>{
             name: 'women-tab'
         }
     ];
-    type tabs = any;
+    
     const [clickedIndex, setClickedIndex] = useState<number>(0);
 
     const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -29,7 +33,11 @@ const OriginalLayout:React.FC = ()=>{
         {id: 2, name: 'trend-product', category:'trend'},
         {id: 3, name: 'women-prduct', category:'women'}
     ]);
-    type Product = any;
+    type Product = {
+        id: number,
+        name: string,
+        category: string
+    };
     const handleTabClick = (category: string, index: number) => {
         setClickedIndex(index);
         setSelectedCategory(category);
