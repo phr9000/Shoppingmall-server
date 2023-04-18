@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import originalData from "../../data/originalData.json";
+import originalData from "../../assets/data/originalData.json"
 
 const OriginalLayout:React.FC = ()=> {
     type tabs = {
