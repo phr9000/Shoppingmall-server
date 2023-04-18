@@ -10,11 +10,28 @@
         font-weight: 200;
     }
     .tab-area {
+        @include flex(row, start, center);
+        margin: 20px 0 54px;
+        li {
+            &:first-child {
+                margin-left: 0;
+            }
+        }
         button {
-            margin: 0 10px; 
-            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 6px;
+            padding: 0px 30px; 
+            height: 50px; 
+            font-size: 16px; 
+            border: 1px solid #ddd; 
+            border-radius: 25px;
+            text-transform: uppercase;
             &.active {
-                color: red; 
+                color: #fff;
+                background-color: #000;
+                font-weight: 500;
             }
         }
     }

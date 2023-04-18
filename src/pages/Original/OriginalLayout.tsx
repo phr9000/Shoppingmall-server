@@ -8,19 +8,27 @@ const OriginalLayout:React.FC = ()=> {
     const tabs = [
         {
             category: 'all',
-            name: 'all'
+            name: 'ALL'
         }, 
         {
             category: 'brand',
-            name: 'brand-tab'
+            name: 'BRAND WE LIKE'
         }, 
         {
             category: 'trend',
-            name: 'trend-tab'
+            name: 'TREND WE PICK'
         }, 
         {
             category: 'women',
-            name: 'women-tab'
+            name: 'WOMEN WE LOVE'
+        }, 
+        {
+            category: 'love',
+            name: 'LOVE WE MEET'
+        }, 
+        {
+            category: 'place',
+            name: 'PLACE WE CHILL'
         }
     ];
     
@@ -31,7 +39,9 @@ const OriginalLayout:React.FC = ()=> {
     const [products, setProducts] = useState<Product[]>([
         {id: 1, name: 'brand-product', category:'brand'},
         {id: 2, name: 'trend-product', category:'trend'},
-        {id: 3, name: 'women-prduct', category:'women'}
+        {id: 3, name: 'women-prduct', category:'women'},
+        {id: 3, name: 'love-prduct', category:'love'},
+        {id: 3, name: 'place-prduct', category:'place'}
     ]);
     type Product = {
         id: number,
@@ -55,16 +65,19 @@ const OriginalLayout:React.FC = ()=> {
             <h2>
                 ORIGINAL
             </h2>
-            <div className='tab-area'>
+            <ul className='tab-area'>
             {tabs.map((category, index) => (
-                <button key={category.category}
+                <li>
+                    <button key={category.category}
+                        type="button"
                         className={index === clickedIndex? 'active': ''}
                         onClick={() => handleTabClick(category.category, index)}
                     >
                     {category.name}
                 </button>
+                </li>
                 ))}
-            </div>
+            </ul>
             <div className='content-area'>
                 <ul>
                     {(filteredProducts ?? products).map((product) => (
