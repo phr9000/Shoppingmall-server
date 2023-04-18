@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import originalData from "../../data/originalData.json";
 
 const OriginalLayout:React.FC = ()=> {
     type tabs = {
@@ -8,19 +9,27 @@ const OriginalLayout:React.FC = ()=> {
     const tabs = [
         {
             category: 'all',
-            name: 'all'
+            name: 'All'
         }, 
         {
             category: 'brand',
-            name: 'brand-tab'
+            name: 'BRAND WE LIKE'
         }, 
         {
             category: 'trend',
-            name: 'trend-tab'
+            name: 'TREND WE PICK'
         }, 
         {
             category: 'women',
-            name: 'women-tab'
+            name: 'WOMEN WE LOVE'
+        }, 
+        {
+            category: 'love',
+            name: 'LOVE WE MEET'
+        }, 
+        {
+            category: 'place',
+            name: 'PLACE WE CHILL'
         }
     ];
     
@@ -29,14 +38,64 @@ const OriginalLayout:React.FC = ()=> {
     const [selectedCategory, setSelectedCategory] = useState<string>('all');
     const [filteredProducts, setFilteredProducts] = useState<Product[]>();
     const [products, setProducts] = useState<Product[]>([
-        {id: 1, name: 'brand-product', category:'brand'},
-        {id: 2, name: 'trend-product', category:'trend'},
-        {id: 3, name: 'women-prduct', category:'women'}
+        {
+            "category": "brand",
+            "id": 1,
+            "img": "/images/preshow_modern01.jpg",
+            "tag": ["스프링", "데님"],
+            "title": "LE17SEPTEMBPE", 
+            "desc" : "시그니처 미학에 충실한 23봄 두번째 컬렉션"
+        },
+        {
+            "category": "trend",
+            "id": 2,
+            "img": "/images/preshow_modern01.jpg",
+            "tag": ["스프링", "데님"],
+            "title": "LE17SEPTEMBPE", 
+            "desc" : "시그니처 미학에 충실한 23봄 두번째 컬렉션"
+        },
+        {
+            "category": "women",
+            "id": 3,
+            "img": "/images/preshow_modern01.jpg",
+            "tag": ["스프링", "데님"],
+            "title": "LE17SEPTEMBPE", 
+            "desc" : "시그니처 미학에 충실한 23봄 두번째 컬렉션"
+        },
+        {
+            "category": "love",
+            "id": 4,
+            "img": "/images/preshow_modern01.jpg",
+            "tag": ["스프링", "데님"],
+            "title": "LE17SEPTEMBPE", 
+            "desc" : "시그니처 미학에 충실한 23봄 두번째 컬렉션"
+        },
+        {
+            "category": "place",
+            "id": 2,
+            "img": "/images/preshow_modern01.jpg",
+            "tag": ["스프링", "데님"],
+            "title": "LE17SEPTEMBPE", 
+            "desc" : "시그니처 미학에 충실한 23봄 두번째 컬렉션"
+        },
+        {
+            "category": "trend",
+            "id": 5,
+            "img": "/images/preshow_modern01.jpg",
+            "tag": ["스프링", "데님"],
+            "title": "LE17SEPTEMBPE", 
+            "desc" : "시그니처 미학에 충실한 23봄 두번째 컬렉션"
+        }
     ]);
     type Product = {
+        category: string,
         id: number,
-        name: string,
-        category: string
+        img: string, 
+        tag: Array<string>,
+        title: string, 
+        desc: string,
+
+
     };
     const handleTabClick = (category: string, index: number) => {
         setClickedIndex(index);
@@ -56,14 +115,14 @@ const OriginalLayout:React.FC = ()=> {
                 ORIGINAL
             </h2>
             <div className='tab-area'>
-            {tabs.map((category, index) => (
-                <button key={category.category}
-                        className={index === clickedIndex? 'active': ''}
-                        onClick={() => handleTabClick(category.category, index)}
-                    >
-                    {category.name}
-                </button>
-                ))}
+                {tabs.map((category, index) => (
+                    <button key={category.category}
+                            className={index === clickedIndex? 'active': ''}
+                            onClick={() => handleTabClick(category.category, index)}
+                        >
+                        {category.name}
+                    </button>
+                    ))}
             </div>
             <div className='content-area'>
                 <ul>
