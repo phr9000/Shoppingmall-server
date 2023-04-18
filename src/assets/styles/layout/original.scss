@@ -35,4 +35,72 @@
             }
         }
     }
+    .content-area {
+        >ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -20px; 
+            >li {
+                width: calc(33% - 40px);
+                margin: 0 20px 60px 20px;
+                a {
+                    display: block; 
+                }
+                .img-area {
+                    > img {
+                        width: 100%; 
+                    }
+                }
+                .txt-area {
+                    h3 {
+                        margin: 20px 0 6px; 
+                        font-size: 15px;
+                        line-height: 15px; 
+                        color: #333;
+                        text-transform: uppercase;
+                        @include ellipsis(1);
+                    }
+                    p {
+                        font-size: 26px; 
+                        line-height: 28px;
+                        color: #000;
+                        @include ellipsis(1);
+                    }
+                    .tag-area {
+                        position: relative;
+                        align-items: flex-start;
+                        margin-top: 30px;
+                        padding-left: 35px; 
+                        width: 100%; 
+                        h4 {
+                            position: absolute;
+                            left:0;
+                            top: 0;
+                            margin-bottom: 6px;
+                            font-size: 12px; 
+                            font-weight: 400;
+                            line-height: 24px; 
+                            color: #e5602a;
+                        }
+                        ul {
+                            display: flex; 
+                            flex-wrap: wrap;
+                            flex: 1; 
+                            li {
+                                margin: 0 6px 6px 0;
+                                button {
+                                    padding: 0 10px; 
+                                    font-size: 12px; 
+                                    line-height: 24px; 
+                                    letter-spacing: -0.24px;
+                                    border: 1px solid #ddd; 
+                                    color: rgb(119,119,119);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
