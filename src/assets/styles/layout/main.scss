@@ -2,6 +2,8 @@
 
 // main container
 .main-layout-container {
+  max-width: 1920px; 
+  margin: 0 auto; 
   // thumbnail
   .thumbnail {
     &__container {
@@ -20,6 +22,7 @@
           position: absolute;
           top: 50%;
           left: 50%;
+          
           width: 1px;
           height: 35px;
           background-color: #000;
@@ -264,6 +267,11 @@
       .product-inner {
         &:first-child {
           margin-top: 0;
+        }
+        .text-area {
+          .sub-heading {
+            height: 16px; 
+          }
         }
       }
     }

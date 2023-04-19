@@ -27,4 +27,22 @@
         height: 25px;
         background: url('/assets/images/btn_del.png') center center /100% 100% no-repeat;
     }
+    &.heart-icon {
+        display: block;
+        position: absolute;
+        cursor: pointer; 
+        width: 18px;
+        height: 17px;
+        z-index: 2;
+        top: 10px;
+        right: 10px; 
+        background: url('/assets/images/spr-common.png') 0 0 no-repeat;
+        background-position: -330px 0px;
+        &.active {
+            display: block; 
+        }
+        &.nonActive {
+            display: none; 
+        }
+    }
 }
