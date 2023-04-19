@@ -31,7 +31,7 @@ const router = createBrowserRouter([
             {path: '/sale', element:<SaleLayout/>},
             { path: "/life", element: <LifeLayout /> },
             { path: "/designer", element: <DesignerLayout /> },
-            { path: "/origin", element: <OriginalLayout /> }
+            { path: "/origin", element: <OriginalLayout /> },
             { path: "/preshow", element: <PreShowLayout /> },
             { path: "/beauty", element: <BeautyLayout/> },
             { path: "/event", element: <EventLayout /> },
