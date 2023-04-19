@@ -44,14 +44,14 @@ const NewLayout:React.FC = ()=>{
   const ShoesList = ["플랫슈즈", "펌프스", "샌들", "뮬/슬리퍼", "로퍼", "스니커즈", "부츠", "슈즈액세서리", "시즈널슈즈", "키즈슈즈"]
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }} className="new-container">
-      <div style={{ fontSize: "40px", marginTop:"-20px", marginBottom:"40px" }}>
+    <div  className="new-container">
+      <div className="title">
         NEW
       </div>
       <div className="hot-tag-container">
         <div className='hot-tag-area'>
           <h4>인기태그</h4>
-          <ul style={{ listStyle:"none" }} className="contents">
+          <ul className="contents">
             {
               taglist.filter(value => value === "스웨트셔츠").map((value)=>
                 <li className="tag side-tag" data-hashtag={{value}} key={value}>
@@ -75,12 +75,11 @@ const NewLayout:React.FC = ()=>{
             }
           </ul>
         </div>
-        <div className='search-container' style={{ borderBottom: "1px solid black", marginRight:"50px" }}>
+        <div className='search-container'>
             <div className='search-area'>
                 <div className='flex align-center'>
                     <input
                         type="text"
-                        style={{ border:"none" }}
                         onFocus={() => {
                             setIsInputClicked(true);
                         }}
@@ -97,12 +96,13 @@ const NewLayout:React.FC = ()=>{
             </div>
         </div>
       </div>
-      <div style={{ display: "flex", flexDirection: "row", alignItems: "start",verticalAlign:"top", width:"1780px", justifyContent: "space-between", marginTop:"50px"}}>
+      <div className="left-rank-area" style={{ display: "flex", flexDirection: "row", alignItems: "start",verticalAlign:"top", width:"1780px", justifyContent: "space-between", marginTop:"50px"}}>
         <div style={{ display: "flex", flexDirection: "column",  width:"300px", height:"100%" }}>
             <div style={{ width:"300px", height:"155px", backgroundColor:"gray"}}>
               <h4 style={{ padding:"20px", fontSize:"28px", color:"white" }}>TODAY<br/>UPDATED</h4>
               <h4 style={{ padding:"20px", fontSize:"15px", color:"white" }}>오늘 등록된 신상품 191</h4>
             </div>
+            {/* 날짜별 신상품 */}
             <div style={{ width:"300px", height:"53px", backgroundColor:"lightgray"}}>
               <h4 style={{ padding:"20px", fontSize:"18px" }}>날짜별 신상품</h4>
             </div>
@@ -113,6 +113,7 @@ const NewLayout:React.FC = ()=>{
                 )
               }
             </div>
+            {/* 주간별 신상품 */}
             <div style={{ width:"300px", height:"53px", backgroundColor:"lightgray"}}>
               <h4 style={{ padding:"20px", fontSize:"18px" }}>주간별 신상품</h4>
             </div>

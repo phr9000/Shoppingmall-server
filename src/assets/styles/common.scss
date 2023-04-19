@@ -7,7 +7,7 @@ body {
   font-size: 10px;
   letter-spacing: -0.5px;
   font-family: "Noto Sans", sans-serif !important;
-  min-width: 1920px;
+  min-width: 1919px;
 }
 body {
   &.no-scroll {
@@ -54,4 +54,11 @@ em {
 .ir {
   overflow: hidden;
   text-indent: -9999px;
+}
+
+.ellipsis-one {
+  @include ellipsis(1);
+}
+.ellipsis-two {
+  @include ellipsis(2);
 }
