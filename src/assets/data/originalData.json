@@ -1,0 +1,50 @@
+[
+    {
+        "category": "brand",
+        "id": 1,
+        "img": "/images/preshow_modern01.jpg",
+        "tag": ["스프링", "데님"],
+        "title": "LE17SEPTEMBPE", 
+        "desc" : "시그니처 미학에 충실한 23봄 두번째 컬렉션"
+    },
+    {
+        "category": "trend",
+        "id": 2,
+        "img": "/images/preshow_modern01.jpg",
+        "tag": ["스프링", "데님"],
+        "title": "LE17SEPTEMBPE", 
+        "desc" : "시그니처 미학에 충실한 23봄 두번째 컬렉션"
+    },
+    {
+        "category": "women",
+        "id": 3,
+        "img": "/images/preshow_modern01.jpg",
+        "tag": ["스프링", "데님"],
+        "title": "LE17SEPTEMBPE", 
+        "desc" : "시그니처 미학에 충실한 23봄 두번째 컬렉션"
+    },
+    {
+        "category": "love",
+        "id": 4,
+        "img": "/images/preshow_modern01.jpg",
+        "tag": ["스프링", "데님"],
+        "title": "LE17SEPTEMBPE", 
+        "desc" : "시그니처 미학에 충실한 23봄 두번째 컬렉션"
+    },
+    {
+        "category": "place",
+        "id": 2,
+        "img": "/images/preshow_modern01.jpg",
+        "tag": ["스프링", "데님"],
+        "title": "LE17SEPTEMBPE", 
+        "desc" : "시그니처 미학에 충실한 23봄 두번째 컬렉션"
+    },
+    {
+        "category": "trend",
+        "id": 5,
+        "img": "/images/preshow_modern01.jpg",
+        "tag": ["스프링", "데님"],
+        "title": "LE17SEPTEMBPE", 
+        "desc" : "시그니처 미학에 충실한 23봄 두번째 컬렉션"
+    }
+]

@@ -1,7 +1,12 @@
 .new-container {
     margin: 0 30px; 
     padding-top: 80px; 
-
+    .title {
+        margin-bottom: 40px;
+        font-size: 44px; 
+        text-align: center; 
+        font-weight: 200;
+    }
    .hot-tag-container{
        width: 100%; 
        @include flex(row, space-between, space-between); 
@@ -14,20 +19,13 @@
     .ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled):after{
         border-color: black;
     }
-
-    // .ant-checkbox-inner{
-    //     border: 1px solid red !important;
-    //     &:hover {
-    //         border: 1px solid #000 !important;
-    //     }
-    //     &:after {
-    //         display: none;
-    //     }
-    // }
    .hot-tag-area {
        @include flex(row, center, center); 
        h4 {
            padding-right: 30px; 
+       }
+       .contents {
+        list-style: none; 
        }
        .tag {
             margin-left: 5px; 
@@ -49,6 +47,15 @@
        @include flex(row, center, center); 
    }
 
+   .search-container {
+    margin-right: 50px; 
+    border-bottom: 1px solid black; 
+    input {
+        border: none; 
+    }
+   }
+   .left-rank-area {
+   }
 
    // 230323 phr: product list
    .product-container {
