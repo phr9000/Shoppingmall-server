@@ -1,0 +1,121 @@
+.best-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  h2 {
+    padding-top: 4.7rem;
+    font-size: 4.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+  }
+  .event-search {
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: flex-end;
+    .search-container {
+      width: 30%;
+      border: 1px solid red;
+    }
+  }
+
+  .event-tab,
+  .tab {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-bottom: 2px solid #000;
+
+    li {
+      display: inline-block;
+      width: 20%;
+      height: 6rem;
+      border-left: 1px solid #000;
+      text-align: center;
+      font-size: 1.8rem;
+      &.active {
+        border-bottom: 1px solid transparent;
+      }
+      button {
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        border-left: 0;
+      }
+    }
+  }
+
+  .section-wrap {
+    background-color: #f2f2f2;
+    margin: 5rem auto;
+    width: 80%;
+    padding: 5rem;
+
+    .section {
+      &.section-1 {
+        .best-item-container {
+          width: 100%;
+          justify-content: space-around;
+          li {
+            width: 42rem;
+            height: 70rem;
+            border: 1px solid red;
+            .best-item-preview {
+              width: 100%;
+            }
+            img {
+              width: 100%;
+            }
+            .best-item-preview {
+              span::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 33px solid transparent;
+                border-right: 33px solid transparent;
+                border-top: 18px solid #222;
+              }
+            }
+          }
+        }
+      }
+      &.section-2 {
+        .best-item-container {
+          width: 100%;
+          justify-content: space-around;
+          li {
+            width: 30rem;
+            height: 55rem;
+            border: 1px solid red;
+            .best-item-preview {
+              width: 100%;
+            }
+            img {
+              width: 100%;
+            }
+            .best-item-preview {
+              span::after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .best-item-container {
+    width: 80%;
+    margin: 5rem auto;
+  }
+
+  .first-layer {
+    display: hidden;
+  }
+}

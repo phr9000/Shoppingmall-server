@@ -11,6 +11,9 @@ import { ConfigProvider } from "antd";
 import SaleLayout from "pages/Sale/SaleLayout";
 import LifeLayout from "pages/Life/LifeLayout";
 import DesignerLayout from "pages/Designer/DesignerLayout";
+import EventLayout from "pages/Event/EventLayout";
+import BestLayout from "pages/Best/BestLayout";
+import ShopBagLayout from "pages/ShopBag/ShopBagLayout";
 import OriginalLayout from "pages/Original/OriginalLayout";
 import PreShowLayout from "pages/PreShow/PreshowLayout";
 
@@ -30,21 +33,26 @@ const router = createBrowserRouter([
             { path: "/designer", element: <DesignerLayout /> },
             { path: "/origin", element: <OriginalLayout /> }
             { path: "/preshow", element: <PreShowLayout /> },
-            { path: "/beauty", element: <BeautyLayout/> }
+            { path: "/beauty", element: <BeautyLayout/> },
+            { path: "/event", element: <EventLayout /> },
+            { path: "/best", element: <BestLayout /> },
+            { path: "/shopbag", element: <ShopBagLayout /> }
         ]
     }
 ]);
 
 const App: React.FC = () => {
-    return <ConfigProvider
-    theme={{
-      token: {
-        colorPrimary: '#000000',
-      },
-    }}
-  >
-    <RouterProvider router={router} />
-  </ConfigProvider>;
-}
+  return (
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: "#000000",
+        },
+      }}
+    >
+      <RouterProvider router={router} />
+    </ConfigProvider>
+  );
+};
 
 export default App;

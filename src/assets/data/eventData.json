@@ -1,0 +1,163 @@
+[
+  {
+    "id": 1,
+    "name": "Wrangler",
+    "src": "/images/event-item-01.jpg",
+    "des": "인플루언서와 함께한 랭글러 23 S/S",
+    "category": ["WOMEN"]
+  },
+  {
+    "id": 2,
+    "name": "SHOES WEEKEND SALE",
+    "src": "/images/event-item-02.jpg",
+    "des": "베스트슈즈 단3일, 주말특가",
+    "category": ["WOMEN"]
+  },
+  {
+    "id": 3,
+    "name": "ROLAROLA 23SU",
+    "src": "/images/event-item-03.jpg",
+    "des": "파리, 그해 여름",
+    "category": ["WOMEN"]
+  },
+  {
+    "id": 4,
+    "name": "STORE ISSUE : New Arrivals",
+    "src": "/images/event-item-04.jpg",
+    "des": "올 봄 옷 준비는 오프라인 스토어에서 해보세요!",
+    "category": ["WOMEN"]
+  },
+  {
+    "id": 5,
+    "name": "RECTO 23SPRING COLLECTION",
+    "src": "/images/event-item-05.jpg",
+    "des": "70년대 보헤미안들의 자유로운 감성과 예술적인 삶",
+    "category": ["WOMEN"]
+  },
+  {
+    "id": 6,
+    "name": "NOTIA 23SPRING",
+    "src": "/images/event-item-06.jpg",
+    "des": "'OBLIQUE'",
+    "category": ["WOMEN"]
+  },
+  {
+    "id": 7,
+    "name": "SOCKS APPEAL",
+    "src": "/images/event-item-07.jpg",
+    "des": "23SPRING 컬렉션 오픈",
+    "category": ["WOMEN"]
+  },
+  {
+    "id": 8,
+    "name": "THETIS 23CAPSULE",
+    "src": "/images/event-item-08.jpg",
+    "des": "with TomoTomo",
+    "category": ["WOMEN"]
+  },
+  {
+    "id": 9,
+    "name": "BEST OF BEST ACC BRAND 5",
+    "src": "/images/event-item-09.jpg",
+    "des": "단 4일! 단독 최대 70%세일",
+    "category": ["WOMEN"]
+  },
+  {
+    "id": 10,
+    "name": "eee",
+    "src": "/images/event-item-10.jpg",
+    "des": "Mini Chain City Bag '실버' 뉴컬러 출시!",
+    "category": ["WOMEN"]
+  },
+  {
+    "id": 11,
+    "name": "ANGLAN",
+    "src": "/images/event-item-11.jpg",
+    "des": "ANGLAN 23 SS컬렉션",
+    "category": ["MEN"]
+  },
+  {
+    "id": 12,
+    "name": "malen",
+    "src": "/images/event-item-12.jpg",
+    "des": "malen 23SS COLLECTION",
+    "category": ["WOMEN", "MEN"]
+  },
+  {
+    "id": 13,
+    "name": "GOOD HOBBY CLUB",
+    "src": "/images/event-item-13.jpg",
+    "des": "23 S/S COLLECTION EXCLUSVIE SALE",
+    "category": ["MEN"]
+  },
+  {
+    "id": 14,
+    "name": "365 T-Shirts Shop",
+    "src": "/images/event-item-14.jpg",
+    "des": "베이직한 디자인부터 워싱 티셔츠 까지, 365일 꼭 필요한 티셔츠 컬렉션",
+    "category": ["MEN"]
+  },
+  {
+    "id": 15,
+    "name": "LUXURY NEW IN",
+    "src": "/images/event-item-15.jpg",
+    "des": "최대 89%세일, 23SS 뉴컬렉션&캐리오버 단독특가!",
+    "category": ["MEN"]
+  },
+  {
+    "id": 16,
+    "name": "BEAUTY & LIFE WEEKEND SALE",
+    "src": "/images/event-item-16.jpg",
+    "des": "주말마다 찾아오는 뷰티&라이프 특가",
+    "category": ["LIFE"]
+  },
+  {
+    "id": 17,
+    "name": "뷰티&라이프 24시간 특가",
+    "src": "/images/event-item-17.jpg",
+    "des": "주어진 시간은 단, 하루! 단독 특가로 만나보세요!",
+    "category": ["LIFE", "BEAUTY"]
+  },
+  {
+    "id": 18,
+    "name": "HOME CAFE(23.03.29~04.05)",
+    "src": "/images/event-item-18.jpg",
+    "des": "나만의 홈카페테리어 아이템 추천",
+    "category": ["LIFE", "BEAUTY"]
+  },
+  {
+    "id": 19,
+    "name": "LIFE DESIGN BRAND 10",
+    "src": "/images/event-item-19.jpg",
+    "des": "감도 높은 브랜드로 큐레이션한 라이프 취향 탐색 지침서",
+    "category": ["LIFE"]
+  },
+  {
+    "id": 20,
+    "name": "COOL ITEM",
+    "src": "/images/event-item-20.jpg",
+    "des": "더위가 시작된 기분. 선풍기&써큘레이터 SALE",
+    "category": ["LIFE"]
+  },
+  {
+    "id": 21,
+    "name": "FACE FACTORY",
+    "src": "/images/event-item-21.jpg",
+    "des": "릴리프 바디괄사&오일 기프트세트 선론칭",
+    "category": ["BEAUTY"]
+  },
+  {
+    "id": 22,
+    "name": "dasique",
+    "src": "/images/event-item-22.jpg",
+    "des": "베리스무디 컬렉션 런칭 기념 브랜드데이",
+    "category": ["BEAUTY"]
+  },
+  {
+    "id": 23,
+    "name": "W.beauty April Fools' Day",
+    "src": "/images/event-item-23.jpg",
+    "des": "거짓말 같은 만우절 뷰티 특가",
+    "category": ["BEAUTY"]
+  }
+]

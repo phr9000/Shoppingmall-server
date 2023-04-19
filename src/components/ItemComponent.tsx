@@ -11,6 +11,10 @@ type dataType = {
   price: string;
   before?: string;
   sale?: string;
+  preorder?: string;
+  new?: string;
+  celeb?: string;
+  only?: string;
 };
 
 type GreetingsProps = {
