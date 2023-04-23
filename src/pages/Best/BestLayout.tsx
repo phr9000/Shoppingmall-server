@@ -3,7 +3,7 @@ import bestData from "assets/data/bestData.json";
 import BestItemComponent from "components/BestItemComponent";
 
 const BestLayout: React.FC = () => {
-  const [selectedDiv, setSelectedDiv] = useState<string | null>(null);
+  const [selectedDiv, setSelectedDiv] = useState<string | null>("ALL");
 
   const handleButtonClick = (divName: string) => {
     setSelectedDiv(divName);
@@ -133,13 +133,6 @@ const BestLayout: React.FC = () => {
           </div>
         </div>
       )}
-      <div className="first-layer">
-        {selectedDiv === "BEAUTY" ? (
-          <BestItemComponent datalist={bestData} />
-        ) : (
-          ""
-        )}
-      </div>
     </div>
   );
 };
