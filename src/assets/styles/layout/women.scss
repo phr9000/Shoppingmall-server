@@ -1,0 +1,80 @@
+@import "/src/assets/styles/abstracts/variables.scss";
+.women-container {
+    h2 {
+        padding-top: 80px;
+        margin-bottom: 40px;
+        font-size: 44px;
+        text-align: center;
+        font-weight: 200;
+    }
+    .thumbnail_layout {
+        margin: 0 auto; 
+        width: 1880px; 
+        .exhibition {
+            display: flex;
+            margin: -10px;
+            li {
+                position: relative; 
+                margin: 0 10px; 
+                width: 618px; 
+                a {
+                    display: block;
+                    > img {
+                        width: 100%; 
+                    }
+                    .txt {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        color: #fff;
+                        strong {
+                            font-size: 28px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            letter-spacing: 0.2em;
+                        }
+                        p {
+                            margin-top: 16px; 
+                            display: block;
+                            overflow: hidden;
+                            white-space: ellipsis;
+                            font-size: 16px; 
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__cate-link-item {
+        margin-top: 20px; 
+        ul {
+            display: flex;
+            flex-wrap: nowrap;
+            margin: -10px;
+            li {
+                margin: 0 10px; 
+                flex: 1;
+                text-align: center;
+                border: 2px solid #000;
+                a {
+                    display: block;
+                    padding: 25px 0;
+                    width: 100%; 
+                    font-size: 24px; 
+                    font-weight: 300;
+                    line-height: 1.2;
+                    em {
+                        font-size: 14px; 
+                    }
+                }
+                &:hover {
+                    background-color: #000;
+                    color: #fff ;
+                }
+            }
+        }
+    }
+}
