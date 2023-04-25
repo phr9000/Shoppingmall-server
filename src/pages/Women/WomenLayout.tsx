@@ -1,4 +1,5 @@
 import React from "react";
+import BestPickLayout from './BestPickLayout';
 const WomenLayout: React.FC = () => {
 const womenlist = [
     "APPAREL",
@@ -59,12 +60,7 @@ return (
                     </ul>
                 </div>
                 {/* BEST PICK */}
-                <div className="thumbnail__container best-pick-container">
-                    <h2 className="thumbnail__title">style story</h2>
-                    <div className="best-pick-tab">
-                        
-                    </div>
-                </div>
+                <BestPickLayout/>
             </div>
         </div>
     </div>
