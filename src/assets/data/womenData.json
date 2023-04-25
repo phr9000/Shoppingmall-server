@@ -286,7 +286,7 @@
         },
         {
             "id": 20,
-            "category": "luxury",
+            "category": "active",
             "brand": "ACOC",
             "front": "[증정이벤트]|[04/25 예약배송]",
             "product": "M Tiered Cross Bag_Light Blue",
@@ -301,7 +301,38 @@
         },
         {
             "id": 21,
-            "category": "luxury",
+            "category": "active",
+            "brand": "ACOC",
+            "front": "[증정이벤트]|[04/25 예약배송]",
+            "product": "M Tiered Cross Bag_Light Blue",
+            "price": "167,250",
+            "before": "65,000",
+            "img": "/images/shoes_2.jpg",
+            "alt": "apparel21",
+            "sale": "25%",
+            "general_tag": "단독",
+            "make_reservation_tag": "",
+            "clearance_tag" : "뉴시즌"
+        },
+        {
+            "id": 21,
+            "category": "active",
+            "brand": "ACOC",
+            "front": "[증정이벤트]|[04/25 예약배송]",
+            "product": "M Tiered Cross Bag_Light Blue",
+            "price": "167,250",
+            "before": "65,000",
+            "img": "/images/shoes_2.jpg",
+            "alt": "apparel21",
+            "sale": "25%",
+            "general_tag": "단독",
+            "make_reservation_tag": "",
+            "clearance_tag" : "뉴시즌"
+        }
+        ,
+        {
+            "id": 21,
+            "category": "active",
             "brand": "ACOC",
             "front": "[증정이벤트]|[04/25 예약배송]",
             "product": "M Tiered Cross Bag_Light Blue",

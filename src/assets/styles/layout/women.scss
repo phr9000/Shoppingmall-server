@@ -79,8 +79,13 @@
     }
     .best-pick-container {
         .best-pick-tab {
+            button {
+                text-transform: uppercase;
+            }
             .active {
-                color: red; 
+                button {
+                    color: red;
+                } 
             }
         }
     }

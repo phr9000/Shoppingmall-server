@@ -3,66 +3,46 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import womenData from "assets/data/womenData.json";
+import ProductIntro2 from "components/ProductIntro2";
 const BestPickLayout: React.FC = () => {
     // Filter 예시
     // const filterTest = womenData.filter
-    // tab 관련 
-    const tabItems = ['APPAREL', 'SHOES', 'BAG', 'ACC', 'LUXURY', 'ACTIVE'];
-    // slide 관련
-    const settings = {
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        beforeChange: (oldIndex: number, newIndex: number) =>
-            handleSlideChange(newIndex),
+    // tab 관련
+    const tabItems = ['apparel', 'shoes', 'bag', 'acc', 'luxury', 'active'];
+    const [clickedIndex, setClickedIndex] = useState<number>(0);
+    const handleClick = (index: number) => {
+        setClickedIndex(index);
     };
-    const [currentSlideIndex, setCurrentSlideIndex] = useState<number>(0);
-    const sliderRef = useRef<Slider>(null);  
-    
-    const handleSlideChange = (index: number) => {
-        setCurrentSlideIndex(index);
-      };
-
-    const handleButtonClick = (index: number) => {
-    console.log(index);
-    if (sliderRef.current) {
-        sliderRef.current.slickGoTo(index);
-    }
-    };
-
-    interface Slide {
-        id: number;
-        text: string;
-      }
     return (
         <div className="thumbnail__container best-pick-container">
             <h2 className="thumbnail__title">style story</h2>
-                <div className="best-pick-tab">
-                    {womenData.bestpick.map((slide, index) => (
-                    <button
+                <ul className="best-pick-tab">
+                    {tabItems.map((item, index) => (
+                    <li
                         key={index}
-                        className={
-                        currentSlideIndex === index ? "active" : "non-active"
-                        }
-                        onClick={() => handleButtonClick(index)}
+                        className={index === clickedIndex ? "active" : ""}
+                        onClick={() => handleClick(index)}
                     >
-                        {slide.category}
-                    </button>
+                        <button>{item}</button>
+                    </li>
                     ))}
-                </div>
-                {/* <Slider {...settings} ref={sliderRef}>
-                    {womenData.bestpick.entries(groupedItems).map(([category, items]) => (
-                    <div key={category}>
-                        <h2>{category}</h2>
-                        <ul>
-                            <li key={item.}></li>
-                        </ul>
-
-                        </div>
-                    </div>
-                    ))}
-                </Slider> */}
+                </ul>
+                <div className="preshow-content">
+            <div className="event-list-wrap">
+            <ul className="event-list">
+                {womenData.bestpick
+                .filter(
+                    (list) =>
+                    list.category === tabItems[clickedIndex]
+                )
+                .map((list) => {
+                    return (
+                        <ProductIntro2 datalist={womenData.bestpick}/>
+                    );
+                })}
+            </ul>
+            </div>
+      </div>
         </div>
     )
 };
