@@ -59,7 +59,7 @@ return (
                     ))}
                     </ul>
                 </div>
-                {/* BEST PICK */}
+                {/* BEST PICK */} 
                 <BestPickLayout/>
             </div>
         </div>
