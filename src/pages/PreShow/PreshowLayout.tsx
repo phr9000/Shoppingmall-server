@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import preShowtData from "assets/data/preshowData.json";
 import { Pagination } from "antd";
-const PreShowCopy: React.FC = () => {
+const PreShowLayout: React.FC = () => {
   // tab 관련
   const tabItems = ["ALL", "모던", "페미닌", "캐주얼", "베이직", "로맨틱"];
   const [clickedIndex, setClickedIndex] = useState<number>(0);
@@ -74,4 +74,4 @@ const PreShowCopy: React.FC = () => {
     </div>
   );
 };
-export default PreShowCopy;
+export default PreShowLayout;
