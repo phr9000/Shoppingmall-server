@@ -18,27 +18,27 @@ import OriginalLayout from "pages/Original/OriginalLayout";
 import PreShowLayout from "pages/PreShow/PreshowLayout";
 
 const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Root/>,
-        children: [
-            {index: true, element: <MainLayout/>},
-            {path: '/join', element:<JoinLayout/>},
-            {path: '/guide', element:<Guide/>},
-            {path: '/login', element:<Login/>},
-            {path: '/login', element:<Login/>},
-            {path: '/new', element:<NewLayout/>},
-            {path: '/sale', element:<SaleLayout/>},
-            { path: "/life", element: <LifeLayout /> },
-            { path: "/designer", element: <DesignerLayout /> },
-            { path: "/origin", element: <OriginalLayout /> },
-            { path: "/preshow", element: <PreShowLayout /> },
-            { path: "/beauty", element: <BeautyLayout/> },
-            { path: "/event", element: <EventLayout /> },
-            { path: "/best", element: <BestLayout /> },
-            { path: "/shopbag", element: <ShopBagLayout /> }
-        ]
-    }
+  {
+    path: "/",
+    element: <Root />,
+    children: [
+      { index: true, element: <MainLayout /> },
+      { path: "/join", element: <JoinLayout /> },
+      { path: "/guide", element: <Guide /> },
+      { path: "/login", element: <Login /> },
+      { path: "/login", element: <Login /> },
+      { path: "/new", element: <NewLayout /> },
+      { path: "/sale", element: <SaleLayout /> },
+      { path: "/life", element: <LifeLayout /> },
+      { path: "/designer", element: <DesignerLayout /> },
+      { path: "/origin", element: <OriginalLayout /> },
+      { path: "/preshow", element: <PreShowLayout /> },
+      { path: "/beauty", element: <BeautyLayout /> },
+      { path: "/event", element: <EventLayout /> },
+      { path: "/best", element: <BestLayout /> },
+      { path: "/shopbag", element: <ShopBagLayout /> },
+    ],
+  },
 ]);
 
 const App: React.FC = () => {
