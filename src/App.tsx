@@ -15,8 +15,7 @@ import EventLayout from "pages/Event/EventLayout";
 import BestLayout from "pages/Best/BestLayout";
 import ShopBagLayout from "pages/ShopBag/ShopBagLayout";
 import OriginalLayout from "pages/Original/OriginalLayout";
-// import PreShowLayout from "pages/PreShow/PreshowLayout";
-import PreShowCopy from "pages/PreShow/PreshowCopy";
+import PreShowLayout from "pages/PreShow/PreshowLayout";
 
 const router = createBrowserRouter([
   {
@@ -33,7 +32,7 @@ const router = createBrowserRouter([
       { path: "/life", element: <LifeLayout /> },
       { path: "/designer", element: <DesignerLayout /> },
       { path: "/origin", element: <OriginalLayout /> },
-      { path: "/preshow", element: <PreShowCopy /> },
+      { path: "/preshow", element: <PreShowLayout /> },
       { path: "/beauty", element: <BeautyLayout /> },
       { path: "/event", element: <EventLayout /> },
       { path: "/best", element: <BestLayout /> },
