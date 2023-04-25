@@ -15,6 +15,7 @@ return (
                 WOMEN
             </h2>
             <div className="thumbnail_layout">
+                {/* exhibition */}
                 <ul className="exhibition">
                     <li>
                         <a href="!#">
@@ -56,6 +57,13 @@ return (
                         </li>
                     ))}
                     </ul>
+                </div>
+                {/* BEST PICK */}
+                <div className="thumbnail__container best-pick-container">
+                    <h2 className="thumbnail__title">style story</h2>
+                    <div className="best-pick-tab">
+                        
+                    </div>
                 </div>
             </div>
         </div>
