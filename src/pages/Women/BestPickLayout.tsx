@@ -13,6 +13,7 @@ const BestPickLayout: React.FC = () => {
     const handleClick = (index: number) => {
         setClickedIndex(index);
     };
+
     return (
         <div className="thumbnail__container best-pick-container">
             <h2 className="thumbnail__title">style story</h2>
