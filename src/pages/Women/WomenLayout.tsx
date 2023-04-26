@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BestPickLayout from './BestPickLayout';
 const WomenLayout: React.FC = () => {
 const womenlist = [
@@ -9,6 +9,7 @@ const womenlist = [
     "LUXURY",
     "ACTIVE",
     ];
+
 return (
     <div className="women-container">
         <div className="main-title-area">
@@ -60,7 +61,9 @@ return (
                     </ul>
                 </div>
                 {/* BEST PICK */} 
-                <BestPickLayout/>
+                <div className="best-pick-container">
+                    <BestPickLayout/>
+                </div>
             </div>
         </div>
     </div>

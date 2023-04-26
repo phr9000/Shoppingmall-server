@@ -79,7 +79,12 @@
     }
     .best-pick-container {
         .best-pick-tab {
+            margin: 16px 0 26px; 
+            display: flex; 
             button {
+                padding: 0 13px 0 14px; 
+                height: 25px; 
+                font-size: 1.6rem;
                 text-transform: uppercase;
             }
             .active {
