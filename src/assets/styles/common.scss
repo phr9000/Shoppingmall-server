@@ -7,7 +7,7 @@ body {
   font-size: 10px;
   letter-spacing: -0.5px;
   font-family: "Noto Sans", sans-serif !important;
-  min-width: 1919px;
+  min-width: 1900px;
 }
 body {
   &.no-scroll {
@@ -21,8 +21,23 @@ em {
   font-style: normal;
 }
 .ir {
-  position: absolute;
   text-indent: -9999px;
+  display: block !important;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%); 
+  width: 1px;
+  height: 1px;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  left: -9999px;
+  white-space: nowrap;
+  font-size: 1px !important;
+  transform: translateX(-100px) scale(0.0001);
+  z-index: -1;
 }
 .hidden {
   display: none !important;
@@ -64,4 +79,54 @@ em {
 }
 .ellipsis-two {
   @include ellipsis(2);
+}
+
+// ------- layout ------- //
+.container-wrapper {
+  // 공통 layout 스타일
+  margin: 0 auto;
+  padding: 80px 20px 0 20px;
+  width: 100%;
+  overflow: hidden; 
+  .thumbnail-container {
+    margin-top: 80px;
+    .thumbnail-title {
+      margin-bottom: 30px; 
+      text-align: center;
+      font-size: 4.8rem;
+      text-transform: uppercase;
+      font-weight: 200;
+      // 타이틀 옆 플러스 모양
+      .plus {
+        position: relative;
+        display: inline-block;
+        width: 33px;
+        height: 33px;
+        cursor: pointer;
+        &:before {
+          display: block;
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          
+          width: 1px;
+          height: 35px;
+          background-color: #000;
+          transform: translate(-50%, -50%);
+        }
+        &:after {
+          display: block;
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 35px;
+          height: 1px;
+          background-color: #000;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
 }
