@@ -13,37 +13,36 @@ const BestPickLayout: React.FC = () => {
     const handleClick = (index: number) => {
         setClickedIndex(index);
     };
-
     return (
         <div className="thumbnail__container best-pick-container">
             <h2 className="thumbnail__title">style story</h2>
-            <ul className="best-pick-tab">
-                {tabItems.map((item, index) => (
-                <li
-                    key={index}
-                    className={index === clickedIndex ? "active" : ""}
-                    onClick={() => handleClick(index)}
-                >
-                    <button>{item}</button>
-                </li>
-                ))}
-            </ul>
-            <div className="best-pick-content">
-                <div className="best-pick-wrap">
-                    <ul>
-                        {womenData.bestpick
-                        .filter(
-                            (list) =>
-                            list.category === tabItems[clickedIndex]
-                        )
-                        .map((list) => {
-                            return (
-                                <ProductIntro2 datalist={womenData.bestpick}/>
-                            );
-                        })}
-                    </ul>
-                </div>
+                <ul className="best-pick-tab">
+                    {tabItems.map((item, index) => (
+                    <li
+                        key={index}
+                        className={index === clickedIndex ? "active" : ""}
+                        onClick={() => handleClick(index)}
+                    >
+                        <button>{item}</button>
+                    </li>
+                    ))}
+                </ul>
+                <div className="preshow-content">
+            <div className="event-list-wrap">
+                <ul className="event-list">
+                    {womenData.bestpick
+                    .filter(
+                        (list) =>
+                        list.category === tabItems[clickedIndex]
+                    )
+                    .map((list) => {
+                        return (
+                            <ProductIntro2 datalist={[list]} key={list.id}/>
+                        );
+                    })}
+                </ul>
             </div>
+      </div>
         </div>
     )
 };

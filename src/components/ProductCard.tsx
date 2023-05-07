@@ -1,30 +1,28 @@
-import React from 'react'
+import React, { useState } from "react";
 import CartHeart from './CartHeart';
 
 type dataType = {
-  id: number,
-  category: string,
-  brand: string,
-  front: string,
-  product: string,
-  discout_price?: string,
-  base_price?: string,
-  img: string,
-  alt?: string,
-  sale?:string,
-  general_tag?: string,
-  make_reservation_tag?: string,
-  clearance_tag?: string,
-};
+    id: number,
+    category: string,
+    brand: string,
+    front: string,
+    product: string,
+    discout_price?: string,
+    base_price?: string,
+    img: string,
+    alt?: string,
+    sale?:string,
+    general_tag?: string,
+    make_reservation_tag?: string,
+    clearance_tag?: string,
+  };
+  
+  type GreetingsProps = {
+    datalist: dataType[]
+  };
 
-type GreetingsProps = {
-  datalist: dataType[]
-};
-
-const ProductIntro:React.FC<GreetingsProps> = (data)=>{
-  return (
-    <div className='product-container'>
-      <ul className='product-inner'>
+const ProductCard:React.FC<GreetingsProps> = (data)=>{
+    <>
         {
           data.datalist.map(
             (list)=>
@@ -67,9 +65,7 @@ const ProductIntro:React.FC<GreetingsProps> = (data)=>{
             </li>
           )
         }
-      </ul>
-    </div>
-  )
+    </>
 }
 
-export default ProductIntro;
+export default ProductCard;

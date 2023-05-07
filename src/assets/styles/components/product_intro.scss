@@ -11,10 +11,16 @@
         margin: 0 12px; 
     }
     .img-area {
+        position: relative; 
         margin-bottom: 15px; 
         height: 272px;
         > img {
             height: 100%; 
+        }
+        .heart-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
         }
     }
     .text-container {
@@ -48,6 +54,8 @@
     .label-area {
         margin-top: 3px; 
         p {
+            display: flex;
+            flex-wrap: wrap;
             &:not(:first-child) {
                 margin-top: 5px; 
             }
@@ -64,15 +72,16 @@
             color: #fff;
             border: 1px solid red;
         }
-        .general_info {
-            background-color: #fff; 
-            color: #000;
-            border: 1px solid #000;
-        }
         .make_reservation {
             background-color: #000; 
             color: #fff;
             border: 1px solid #000;
         }
+        .general_info {
+            background-color: #fff; 
+            color: #000;
+            border: 1px solid #000;
+        }
+        
     }
 }
