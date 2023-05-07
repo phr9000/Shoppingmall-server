@@ -14,7 +14,7 @@ const LoginLayout:React.FC = ()=>{
       <h2 className="title">로그인</h2>
       <div className="top-title-area"></div>
       <form>
-        <div className="user-box mt10">
+        <div className="user-box w-mt10">
           <input
             type="text"
             name="login-id"
@@ -24,7 +24,7 @@ const LoginLayout:React.FC = ()=>{
           />
           <label htmlFor="login-id">username</label>
         </div>
-        <div className="user-box mt10">
+        <div className="user-box w-mt10">
           <input
             type="password"
             name="login-pw"

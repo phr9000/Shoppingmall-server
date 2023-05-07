@@ -38,12 +38,13 @@ const MainLayout:React.FC = ()=>{
     ToggleState === index ? className : "";
 
   return (
-    <div className='main-layout-container'>
+    <main>
+      <div className='container-wrapper main-layout-container'>
         <MainCarousel/>
         {/* style story */}
-        <div className='thumbnail__container style-story-contianer'>
-          <h2 className='thumbnail__title'>style story</h2>
-          <ul className='thumbnail__area'>
+        <section className='thumbnail-container thumbnail__container style-story-contianer'>
+          <h2 className='thumbnail-title'>style story</h2>
+          <ul className='style-story-container'>
               {
                 styleStory.map((list)=>
                 <li key={list.id}>
@@ -59,7 +60,7 @@ const MainLayout:React.FC = ()=>{
                 )
               }
           </ul>
-        </div>
+        </section>
         {/* banner */}
         <div className='banner__container'>
             <ul>
@@ -76,28 +77,28 @@ const MainLayout:React.FC = ()=>{
             </ul>
         </div>
         {/* what's new */}
-        <div className='thumbnail__container whats-new-container'>
-          <h2 className='thumbnail__title'>WHAT'S NEW</h2>
+        <div className='thumbnail-container whats-new-container'>
+          <h2 className='thumbnail-title'>WHAT'S NEW</h2>
             <ProductCarousel setting={settings} dataList={whatsNew}/>
         </div>
         {/* make it yours */}
-        <div className='thumbnail__container whats-new-container'>
-          <h2 className='thumbnail__title'>MAKE IT YOURS </h2>
+        <div className='thumbnail-container  whats-new-container'>
+          <h2 className='thumbnail-title'>MAKE IT YOURS </h2>
             <ProductCarousel setting={settings2} dataList={makeItNew}/>
         </div>
         {/* EXCLUSIVE */}
-        <div className='thumbnail__container exclusive-container'>
-          <h2 className='thumbnail__title'>EXCLUSIVE <span className='plus'></span></h2>
+        <div className='thumbnail-container exclusive-container'>
+          <h2 className='thumbnail-title'>EXCLUSIVE <span className='plus'></span></h2>
             <ComCarousel/>
         </div>
         {/* BeautyPick */}
-        <div className='thumbnail__container BeautyPick-container'>
-          <h2 className='thumbnail__title'>BEAUTY PICK <span className='plus'></span></h2>
+        <div className='thumbnail-container BeautyPick-container'>
+          <h2 className='thumbnail-title'>BEAUTY PICK <span className='plus'></span></h2>
               <BeautyPick/>
         </div>
         {/* TV */}
-        <div className='thumbnail__container exclusive-container'>
-          <h2 className='thumbnail__title'>W<span className='small-txt'>컨셉</span> TV <span className='plus'></span></h2>
+        <div className='thumbnail-container exclusive-container'>
+          <h2 className='thumbnail-title'>W<span className='small-txt'>컨셉</span> TV <span className='plus'></span></h2>
             <ComCarousel/>
         </div>
         {/* edirorial */}
@@ -348,7 +349,8 @@ const MainLayout:React.FC = ()=>{
           </div>
 
         </div>
-    </div>
+      </div>
+    </main>
   )
 }
 
