@@ -38,12 +38,13 @@ const MainLayout:React.FC = ()=>{
     ToggleState === index ? className : "";
 
   return (
-    <div className='main-layout-container'>
+    <main>
+      <div className='container-wrapper main-layout-container'>
         <MainCarousel/>
         {/* style story */}
-        <div className='thumbnail__container style-story-contianer'>
-          <h2 className='thumbnail__title'>style story</h2>
-          <ul className='thumbnail__area'>
+        <section className='thumbnail-container thumbnail__container style-story-contianer'>
+          <h2 className='thumbnail-title'>style story</h2>
+          <ul className='style-story-container'>
               {
                 styleStory.map((list)=>
                 <li key={list.id}>
@@ -59,9 +60,10 @@ const MainLayout:React.FC = ()=>{
                 )
               }
           </ul>
-        </div>
+        </section>
         {/* banner */}
-        <div className='banner__container'>
+        <section className='banner__container'>
+          <h2 className='ir'>메인 배너</h2>
             <ul>
               <li>
                 <a href="#!">
@@ -74,34 +76,35 @@ const MainLayout:React.FC = ()=>{
                   </a>
               </li>
             </ul>
-        </div>
+        </section>
         {/* what's new */}
-        <div className='thumbnail__container whats-new-container'>
-          <h2 className='thumbnail__title'>WHAT'S NEW</h2>
+        <section className='thumbnail-container whats-new-container'>
+          <h2 className='thumbnail-title'>WHAT'S NEW</h2>
             <ProductCarousel setting={settings} dataList={whatsNew}/>
-        </div>
+        </section>
         {/* make it yours */}
-        <div className='thumbnail__container whats-new-container'>
-          <h2 className='thumbnail__title'>MAKE IT YOURS </h2>
+        <section className='thumbnail-container  whats-new-container'>
+          <h2 className='thumbnail-title'>MAKE IT YOURS </h2>
             <ProductCarousel setting={settings2} dataList={makeItNew}/>
-        </div>
+        </section>
         {/* EXCLUSIVE */}
-        <div className='thumbnail__container exclusive-container'>
-          <h2 className='thumbnail__title'>EXCLUSIVE <span className='plus'></span></h2>
+        <section className='thumbnail-container exclusive-container'>
+          <h2 className='thumbnail-title'>EXCLUSIVE <span className='plus'></span></h2>
             <ComCarousel/>
-        </div>
+        </section>
         {/* BeautyPick */}
-        <div className='thumbnail__container BeautyPick-container'>
-          <h2 className='thumbnail__title'>BEAUTY PICK <span className='plus'></span></h2>
+        <section className='thumbnail-container BeautyPick-container'>
+          <h2 className='thumbnail-title'>BEAUTY PICK <span className='plus'></span></h2>
               <BeautyPick/>
-        </div>
+        </section>
         {/* TV */}
-        <div className='thumbnail__container exclusive-container'>
-          <h2 className='thumbnail__title'>W<span className='small-txt'>컨셉</span> TV <span className='plus'></span></h2>
+        <section className='thumbnail-container exclusive-container'>
+          <h2 className='thumbnail-title'>W<span className='small-txt'>컨셉</span> TV <span className='plus'></span></h2>
             <ComCarousel/>
-        </div>
+        </section>
         {/* edirorial */}
-        <div className='edirorial-container'>
+        <section className='edirorial-container'>
+          <h2 className='ir'>w컨셉 소식지 보기</h2>
             <ul>
               <li>
                 <a href="!#" className='display-block'>
@@ -176,11 +179,12 @@ const MainLayout:React.FC = ()=>{
                 </a>
               </li>
             </ul>
-        </div>
+        </section>
         {/* trend */}
         <TrendLayout/>
         {/* footer banner */}
-        <div className='footer-banner-container'>
+        <section className='footer-banner-container'>
+          <h2 className='ir'>전체 카테고리 별 상품 보기</h2>
           <ul>
             <li>
               <a href="!#">
@@ -198,9 +202,10 @@ const MainLayout:React.FC = ()=>{
               </a>
             </li>
           </ul>
-        </div>
+        </section>
         {/* footer info */}
-        <div className='footer-info-container'>
+        <section className='footer-info-container'>
+          <h2 className='ir'>뉴스 이벤트 발표 고객센터 영역</h2>
           <div className='left'>
             <ul className='tab-list'>
               <li 
@@ -347,8 +352,9 @@ const MainLayout:React.FC = ()=>{
             </div>
           </div>
 
-        </div>
-    </div>
+        </section>
+      </div>
+    </main>
   )
 }
 

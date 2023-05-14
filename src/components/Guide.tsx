@@ -10,7 +10,7 @@ const Guide:React.FC = ()=>{
           <button className="btn" type="button">
             기본버튼
           </button>
-          <button className="btn primary ml5" type="button">
+          <button className="btn primary w-ml5" type="button">
             기본버튼
           </button>
         </div>
@@ -47,7 +47,7 @@ const Guide:React.FC = ()=>{
           </div>
         </div>
         {/* 인풋 + disabled 버튼 */}
-        <div className="ml10">
+        <div className="w-ml10">
           <h2 className="guide-title">인풋 + 비활성 버튼</h2>
           <div className="field">
             <label className="ir" htmlFor="input-name">
@@ -76,26 +76,26 @@ const Guide:React.FC = ()=>{
         <div className="field fieldRadio">
           {/* <div class="field-label">라디오 사용법</div> */}
           {/* inline radio */}
-          <div className="field-form mb10">
+          <div className="field-form w-mb10">
             <div className="radio">
               <input type="radio" id="input-id-08" name="radio" defaultChecked={true}/>
               <label htmlFor="input-id-08" className="radio-label">
                 <span>Inline radio</span>
               </label>
             </div>
-            <div className="radio ml10">
+            <div className="radio w-ml10">
               <input type="radio" id="input-id-09" name="radio" defaultChecked={true} />
               <label htmlFor="input-id-09" className="radio-label">
                 <span>Inline radio</span>
               </label>
             </div>
-            <div className="radio ml10">
+            <div className="radio w-ml10">
               <input type="radio" id="input-id-10" name="radio" defaultChecked={true} />
               <label htmlFor="input-id-10" className="radio-label">
                 <span>Inline radio</span>
               </label>
             </div>
-            <div className="radio ml10">
+            <div className="radio w-ml10">
               <input type="radio" id="input-id-11" name="radio" defaultChecked={true} />
               <label htmlFor="input-id-11" className="radio-label">
                 <span>Inline radio</span>

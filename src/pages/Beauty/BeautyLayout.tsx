@@ -595,7 +595,7 @@ const BeautyLayout: React.FC = () => {
           <Slider {...settings} ref={sliderRef}>
             {beautyData.brands.map((slide) => (
               <div>
-                <div className="flex">
+                <div className="flex justify-center">
                   <div className="wrap-img">
                     <img src={slide.wrapImg} alt={slide.wrapAlt} />
                   </div>

@@ -3,7 +3,7 @@ import bestData from "assets/data/bestData.json";
 import BestItemComponent from "components/BestItemComponent";
 
 const BestLayout: React.FC = () => {
-  const [selectedDiv, setSelectedDiv] = useState<string | null>(null);
+  const [selectedDiv, setSelectedDiv] = useState<string | null>("ALL");
 
   const handleButtonClick = (divName: string) => {
     setSelectedDiv(divName);
@@ -15,6 +15,8 @@ const BestLayout: React.FC = () => {
   };
 
   let [isInputClicked, setIsInputClicked] = useState(false);
+
+  const menuList = ["ALL", "WOMEN", "MEN", "LIFE", "BEAUTY"];
 
   return (
     <div className="best-container">
@@ -46,45 +48,21 @@ const BestLayout: React.FC = () => {
         </div>
       </div>
       <ul className="event-tab">
-        <li>
-          <button onClick={() => handleButtonClick("div0")}>ALL</button>
-        </li>
-        <li>
-          <button
-            className={selectedDiv === "div1" ? "selected" : ""}
-            onClick={() => handleButtonClick("div1")}
-          >
-            WOMEN
-          </button>
-        </li>
-        <li>
-          <button
-            className={selectedDiv === "div2" ? "selected" : ""}
-            onClick={() => handleButtonClick("div2")}
-          >
-            MEN
-          </button>
-        </li>
-        <li>
-          <button
-            className={selectedDiv === "div3" ? "selected" : ""}
-            onClick={() => handleButtonClick("div3")}
-          >
-            LIFE
-          </button>
-        </li>
-        <li>
-          <button
-            className={selectedDiv === "div4" ? "selected" : ""}
-            onClick={() => handleButtonClick("div4")}
-          >
-            BEAUTY
-          </button>
-        </li>
+        {menuList.map((value) => (
+          <li data-hashtag={{ value }} key={value}>
+            <button
+              className={selectedDiv === value ? "selected" : ""}
+              onClick={() => handleButtonClick(value)}
+              type="button"
+            >
+              {value}
+            </button>
+          </li>
+        ))}
       </ul>
 
-      {selectedDiv === "div0" && <BestItemComponent datalist={bestData} />}
-      {selectedDiv === "div1" && (
+      {selectedDiv === "ALL" && <BestItemComponent datalist={bestData} />}
+      {selectedDiv === "WOMEN" && (
         <div className="section-wrap">
           <div className="section section-1">
             <BestItemComponent
@@ -103,7 +81,7 @@ const BestLayout: React.FC = () => {
         </div>
       )}
 
-      {selectedDiv === "div2" && (
+      {selectedDiv === "MEN" && (
         <div className="section-wrap">
           <div className="section section-1">
             <BestItemComponent
@@ -121,7 +99,7 @@ const BestLayout: React.FC = () => {
           </div>
         </div>
       )}
-      {selectedDiv === "div3" && (
+      {selectedDiv === "BEAUTY" && (
         <div className="section-wrap">
           <div className="section section-1">
             <BestItemComponent
@@ -139,7 +117,7 @@ const BestLayout: React.FC = () => {
           </div>
         </div>
       )}
-      {selectedDiv === "div4" && (
+      {selectedDiv === "LIFE" && (
         <div className="section-wrap">
           <div className="section section-1">
             <BestItemComponent
@@ -157,17 +135,6 @@ const BestLayout: React.FC = () => {
           </div>
         </div>
       )}
-      <div className="first-layer">
-        {selectedDiv !== "div0" &&
-        selectedDiv !== "div1" &&
-        selectedDiv !== "div2" &&
-        selectedDiv !== "div3" &&
-        selectedDiv !== "div4" ? (
-          <BestItemComponent datalist={bestData} />
-        ) : (
-          ""
-        )}
-      </div>
     </div>
   );
 };

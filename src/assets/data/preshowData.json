@@ -1,113 +1,112 @@
 [
-    {
-        "category": "modern",
-        "id": 1,
-        "img": "/images/preshow_modern01.jpg",
-        "categoryTag1": "PRE-OPEN",
-        "categoryTag2": "PRE-SALE",
-        "title": "LE17SEPTEMBPE", 
-        "desc" : "시그니처 미학에 충실한 23봄 두번째 컬렉션", 
-        "miniTag" : "#모던",
-        "date" : "2023.04.14 ~ 2023.04.21" 
-    },
-    {
-        "category": "modern",
-        "id": 2,
-        "img": "/images/preshow_modern02.jpg",
-        "categoryTag1": "PRE-OPEN",
-        "categoryTag2": "PRE-SALE",
-        "title": "REPLAIN", 
-        "desc" : "sense & sensibility", 
-        "miniTag" : "#모던",
-        "date" : "2023.03.29 ~ 2023.04.05" 
-    },
-    {
-        "category": "feminine",
-        "id": 3,
-        "img": "/images/preshow_feminine01.jpg",
-        "categoryTag1": "PRE-OPEN",
-        "categoryTag2": "PRE-SALE",
-        "title": "ADAUL", 
-        "desc" : "어다울 썸머 원피스 PRE-OPEN!", 
-        "miniTag" : "#페미닌",
-        "date" : "2023.04.14 ~ 2023.04.21" 
-    },
-    {
-        "category": "feminine",
-        "id": 4,
-        "img": "/images/preshow_feminine02.jpg",
-        "categoryTag1": "PRE-OPEN",
-        "categoryTag2": "PRE-SALE",
-        "title": "ROLAROLA", 
-        "desc" : "한 여름 밤의 낭만이 가득한 파이", 
-        "miniTag" : "#페미닌",
-        "date" : "2023.04.14 ~ 2023.04.21" 
-    },
-    {
-        "category": "casual",
-        "id": 5,
-        "img": "/images/preshow_casual01.jpg",
-        "categoryTag1": "PRE-OPEN",
-        "categoryTag2": "PRE-SALE",
-        "title": "RAIVE", 
-        "desc" : "The Shell", 
-        "miniTag" : "#캐주얼",
-        "date" : "2023.04.14 ~ 2023.04.21" 
-    },
-    {
-        "category": "casual",
-        "id": 6,
-        "img": "/images/preshow_casual02.jpg",
-        "categoryTag1": "PRE-OPEN",
-        "categoryTag2": "PRE-SALE",
-        "title": "THE CENTAUR", 
-        "desc" : "RATIONAL RAPUNZEL", 
-        "miniTag" : "#캐주얼",
-        "date" : "2023.03.23 ~ 2023.03.30" 
-    },
-    {
-        "category": "basic",
-        "id": 7,
-        "img": "/images/preshow_basic01.jpg",
-        "categoryTag1": "EXCLUSIVE",
-        "categoryTag2": "COUPON",
-        "title": "FRONTROW & FRRW", 
-        "desc" : "23S/S BEST PANTS 쇼핑 가이드", 
-        "miniTag" : "#베이직",
-        "date" : "2023.04.14 ~ 2023.04.21" 
-    },
-    {
-        "category": "basic",
-        "id": 8,
-        "img": "/images/preshow_basic02.jpg",
-        "categoryTag1": "EXCLUSIVE",
-        "categoryTag2": "PRE-SALE",
-        "title": "ourcomos", 
-        "desc" : "seize the day", 
-        "miniTag" : "#베이직",
-        "date" : "2023.04.14 ~ 2023.04.21" 
-    },
-    {
-        "category": "romantic",
-        "id": 9,
-        "img": "/images/preshow_romantic01.jpg",
-        "categoryTag1": "PRE-OPEN",
-        "categoryTag2": "PRE-SALE",
-        "title": "Remantist", 
-        "desc" : "23SS COLLECTION", 
-        "miniTag" : "#로맨틱",
-        "date" : "2023.04.14 ~ 2023.04.21" 
-    },
-    {
-        "category": "romantic",
-        "id": 10,
-        "img": "/images/preshow_romantic02.jpg",
-        "categoryTag1": "EXCLUSIVE",
-        "categoryTag2": "PRE-SALE",
-        "title": "THETIS", 
-        "desc" : "with TomoTomo", 
-        "miniTag" : "#로맨틱",
-        "date" : "2023.03.31 ~ 2023.04.07" 
-    }
-
+  {
+    "category": "모던",
+    "id": 1,
+    "img": "/images/preshow_modern01.jpg",
+    "categoryTag1": "PRE-OPEN",
+    "categoryTag2": "PRE-SALE",
+    "title": "LE17SEPTEMBPE",
+    "desc": "시그니처 미학에 충실한 23봄 두번째 컬렉션",
+    "miniTag": "#모던",
+    "date": "2023.04.14 ~ 2023.04.21"
+  },
+  {
+    "category": "모던",
+    "id": 2,
+    "img": "/images/preshow_modern02.jpg",
+    "categoryTag1": "PRE-OPEN",
+    "categoryTag2": "PRE-SALE",
+    "title": "REPLAIN",
+    "desc": "sense & sensibility",
+    "miniTag": "#모던",
+    "date": "2023.03.29 ~ 2023.04.05"
+  },
+  {
+    "category": "페미닌",
+    "id": 3,
+    "img": "/images/preshow_feminine01.jpg",
+    "categoryTag1": "PRE-OPEN",
+    "categoryTag2": "PRE-SALE",
+    "title": "ADAUL",
+    "desc": "어다울 썸머 원피스 PRE-OPEN!",
+    "miniTag": "#페미닌",
+    "date": "2023.04.14 ~ 2023.04.21"
+  },
+  {
+    "category": "페미닌",
+    "id": 4,
+    "img": "/images/preshow_feminine02.jpg",
+    "categoryTag1": "PRE-OPEN",
+    "categoryTag2": "PRE-SALE",
+    "title": "ROLAROLA",
+    "desc": "한 여름 밤의 낭만이 가득한 파이",
+    "miniTag": "#페미닌",
+    "date": "2023.04.14 ~ 2023.04.21"
+  },
+  {
+    "category": "캐주얼",
+    "id": 5,
+    "img": "/images/preshow_casual01.jpg",
+    "categoryTag1": "PRE-OPEN",
+    "categoryTag2": "PRE-SALE",
+    "title": "RAIVE",
+    "desc": "The Shell",
+    "miniTag": "#캐주얼",
+    "date": "2023.04.14 ~ 2023.04.21"
+  },
+  {
+    "category": "캐주얼",
+    "id": 6,
+    "img": "/images/preshow_casual02.jpg",
+    "categoryTag1": "PRE-OPEN",
+    "categoryTag2": "PRE-SALE",
+    "title": "THE CENTAUR",
+    "desc": "RATIONAL RAPUNZEL",
+    "miniTag": "#캐주얼",
+    "date": "2023.03.23 ~ 2023.03.30"
+  },
+  {
+    "category": "베이직",
+    "id": 7,
+    "img": "/images/preshow_basic01.jpg",
+    "categoryTag1": "EXCLUSIVE",
+    "categoryTag2": "COUPON",
+    "title": "FRONTROW & FRRW",
+    "desc": "23S/S BEST PANTS 쇼핑 가이드",
+    "miniTag": "#베이직",
+    "date": "2023.04.14 ~ 2023.04.21"
+  },
+  {
+    "category": "베이직",
+    "id": 8,
+    "img": "/images/preshow_basic02.jpg",
+    "categoryTag1": "EXCLUSIVE",
+    "categoryTag2": "PRE-SALE",
+    "title": "ourcomos",
+    "desc": "seize the day",
+    "miniTag": "#베이직",
+    "date": "2023.04.14 ~ 2023.04.21"
+  },
+  {
+    "category": "로맨틱",
+    "id": 9,
+    "img": "/images/preshow_romantic01.jpg",
+    "categoryTag1": "PRE-OPEN",
+    "categoryTag2": "PRE-SALE",
+    "title": "Remantist",
+    "desc": "23SS COLLECTION",
+    "miniTag": "#로맨틱",
+    "date": "2023.04.14 ~ 2023.04.21"
+  },
+  {
+    "category": "로맨틱",
+    "id": 10,
+    "img": "/images/preshow_romantic02.jpg",
+    "categoryTag1": "EXCLUSIVE",
+    "categoryTag2": "PRE-SALE",
+    "title": "THETIS",
+    "desc": "with TomoTomo",
+    "miniTag": "#로맨틱",
+    "date": "2023.03.31 ~ 2023.04.07"
+  }
 ]

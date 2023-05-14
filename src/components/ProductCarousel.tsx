@@ -50,7 +50,7 @@ const ProductCarousel: React.FC<PropsData> = (data)=>{
                     <div className='price-area'>
                       <div className='flex align-center'>
                         <p className='discount'>{carousel.discount}</p>
-                        <p className='original-price ml5'>{carousel.originalPrice}</p>
+                        <p className='original-price w-ml5'>{carousel.originalPrice}</p>
                       </div>
                       <div className='percent'>
                         {carousel.percent}
