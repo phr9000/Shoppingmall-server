@@ -1,13 +1,5 @@
 @import "/src/assets/styles/abstracts/variables.scss";
 .women-container {
-    h2 {
-        padding-top: 80px;
-        margin-bottom: 40px;
-        font-size: 44px;
-        text-align: center;
-        font-weight: 200;
-        text-transform: uppercase;
-    }
     .thumbnail_layout {
         margin: 0 auto; 
         width: 1880px; 
@@ -84,17 +76,18 @@
             display: flex; 
             justify-content: center;
             button {
-                padding: 0 13px 0 14px; 
+                margin: 0 13px 0 14px; 
                 height: 25px; 
                 font-size: 1.6rem;
                 text-transform: uppercase;
+                color: #666;
             }
             .active {
                 button {
                     color: #333; 
                     font-weight: 500;
                     font-size: 16px; 
-                    text-decoration: underline;
+                    border-bottom: 2px solid #000;
                 } 
             }
         }
@@ -103,9 +96,9 @@
             max-width: 100%;
             width: 100%;
             .product-inner {
-                max-width: 100%;
+                max-width: 1880px;
                 li {
-                    width: 12.5%;
+                    width: 216px;
                 }
                 .img-area > img{
                     width: 100%;

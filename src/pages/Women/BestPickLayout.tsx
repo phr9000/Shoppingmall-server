@@ -15,7 +15,7 @@ const BestPickLayout: React.FC = () => {
     };
     return (
         <div className="thumbnail__container best-pick-container">
-            <h2 className="thumbnail__title">style story</h2>
+            <h2 className="thumbnail__title">best pick</h2>
                 <ul className="best-pick-tab">
                     {tabItems.map((item, index) => (
                     <li

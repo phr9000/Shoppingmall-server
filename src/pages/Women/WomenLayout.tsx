@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import BestPickLayout from './BestPickLayout';
+import ComCarousel from "components/ComCarousel";
 const WomenLayout: React.FC = () => {
 const womenlist = [
     "APPAREL",
@@ -63,6 +64,11 @@ return (
                 {/* BEST PICK */} 
                 <div className="best-pick-container">
                     <BestPickLayout/>
+                </div>
+                {/* EXCLUSIVE */}
+                <div className='thumbnail__container exclusive-container'>
+                <h2 className='thumbnail__title'>EXCLUSIVE <span className='plus'></span></h2>
+                    <ComCarousel/>
                 </div>
             </div>
         </div>
