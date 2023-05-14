@@ -40,6 +40,7 @@ const router = createBrowserRouter([
             {path: "/women", element: <WomenLayout/>},
         ]
     }
+
 ]);
 
 const App: React.FC = () => {

@@ -1,0 +1,69 @@
+.w-m0 {
+    margin: 0;
+}
+
+// margin top 
+.w-mt {
+    &0 { margin-top: 0px;}
+    &10 { margin-top: 10px;}
+    &20 { margin-top: 20px;}
+    &30 { margin-top: 30px;}
+}
+
+// margin right 
+.w-mr {
+    &0 { margin-right: 0px;}
+    &10 { margin-right: 10px;}
+    &20 { margin-right: 20px;}
+    &30 { margin-top: 30px;}
+}
+
+// margin bottom 
+.w-mb {
+    &0 { margin-bottom: 0px;}
+    &10 { margin-bottom: 10px;}
+    &20 { margin-bottom: 20px;}
+    &30 { margin-bottom: 30px;}
+}
+
+// margin left 
+.w-ml {
+    &0 { margin-left: 0px;}
+    &10 { margin-left: 10px;}
+    &20 { margin-left: 20px;}
+    &30 { margin-left: 30px;}
+}
+
+.w-p0 {padding: 0px;}
+
+// padding top
+.w-pt {
+    &0 { padding-top: 0px;}
+    &10 { padding-top: 10px;}
+    &20 { padding-top: 20px;}
+    &30 { padding-top: 30px;}
+}
+
+// padding right
+.w-pr {
+    &0 { padding-right: 0px;}
+    &10 { padding-right: 10px;}
+    &20 { padding-right: 20px;}
+    &30 { padding-right: 30px;}
+}
+
+// padding bottom
+.w-pb {
+    &0 { padding-bottom: 0px;}
+    &10 { padding-bottom: 10px;}
+    &20 { padding-bottom: 20px;}
+    &30 { padding-bottom: 30px;}
+}
+
+// padding left 
+.w-pl {
+    &0 { padding-left: 0px;}
+    &10 { padding-left: 10px;}
+    &20 { padding-left: 20px;}
+    &30 { padding-left: 30px;}
+}
