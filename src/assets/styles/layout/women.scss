@@ -98,8 +98,20 @@
                 } 
             }
         }
-        .best-pick-content {
-            
+        //product container 공통 수정
+        .product-container {
+            max-width: 100%;
+            width: 100%;
+            .product-inner {
+                max-width: 100%;
+                li {
+                    width: 12.5%;
+                }
+                .img-area > img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
         }
     }
 }

@@ -18,11 +18,12 @@ type dataType = {
   };
   
   type GreetingsProps = {
-    datalist: dataType[]
+    datalist: dataType[];
   };
 
 const ProductCard:React.FC<GreetingsProps> = (data)=>{
-    <>
+    return (
+      <>
         {
           data.datalist.map(
             (list)=>
@@ -66,6 +67,7 @@ const ProductCard:React.FC<GreetingsProps> = (data)=>{
           )
         }
     </>
+    )
 }
 
 export default ProductCard;

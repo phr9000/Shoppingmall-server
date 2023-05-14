@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import womenData from "assets/data/womenData.json";
-import ProductIntro2 from "components/ProductIntro2";
+import ProductCard from "components/ProductCard";
 const BestPickLayout: React.FC = () => {
     // Filter 예시
     // const filterTest = womenData.filter
@@ -30,16 +30,21 @@ const BestPickLayout: React.FC = () => {
                 <div className="preshow-content">
             <div className="event-list-wrap">
                 <ul className="event-list">
-                    {womenData.bestpick
-                    .filter(
-                        (list) =>
-                        list.category === tabItems[clickedIndex]
-                    )
-                    .map((list) => {
-                        return (
-                            <ProductIntro2 datalist={[list]} key={list.id}/>
-                        );
-                    })}
+                    <div className='product-container'>
+                        <ul className='product-inner'>
+                            {womenData.bestpick
+                            .filter(
+                                (list) =>
+                                list.category === tabItems[clickedIndex]
+                            )
+                            .map((list) => {
+                                return (
+                                    <ProductCard datalist={[list]} key={list.id}/>
+                                );
+                            })}
+                        </ul>
+                    </div>    
+                    
                 </ul>
             </div>
       </div>
