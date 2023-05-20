@@ -195,5 +195,97 @@
            "make_reservation_tag": "",
            "clearance_tag" : "뉴시즌"
        }
+    ],
+    "hotkeyword": [
+        {
+            "id": 1,
+            "category": "apparel",
+            "brand": "VINTAGE HOLLYWOOK",
+            "front": "[단독오픈] | [23SUMMER]",
+            "product": "Catch Love Pearl Necklace_VH23N1NE112B",
+            "discount_price": "84,550",
+            "base_price": "89,000",
+            "img": "/images/pro_app01.png",
+            "alt": "apparel1",
+            "sale": "5%",
+            "general_tag": "단독",
+            "make_reservation_tag": "예약상품",
+            "clearance_tag" : "뉴시즌"
+        },
+        {
+            "id": 2,
+            "category": "apparel",
+            "brand": "ALLINCOMPLETE",
+            "front": "[단독] Round Logo Ball Cap (10 Colors)",
+            "product": "",
+            "discount_price": "84,550",
+            "base_price": "89,000",
+            "img": "/images/pro_app02.jpg",
+            "alt": "apparel1",
+            "sale": "5%",
+            "general_tag": "단독",
+            "make_reservation_tag": "예약상품",
+            "clearance_tag" : "뉴시즌"
+        },
+        {
+            "id": 3,
+            "category": "apparel",
+            "brand": "ALLINCOMPLETE",
+            "front": "[단독] Round Logo Ball Cap (10 Colors)",
+            "product": "",
+            "discount_price": "84,550",
+            "base_price": "89,000",
+            "img": "/images/pro_app03.jpg",
+            "alt": "apparel1",
+            "sale": "5%",
+            "general_tag": "단독",
+            "make_reservation_tag": "예약상품",
+            "clearance_tag" : "뉴시즌"
+        },
+        {
+            "id": 4,
+            "category": "apparel",
+            "brand": "ALLINCOMPLETE",
+            "front": "[단독] Round Logo Ball Cap (10 Colors)",
+            "product": "",
+            "discount_price": "84,550",
+            "base_price": "89,000",
+            "img": "/images/pro_app04.jpg",
+            "alt": "apparel1",
+            "sale": "5%",
+            "general_tag": "단독",
+            "make_reservation_tag": "예약상품",
+            "clearance_tag" : "뉴시즌"
+        },
+        {
+            "id": 5,
+            "category": "apparel",
+            "brand": "ALLINCOMPLETE",
+            "front": "[단독] Round Logo Ball Cap (10 Colors)",
+            "product": "",
+            "discount_price": "84,550",
+            "base_price": "89,000",
+            "img": "/images/pro_app05.jpg",
+            "alt": "apparel1",
+            "sale": "5%",
+            "general_tag": "단독",
+            "make_reservation_tag": "예약상품",
+            "clearance_tag" : "뉴시즌"
+        },
+        {
+            "id": 6,
+            "category": "apparel",
+            "brand": "ALLINCOMPLETE",
+            "front": "[단독] Round Logo Ball Cap (10 Colors)",
+            "product": "",
+            "discount_price": "84,550",
+            "base_price": "89,000",
+            "img": "/images/pro_app01.png",
+            "alt": "apparel1",
+            "sale": "5%",
+            "general_tag": "단독",
+            "make_reservation_tag": "예약상품",
+            "clearance_tag" : "뉴시즌"
+        }
     ]
 }
