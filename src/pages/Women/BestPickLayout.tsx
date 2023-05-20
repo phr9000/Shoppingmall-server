@@ -14,8 +14,8 @@ const BestPickLayout: React.FC = () => {
         setClickedIndex(index);
     };
     return (
-        <div className="thumbnail__container best-pick-container">
-            <h2 className="thumbnail__title">best pick</h2>
+        <section className="thumbnail-container best-pick-container">
+            <h2 className="thumbnail-title">best pick</h2>
                 <ul className="best-pick-tab">
                     {tabItems.map((item, index) => (
                     <li
@@ -48,7 +48,7 @@ const BestPickLayout: React.FC = () => {
                 </ul>
             </div>
       </div>
-        </div>
+        </section>
     )
 };
 
