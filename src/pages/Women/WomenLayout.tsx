@@ -1,6 +1,8 @@
 import React from "react";
 import BestPickLayout from './BestPickLayout';
 import ComCarousel from "components/ComCarousel";
+import ProductCard from "components/ProductCard";
+import womenData from "assets/data/womenData.json";
 const WomenLayout: React.FC = () => {
 const womenlist = [
     "APPAREL",
@@ -106,7 +108,6 @@ return (
                     </a>
                 </div>
             </section>
-            {/* hot keyword */}
             <section className="hot-keyword-container">
                 <div className="rank-container">
                     <div className="rank-area">
@@ -122,12 +123,46 @@ return (
                             }
                         </ul>
                     </div>
-                    
+                    <div className="rank-area">
+                        <h4 className="title">TOP BRAND</h4>
+                        <ul>
+                            {
+                                keywordList.map((item:keywordType, index: number)=>(
+                                    <li key={index}>
+                                        <span className="num">{item.countNumber}</span>
+                                        <a href="!#" title={item.title}>{item.title}</a>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
                 </div>
+                {/* top seller */}
                 <div className="product-list-container">
                     <h4 className="title">top seller</h4>
                     {/* list */}
-                    list 
+                    <div className="product-container">
+                        <ul className="product-inner">
+                        {womenData.hotkeyword
+                            .map((list) => {
+                                return (
+                                    <ProductCard datalist={[list]} key={list.id}/>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                    <h4 className="title w-mt10">WHAT'S NEW</h4>
+                    {/* list */}
+                    <div className="product-container">
+                        <ul className="product-inner">
+                        {womenData.hotkeyword
+                            .map((list) => {
+                                return (
+                                    <ProductCard datalist={[list]} key={list.id}/>
+                                );
+                            })}
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
