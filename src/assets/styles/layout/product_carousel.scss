@@ -51,6 +51,7 @@
             @include font(18px, 600, #333, 1.5);
         }
         .original-price {
+            margin-left: 10px; 
             @include font(14px, 400, #808080, 1.5);
             text-decoration: line-through;
         }
