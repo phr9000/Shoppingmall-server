@@ -1,10 +1,8 @@
 import React from "react";
-import BestPickLayout from './BestPickLayout';
-import ComCarousel from "components/ComCarousel";
+import menData from "assets/data/menData.json";
 import ProductCard from "components/ProductCard";
-import womenData from "assets/data/womenData.json";
-const WomenLayout: React.FC = () => {
-    const womenlist = [
+const MenLayout: React.FC = () => {
+    const menlist = [
         "APPAREL",
         "BAG",
         "SHOES",
@@ -29,42 +27,40 @@ const WomenLayout: React.FC = () => {
         {countNumber: 9, title: '시엔느'},
         {countNumber: 10, title: '블라우스'},
     ];
-
     return (
         <main>
-            
             <div  className="container-wrapper women-container">
                 <section className='thumbnail-container' >
                     <h2 className='thumbnail-title'>
-                        WOMEN
+                        MEN
                     </h2>
                     {/* exhibition */}
                     <div className="exhibition-container">
                         <ul className="exhibition-area">
                             <li>
                                 <a href="!#">
-                                    <img src={process.env.PUBLIC_URL + '/images/women_1.jpg'} alt="banner1" />
+                                    <img src={process.env.PUBLIC_URL + '/images/man_banner01.jpg'} alt="banner1" />
                                     <div className="txt">
-                                        <strong>MOMEN</strong>
-                                        <p>인플루언서들이 소개하는 봄 스타일링</p>
+                                        <strong>DUNST FOR MEN</strong>
+                                        <p>던스트포맨의 여름 시즌오프, 최대 40%세일</p>
                                     </div>
                                 </a>
                             </li>
                             <li>
                                 <a href="!#">
-                                    <img src={process.env.PUBLIC_URL + '/images/women_2.jpg'} alt="banner1" />
+                                    <img src={process.env.PUBLIC_URL + '/images/man_banner02.jpg'} alt="banner1" />
                                     <div className="txt">
-                                        <strong>LEMEME</strong>
-                                        <p>이주의 추천백 #114. 르메메 '삭 파니에'</p>
+                                        <strong>THE NORTH FACE</strong>
+                                        <p>HOT SUMMER ITEM</p>
                                     </div>
                                 </a>
                             </li>
                             <li>
                                 <a href="!#">
-                                    <img src={process.env.PUBLIC_URL + '/images/women_3.jpg'} alt="banner1" />
+                                    <img src={process.env.PUBLIC_URL + '/images/man_banner03.jpg'} alt="banner1" />
                                     <div className="txt">
-                                        <strong>IN THE STAR</strong>
-                                        <p>23 SUMMER COLLECTION OPEN</p>
+                                        <strong>ISLAND SLIPPER</strong>
+                                        <p>튼튼하고 편안한 슈즈 아일랜드슬리퍼</p>
                                     </div>
                                 </a>
                             </li>
@@ -73,10 +69,10 @@ const WomenLayout: React.FC = () => {
                     {/* category link */}
                     <div className="cate-link-area">
                         <ul>
-                            {womenlist.map((value)=>(
+                            {menlist.map((value)=>(
                             <li>
                                 <a href="!#">
-                                    <em>WOMEN</em>
+                                    <em>MEN</em>
                                     <p>{value}</p>
                                 </a>
                             </li>
@@ -85,11 +81,9 @@ const WomenLayout: React.FC = () => {
                     </div>
                 </section>
                 {/* BEST PICK */} 
-                <BestPickLayout/>
                 {/* EXCLUSIVE */}
                 <section className='thumbnail-container exclusive-container'>
                     <h2 className='thumbnail-title'>EXCLUSIVE <span className='plus'></span></h2>
-                    <ComCarousel/>
                 </section>
                 {/* md banner */}
                 <section className="md-banner-container">
@@ -104,7 +98,7 @@ const WomenLayout: React.FC = () => {
                     </div>
                     <div className="issue-area">
                         <a href="!#">
-                            <img src="/images/women_issue_banner.jpg" alt="women issue banner" />
+                            <img src="/images/man_banner04.jpg" alt="women issue banner" />
                         </a>
                     </div>
                 </section>
@@ -143,7 +137,7 @@ const WomenLayout: React.FC = () => {
                         {/* list */}
                         <div className="product-container">
                             <ul className="product-inner">
-                            {womenData.hotkeyword
+                            {menData.hotkeyword
                                 .map((list) => {
                                     return (
                                         <ProductCard datalist={[list]} key={list.id}/>
@@ -155,7 +149,7 @@ const WomenLayout: React.FC = () => {
                         {/* list */}
                         <div className="product-container">
                             <ul className="product-inner">
-                            {womenData.hotkeyword
+                            {menData.hotkeyword
                                 .map((list) => {
                                     return (
                                         <ProductCard datalist={[list]} key={list.id}/>
@@ -169,4 +163,4 @@ const WomenLayout: React.FC = () => {
         </main>
     );
 };
-export default WomenLayout;
+export default MenLayout;

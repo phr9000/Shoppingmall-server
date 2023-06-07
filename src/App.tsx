@@ -17,9 +17,8 @@ import ShopBagLayout from "pages/ShopBag/ShopBagLayout";
 import OriginalLayout from "pages/Original/OriginalLayout";
 import PreShowLayout from "pages/PreShow/PreshowLayout";
 import WomenLayout from "pages/Women/WomenLayout";
+import MenLayout from "pages/Men/MenLayout";
 
-// test
-import TestLayout from "pages/Test/TestLayout";
 const router = createBrowserRouter([
     {
         path: '/',
@@ -41,7 +40,7 @@ const router = createBrowserRouter([
             { path: "/best", element: <BestLayout /> },
             { path: "/shopbag", element: <ShopBagLayout /> },
             {path: "/women", element: <WomenLayout/>},
-            {path: "/test", element:<TestLayout/>},
+            {path: "/men", element: <MenLayout/>}
         ]
     }
 
