@@ -44,10 +44,26 @@ const Header: React.FC = ()=>{
             </li>
           </ul>
           <ul>
-            <li><a href="/preshow">PRE-SHOW</a></li>
-            <li><a href="/origin">ORIGINAL</a></li>
-            <li><a href="/event">EVENT</a></li>
-            <li><a href="/best">BEST</a></li>
+            <li>
+              <Link to="/preshow">
+                  <span>PRE-SHOW</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/origin">
+                <span>ORIGINAL</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/event">
+                  <span>EVENT</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/best">
+                <span>BEST</span>
+              </Link>
+            </li>
           </ul>
         </div>
         {/* <span className="display-inblock">
