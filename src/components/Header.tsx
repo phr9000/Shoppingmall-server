@@ -9,37 +9,37 @@ const Header: React.FC = ()=>{
           <ul>
             <li>
               <Link to="/new">
-                NEW111
+                <span>NEW111</span>
               </Link>
             </li>
             <li>
               <Link to="/women">
-                WOMEN
+                <span>WOMEN</span>
               </Link>
             </li>
             <li>
               <Link to="/men">
-                MEN
+                <span>MEN</span>
               </Link>
             </li>
             <li>
               <Link to="/beauty">
-                BEAUTY
+                <span>BEAUTY</span>
               </Link>
             </li>
             <li>
               <Link to="/life">
-                LIFE
+                <span>LIFE</span>
               </Link>
             </li>
             <li>
               <Link to="/sale">
-                SALE
+                <span>SALE</span>
               </Link>
             </li>
             <li>
               <Link to="/designer">
-                DESIGNER
+                <span>DESIGNER</span>
               </Link>
             </li>
           </ul>
