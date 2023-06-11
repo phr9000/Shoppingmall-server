@@ -1,5 +1,5 @@
 // import React, {useEffect, useState} from 'react'
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = ()=>{
     return (
@@ -7,8 +7,16 @@ const Header: React.FC = ()=>{
         {/* pc header 추후 컴퍼넌트로 분리예정 */}
         <div className='pc-header'>
           <ul>
-            <li><a href="/new">NEW</a></li>
-            <li><a href="/women">WOMEN</a></li>
+            <li>
+              <Link to="/new">
+                NEW
+              </Link>
+            </li>
+            <li>
+              <Link to="/women">
+                WOMEN
+              </Link>
+            </li>
             <li><a href="/men">MEN</a></li>
             <li><a href="/beauty">BEAUTY</a></li>
             <li><a href="/life">LIFE</a></li>
