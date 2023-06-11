@@ -32,7 +32,7 @@ const OriginalLayout:React.FC = ()=> {
     
     const [clickedIndex, setClickedIndex] = useState<number>(0);
 
-    const [selectedCategory, setSelectedCategory] = useState<string>('all');
+    const [selectedCategory, setSelectedCategory] = useState<string>('all'); //eslint-disable-line no-unused-vars
     const [filteredProducts, setFilteredProducts] = useState<Product[]>();
     
     type Product = {
