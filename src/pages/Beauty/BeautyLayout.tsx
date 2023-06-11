@@ -57,10 +57,6 @@ const BeautyLayout: React.FC = () => {
     "디바이스",
     "뷰티툴",
   ];
-  interface Slide {
-    id: number;
-    text: string;
-  }
 
   const heartClick = () => {
     alert('장바구니로 이동됩니다.');

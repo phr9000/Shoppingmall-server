@@ -2,11 +2,7 @@ import React, {useState} from 'react'
 import OriginalData from 'assets/data/originalData.json'
 
 const OriginalLayout:React.FC = ()=> {
-    type tabs = {
-        category: string,
-        name: string
-    };
-    const tabs = [
+    const tabList = [
         {
             
             category: 'all',
@@ -67,7 +63,7 @@ const OriginalLayout:React.FC = ()=> {
                 ORIGINAL
             </h2>
             <div className='tab-area'>
-                {tabs.map((category, index) => (
+                {tabList.map((category:any, index:any) => (
                     <button key={category.category}
                             className={index === clickedIndex? 'active': ''}
                             onClick={() => handleTabClick(category.category, index)}
