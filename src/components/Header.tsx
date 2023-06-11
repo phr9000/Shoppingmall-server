@@ -9,7 +9,7 @@ const Header: React.FC = ()=>{
           <ul>
             <li>
               <Link to="/new">
-                NEW
+                NEW111
               </Link>
             </li>
             <li>
@@ -17,11 +17,31 @@ const Header: React.FC = ()=>{
                 WOMEN
               </Link>
             </li>
-            <li><a href="/men">MEN</a></li>
-            <li><a href="/beauty">BEAUTY</a></li>
-            <li><a href="/life">LIFE</a></li>
-            <li><a href="/sale">SALE</a></li>
-            <li><a href="/designer">DESIGNER</a></li>
+            <li>
+              <Link to="/men">
+                MEN
+              </Link>
+            </li>
+            <li>
+              <Link to="/beauty">
+                BEAUTY
+              </Link>
+            </li>
+            <li>
+              <Link to="/life">
+                LIFE
+              </Link>
+            </li>
+            <li>
+              <Link to="/sale">
+                SALE
+              </Link>
+            </li>
+            <li>
+              <Link to="/designer">
+                DESIGNER
+              </Link>
+            </li>
           </ul>
           <ul>
             <li><a href="/preshow">PRE-SHOW</a></li>
