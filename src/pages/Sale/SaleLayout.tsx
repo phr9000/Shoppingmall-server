@@ -131,7 +131,12 @@ const SaleLayout: React.FC = () => {
       className="new-container"
     >
       <div
-        style={{ fontSize: "40px", marginTop: "-20px", marginBottom: "40px" }}
+        style={{
+          fontSize: "4.4rem",
+          marginTop: "130px",
+          marginBottom: "40px",
+          fontWeight: "200",
+        }}
       >
         SALE
       </div>
