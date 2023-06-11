@@ -9,7 +9,7 @@ const Header: React.FC = ()=>{
           <ul>
             <li>
               <Link to="/new">
-                <span>NEW111</span>
+                <span>NEW</span>
               </Link>
             </li>
             <li>
