@@ -48,6 +48,7 @@ const OriginalLayout:React.FC = ()=> {
     const handleTabClick = (category: string, index: number) => {
         setClickedIndex(index);
         setSelectedCategory(category);
+        console.log(selectedCategory);
         if(category === 'all') {
             setFilteredProducts(undefined);
         } else {
