@@ -2,7 +2,6 @@
 .women-container {
   margin: 0 auto;
   width: 1880px;
-
   // exhibition
   .exhibition-container {
     .exhibition-area {
@@ -95,8 +94,8 @@
       }
     }
   }  
-    //product container 공통 수정
-    .product-container {
+  //product container 공통 수정
+  .product-container {
       max-width: 100%;
       width: 100%;
       .product-inner {
@@ -124,6 +123,7 @@
         }
       }
     }
+  }  
     .hot-keyword-container {
         display: flex;
         justify-content: center;
@@ -171,27 +171,6 @@
   // exclusive-container
   .exclusive-container {
     margin-bottom: 80px;
-  }
-  // middle banner
-  .md-banner-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .video-area {
-      margin-right: 15px;
-    }
-    .issue-area {
-      width: 877px;
-      height: 373px;
-      a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        > img {
-          height: 100%;
-        }
-      }
-    }
   }
   .hot-keyword-container {
     display: flex;
@@ -275,6 +254,26 @@
       }
     }
   }
-}
+    // middle banner
+    .md-banner-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .video-area {
+        margin-right: 15px;
+      }
+      .issue-area {
+        width: 877px;
+        height: 373px;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          > img {
+            height: 100%;
+          }
+        }
+      }
+    }
   
 }
