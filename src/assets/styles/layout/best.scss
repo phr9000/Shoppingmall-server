@@ -44,6 +44,11 @@
         width: 100%;
         height: 100%;
         border-left: 0;
+        transition: all 0.5s ease;
+        &:hover {
+          background-color: $black-01;
+          color: $white;
+        }
       }
     }
   }
