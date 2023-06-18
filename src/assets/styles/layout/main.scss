@@ -126,6 +126,11 @@
         float: right; 
         width: 60%;
         .product-inner {
+          flex-wrap: wrap;
+          li {
+            margin: 0 5px; 
+            margin-bottom: 15px; 
+          }
           &:first-child {
             margin-top: 0;
           }
