@@ -7,7 +7,7 @@ type dataType = {
     brand: string,
     front: string,
     product: string,
-    discout_price?: string,
+    discount_price?: string,
     base_price?: string,
     img: string,
     alt?: string,
@@ -41,7 +41,7 @@ const ProductCard:React.FC<GreetingsProps> = (data)=>{
                       </div>
                       <div className="price-area">
                           <div className="price">
-                              <span className='price__bargain'>{list.discout_price}</span>
+                              <span className='price__bargain'>{list.discount_price}</span>
                               <span className='price__origin'>{list.base_price}</span>
                           </div>
                           <div className="percent">{list.sale}</div>

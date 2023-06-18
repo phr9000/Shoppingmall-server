@@ -6,8 +6,8 @@ type dataType = {
   preview: string,
   item: string,
   state: string,
-  price: string,
-  before?: string,
+  originPrice: string,
+  bargainPrice?: string,
   sale?: string
 };
 
@@ -25,7 +25,7 @@ const ProductIntro:React.FC<GreetingsProps> = (data)=>{
             <li>
               <a className='display-block' href='./new'>
                   <div className='img-area'>
-                      <img src={process.env.PUBLIC_URL + list.preview} alt="app01" />
+                      <img src={list.preview} alt="app01" />
                   </div>
                   <div className="text-container">
                       <div className="text-area">
@@ -35,8 +35,8 @@ const ProductIntro:React.FC<GreetingsProps> = (data)=>{
                       </div>
                       <div className="price-area">
                           <div className="price">
-                              <span className='price__bargain'>{list.before}</span>
-                              <span className='price__origin'>{list.price}</span>
+                              <span className='price__bargain'>{list.bargainPrice}</span>
+                              <span className='price__origin'>{list.originPrice}</span>
                           </div>
                           <div className="percent">{list.sale}</div>
                       </div>

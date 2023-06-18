@@ -19,8 +19,10 @@ const BestLayout: React.FC = () => {
   const menuList = ["ALL", "WOMEN", "MEN", "LIFE", "BEAUTY"];
 
   return (
-    <div className="best-container">
-      <h2 className="sub-title">BEST</h2>
+    <div className="container-wrapper best-container">
+      <div className="thumbnail-container">
+        <h4 className="thumbnail-title">BEST</h4>
+      </div>
       <div className="event-search">
         <div className="search-container">
           <div className="search-area">

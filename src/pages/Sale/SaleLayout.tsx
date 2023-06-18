@@ -128,17 +128,14 @@ const SaleLayout: React.FC = () => {
   return (
     <div
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
-      className="new-container"
+      className="new-container container-wrapper"
     >
-      <div
-        style={{
-          fontSize: "4.4rem",
-          marginTop: "130px",
-          marginBottom: "40px",
-          fontWeight: "200",
-        }}
-      >
-        SALE
+      <div className="thumbnail-container">
+        <div
+          className="thumbnail-title"
+        >
+          SALE
+        </div>
       </div>
       <div className="main-carousel">
         <Slider {...settings}>

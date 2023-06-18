@@ -63,9 +63,9 @@ const BeautyLayout: React.FC = () => {
   };
 
   return (
-    <div className="main-layout-container beauty-container container-wrapper">
-      <div className="beauty-container__inner">
-        <h2 className="beauty-container__title">BEAUTY</h2>
+    <div className="beauty-container container-wrapper">
+      <div className="thumbnail-container">
+        <h2 className="thumbnail-title">BEAUTY</h2>
         {/* carousel */}
         <div className="main-carousel beauty-container__banner">
           <Slider {...settings}>
@@ -102,8 +102,8 @@ const BeautyLayout: React.FC = () => {
           </a>
         </div>
         {/* make it yours */}
-        <div className="thumbnail__container whats-new-container make-it-yours-container">
-          <h2 className="thumbnail__title">MAKE IT YOURS </h2>
+        <div className="thumbnail-container whats-new-container make-it-yours-container">
+          <h2 className="thumbnail-title">MAKE IT YOURS </h2>
           <ProductCarousel setting={settings2} dataList={bestPickData} />
         </div>
         {/* sub banner */}
@@ -573,8 +573,8 @@ const BeautyLayout: React.FC = () => {
           </div>
         </div>
         {/* slider test */}
-        <div className="thumbnail__container beauty-container__brand-container">
-          <h2 className="thumbnail__title">style story</h2>
+        <div className="thumbnail-container beauty-container__brand-container">
+          <h2 className="thumbnail-title">style story</h2>
           <div className="brands-menu-area">
             {beautyData.brands.map((slide, index) => (
               <button

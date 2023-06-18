@@ -13,7 +13,7 @@ const LifeLayout: React.FC = () => {
   return (
     <div className="container-wrapper life-container">
       <section className="thumbnail-container">
-        <h2 className="sub-title">LIFE</h2>
+        <h4 className="thumbnail-title">LIFE</h4>
         <LifeCarousel></LifeCarousel>
         <ul className="tab-list">
           {lifeTabList.map((value) => (

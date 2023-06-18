@@ -110,7 +110,7 @@ const NewLayout: React.FC = () => {
   return (
     <div className="container-wrapper new-container">
       <section className="thumbnail-container">
-        <div className="title">NEW</div>
+        <div className="thumbnail-title">NEW</div>
         <div className="hot-tag-container">
           <div className="hot-tag-area">
             <h4>인기태그</h4>

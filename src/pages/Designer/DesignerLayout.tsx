@@ -40,7 +40,7 @@ const DesignerLayout: React.FC = () => {
   return (
     <div className="container-wrapper designer-container">
       <section className="thumbnail-container">
-        <h2 className="sub-title">DESIGNER</h2>
+        <h4 className="thumbnail-title">DESIGNER</h4>
         <div className="designer-section designer-section__showup">
           <div className="showup__video">
             <iframe

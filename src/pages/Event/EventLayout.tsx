@@ -51,8 +51,10 @@ const EventLayout: React.FC = () => {
   ];
 
   return (
-    <div className="event-container">
-      <h2 className="sub-title">EVENT</h2>
+    <div className="container-wrapper  event-container">
+      <div className="thumbnail-container">
+        <h4 className="thumbnail-title">EVENT</h4>
+      </div>
       <EventCarousel />
       <div className="event-section">
         <div className="event-benefit event-benefit__login">
