@@ -1,0 +1,102 @@
+[
+    {
+        "category": "HOME",
+        "id": 1,
+        "preview": "/images/pro_app01.png",
+        "item": "Mosser Glass",
+        "state": "케이크 스탠드 17cm 크라운 핑크",
+        "bargainPrice": "",
+        "originPrice": "148,000",
+        "sale": "33%"
+    },
+    {
+        "category": "HOME",
+        "id": 2,
+        "preview": "/images/pro_app02.jpg",
+        "item": "nomia",
+        "state": "코비 러그",
+        "bargainPrice": "99,000",
+        "originPrice": "148,000",
+        "sale": "33%"
+    },
+    {
+        "category": "HOME",
+        "id": 3,
+        "preview": "/images/pro_app03.jpg",
+        "item": "FINCA",
+        "state": "블랙스트라이프&블루 레이어드 알러지케어 이불커버세트 SSQ",
+        "bargainPrice": "99,000",
+        "originPrice": "148,000",
+        "sale": "33%"
+    },
+    {
+        "category": "HOME",
+        "id": 4,
+        "preview": "/images/pro_app04.jpg",
+        "item": "LIVART",
+        "state": "멜바 수납 화장대",
+        "bargainPrice": "99,000",
+        "originPrice": "148,000",
+        "sale": "40%"
+    },
+    {
+        "category": "HOME",
+        "id": 5,
+        "preview": "/images/pro_app05.jpg",
+        "item": "dropdropdrop",
+        "state": "A-페이퍼커튼 LUCKY HEARTY BLACKBERRY",
+        "bargainPrice": "99,000",
+        "originPrice": "148,000",
+        "sale": "10%"
+    },
+    {
+        "category": "HOME",
+        "id": 6,
+        "preview": "/images/pro_app01.png",
+        "item": "Mosser Glass",
+        "state": "케이크 스탠드 17cm 크라운 핑크",
+        "bargainPrice": "",
+        "originPrice": "148,000",
+        "sale": "33%"
+    },
+    {
+        "category": "HOME",
+        "id": 7,
+        "preview": "/images/pro_app02.jpg",
+        "item": "nomia",
+        "state": "코비 러그",
+        "bargainPrice": "99,000",
+        "originPrice": "148,000",
+        "sale": "33%"
+    },
+    {
+        "category": "HOME",
+        "id": 8,
+        "preview": "/images/pro_app03.jpg",
+        "item": "FINCA",
+        "state": "블랙스트라이프&블루 레이어드 알러지케어 이불커버세트 SSQ",
+        "bargainPrice": "99,000",
+        "originPrice": "148,000",
+        "sale": "33%"
+    },
+    {
+        "category": "HOME",
+        "id": 9,
+        "preview": "/images/pro_app04.jpg",
+        "item": "LIVART",
+        "state": "멜바 수납 화장대",
+        "bargainPrice": "99,000",
+        "originPrice": "148,000",
+        "sale": "40%"
+    },
+    {
+        "category": "HOME",
+        "id": 10,
+        "preview": "/images/pro_app05.jpg",
+        "item": "dropdropdrop",
+        "state": "A-페이퍼커튼 LUCKY HEARTY BLACKBERRY",
+        "bargainPrice": "99,000",
+        "originPrice": "148,000",
+        "sale": "10%"
+    }
+]

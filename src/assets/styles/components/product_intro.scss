@@ -45,8 +45,10 @@
             font-weight: 600;
             .price {
                 color: $black; 
+                .price__bargain {
+                    margin-right: 4px; 
+                }
                 .price__origin {
-                    margin-left: 4px; 
                     font-size: 12px;
                     color: rgb(157,157,157);
                     text-decoration: line-through;
