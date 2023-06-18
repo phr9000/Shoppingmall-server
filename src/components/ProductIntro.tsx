@@ -35,6 +35,7 @@ const ProductIntro:React.FC<GreetingsProps> = (data)=>{
                       </div>
                       <div className="price-area">
                           <div className="price">
+                              {list.bargainPrice === ''?<span>bargin없어</span>:null}
                               <span className='price__bargain'>{list.bargainPrice}</span>
                               <span className='price__origin'>{list.originPrice}</span>
                           </div>
