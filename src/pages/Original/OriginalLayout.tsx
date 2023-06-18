@@ -58,11 +58,11 @@ const OriginalLayout:React.FC = ()=> {
     };
     return (
     //TODO: 인피니티 스크롤 
-    <div className='main-layout-container original-container'>
-        <div className='original-container__inner'>
-            <h2>
+    <div className='container-wrapper original-container'>
+        <div className='thumbnail-container original-container__inner'>
+            <h4 className='thumbnail-title'>
                 ORIGINAL
-            </h2>
+            </h4>
             <div className='tab-area'>
                 {tabList.map((category:any, index:any) => (
                     <button key={category.category}

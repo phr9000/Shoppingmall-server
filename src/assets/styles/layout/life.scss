@@ -1,12 +1,5 @@
-@font-face {
-  font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
 .life-container {
-  max-width: 1920px;
+  max-width: 1880px;
   margin: 0 auto;
   h2 {
     height: 14rem;
@@ -15,7 +8,6 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: 200;
-    // font-family: "Pretendard-Regular" !important;
   }
   h3 {
     height: 10rem;
@@ -26,7 +18,7 @@
   }
 
   .tab-list {
-    width: 80%;
+    width: 100%;
     margin: 5rem auto;
     display: flex;
     justify-content: space-between;
@@ -48,17 +40,13 @@
   }
   .life-section {
     list-style: none;
-    width: 80%;
-
+    width: 100%;
     overflow: hidden;
     margin: 5rem auto;
-
     display: flex;
     justify-content: space-between;
-
     .side-banner {
       width: 40%;
-
       img {
         object-fit: contain;
         width: 100%;
@@ -70,9 +58,17 @@
         height: auto;
         margin-left: 2rem;
         .item-container {
-          justify-content: flex-end;
+          justify-content: space-between;
           li {
             min-width: 200px;
+            width: 25rem;
+            height: 50rem;
+            margin-top: 3rem;
+            .item-preview {
+              width: 25rem;
+              padding: 0;
+              left: 0;
+            }
           }
         }
       }
@@ -84,11 +80,21 @@
         width: 30%;
         height: 88rem;
         margin-left: 20px;
-      }
-      .life-section__food {
-        margin-left: 0;
         .item-container {
           justify-content: flex-end;
+          li {
+            width: 25rem;
+            height: 50em;
+            margin-top: 3rem;
+            .item-preview {
+              width: 25rem;
+              padding: 0;
+              left: 0;
+            }
+          }
+        }
+        .life-section__food {
+          margin-left: 0;
         }
       }
     }
@@ -198,7 +204,7 @@
   }
 
   .mid-banner {
-    width: 80%;
+    width: 100%;
     height: 56rem;
     margin: 5rem auto;
     overflow: hidden;
