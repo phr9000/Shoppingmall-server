@@ -1,5 +1,4 @@
 import React from "react";
-import BestPickLayout from './BestPickLayout';
 import ComCarousel from "components/ComCarousel";
 import ProductCard from "components/ProductCard";
 import womenData from "assets/data/womenData.json";
@@ -84,8 +83,6 @@ const WomenLayout: React.FC = () => {
                         </ul>
                     </div>
                 </section>
-                {/* BEST PICK */} 
-                <BestPickLayout/>
                 {/* EXCLUSIVE */}
                 <section className='thumbnail-container exclusive-container'>
                     <h2 className='thumbnail-title'>EXCLUSIVE <span className='plus'></span></h2>

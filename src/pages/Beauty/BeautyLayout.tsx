@@ -59,13 +59,13 @@ const BeautyLayout: React.FC = () => {
   ];
 
   const heartClick = () => {
-    alert('장바구니로 이동됩니다.');
-  }
+    alert("장바구니로 이동됩니다.");
+  };
 
   return (
-    <div className="main-layout-container beauty-container">
-      <div className="beauty-container__inner">
-        <h2 className="beauty-container__title">BEAUTY</h2>
+    <div className="beauty-container container-wrapper">
+      <div className="thumbnail-container">
+        <h2 className="thumbnail-title">BEAUTY</h2>
         {/* carousel */}
         <div className="main-carousel beauty-container__banner">
           <Slider {...settings}>
@@ -102,8 +102,8 @@ const BeautyLayout: React.FC = () => {
           </a>
         </div>
         {/* make it yours */}
-        <div className="thumbnail__container whats-new-container make-it-yours-container">
-          <h2 className="thumbnail__title">MAKE IT YOURS </h2>
+        <div className="thumbnail-container whats-new-container make-it-yours-container">
+          <h2 className="thumbnail-title">MAKE IT YOURS </h2>
           <ProductCarousel setting={settings2} dataList={bestPickData} />
         </div>
         {/* sub banner */}
@@ -573,8 +573,8 @@ const BeautyLayout: React.FC = () => {
           </div>
         </div>
         {/* slider test */}
-        <div className="thumbnail__container beauty-container__brand-container">
-          <h2 className="thumbnail__title">style story</h2>
+        <div className="thumbnail-container beauty-container__brand-container">
+          <h2 className="thumbnail-title">style story</h2>
           <div className="brands-menu-area">
             {beautyData.brands.map((slide, index) => (
               <button
@@ -601,7 +601,10 @@ const BeautyLayout: React.FC = () => {
                   >
                     <ul className="small-img-inner flex">
                       <li>
-                        <button className="icon heart-icon" onClick={() => heartClick()}></button>
+                        <button
+                          className="icon heart-icon"
+                          onClick={() => heartClick()}
+                        ></button>
                         <a href="!#">
                           <div className="small-img-area">
                             <img src={slide.smallImg1} alt={slide.smallAlt1} />
@@ -611,16 +614,31 @@ const BeautyLayout: React.FC = () => {
                             <p className="desc">{slide.desc1}</p>
                             <div className="price-area">
                               <div className="flex align-center">
-                                <span className="discount_price">{slide.discountPrice1}</span>
-                                <span className={slide.isDiscount ? 'base_price' : 'discount_price' }>{slide.basePrice1}</span>
+                                <span className="discount_price">
+                                  {slide.discountPrice1}
+                                </span>
+                                <span
+                                  className={
+                                    slide.isDiscount
+                                      ? "base_price"
+                                      : "discount_price"
+                                  }
+                                >
+                                  {slide.basePrice1}
+                                </span>
                               </div>
-                              <div className="discount_percent">{slide.discountRate1}</div>
+                              <div className="discount_percent">
+                                {slide.discountRate1}
+                              </div>
                             </div>
                           </div>
                         </a>
                       </li>
                       <li>
-                        <button className="icon heart-icon" onClick={() => heartClick()}></button>
+                        <button
+                          className="icon heart-icon"
+                          onClick={() => heartClick()}
+                        ></button>
                         <a href="!#">
                           <div className="small-img-area">
                             <img src={slide.smallImg2} alt={slide.smallAlt2} />
@@ -630,16 +648,31 @@ const BeautyLayout: React.FC = () => {
                             <p className="desc">{slide.desc2}</p>
                             <div className="price-area">
                               <div className="flex align-center">
-                              <span className="discount_price">{slide.discountPrice2}</span>
-                                <span className={slide.isDiscount ? 'base_price' : 'discount_price' }>{slide.basePrice2}</span>
+                                <span className="discount_price">
+                                  {slide.discountPrice2}
+                                </span>
+                                <span
+                                  className={
+                                    slide.isDiscount
+                                      ? "base_price"
+                                      : "discount_price"
+                                  }
+                                >
+                                  {slide.basePrice2}
+                                </span>
                               </div>
-                              <div className="discount_percent">{slide.discountRate2}</div>
+                              <div className="discount_percent">
+                                {slide.discountRate2}
+                              </div>
                             </div>
                           </div>
                         </a>
                       </li>
                       <li>
-                        <button className="icon heart-icon" onClick={() => heartClick()}></button>
+                        <button
+                          className="icon heart-icon"
+                          onClick={() => heartClick()}
+                        ></button>
                         <a href="!#">
                           <div className="small-img-area">
                             <img src={slide.smallImg3} alt={slide.smallAlt3} />
@@ -649,10 +682,22 @@ const BeautyLayout: React.FC = () => {
                             <p className="desc">{slide.desc3}</p>
                             <div className="price-area">
                               <div className="flex align-center">
-                              <span className="discount_price">{slide.discountPrice3}</span>
-                                <span className={slide.isDiscount ? 'base_price' : 'discount_price' }>{slide.basePrice3}</span>
+                                <span className="discount_price">
+                                  {slide.discountPrice3}
+                                </span>
+                                <span
+                                  className={
+                                    slide.isDiscount
+                                      ? "base_price"
+                                      : "discount_price"
+                                  }
+                                >
+                                  {slide.basePrice3}
+                                </span>
                               </div>
-                              <div className="discount_percent">{slide.discountRate3}</div>
+                              <div className="discount_percent">
+                                {slide.discountRate3}
+                              </div>
                             </div>
                           </div>
                         </a>

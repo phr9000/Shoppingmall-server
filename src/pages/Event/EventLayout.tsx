@@ -41,9 +41,20 @@ const EventLayout: React.FC = () => {
     console.log(`selected ${value}`);
   };
 
+  const evnetTabList = [
+    "ALL",
+    "COLLECTION",
+    "TREND",
+    "EDITORIAL",
+    "SALE",
+    "EVENT",
+  ];
+
   return (
-    <div className="event-container">
-      <h2 className="sub-title">EVENT</h2>
+    <div className="container-wrapper  event-container">
+      <div className="thumbnail-container">
+        <h4 className="thumbnail-title">EVENT</h4>
+      </div>
       <EventCarousel />
       <div className="event-section">
         <div className="event-benefit event-benefit__login">
@@ -118,36 +129,13 @@ const EventLayout: React.FC = () => {
 
       <div className="event-tab__subwrap">
         <ul className="event-tab__submenu">
-          <li>
-            <button>
-              <span>ALL</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <span>COLLECTION</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <span>TREND</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <span>EDITORIAL</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <span>SALE</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <span>EVENT</span>
-            </button>
-          </li>
+          {evnetTabList.map((value) => (
+            <li>
+              <button>
+                <span>{value}</span>
+              </button>
+            </li>
+          ))}
         </ul>
         <Select
           defaultValue="진행중 이벤트"

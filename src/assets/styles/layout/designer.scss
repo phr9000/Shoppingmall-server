@@ -1,7 +1,6 @@
 .designer-container {
-  width: 1920px;
+  width: 1880px;
   margin: 0 auto;
-
   height: 100%;
   h2 {
     height: 14rem;
@@ -13,16 +12,16 @@
     // font-family: "Pretendard-Regular" !important;
   }
   .designer-section {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     &.designer-section__showup {
-      height: 400px;
+      height: 434px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       overflow: hidden;
       .showup__video {
-        width: 47%;
+        width: 50%;
         height: 100%;
         iframe {
           width: 100%;
@@ -30,14 +29,19 @@
         }
       }
       .showup__slide {
-        width: 52%;
-        border: 1px solid green;
+        width: 48%;
+        li {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
       }
     }
     &.designer-section__login {
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid $black;
       h4 {
         font-size: 2.6rem;
         font-weight: 300;
@@ -48,22 +52,22 @@
         height: 2.6rem;
         font-size: 2rem;
         text-align: center;
-        background-color: #333333;
-        color: #fff;
+        background-color: $black-01;
+        color: $white;
         line-height: 25px;
       }
     }
     &.designer-section__login--open {
       height: 12.5rem;
-      color: #fff;
+      color: $white;
       font-size: 1.4rem;
       background-color: #666666;
       margin: 0 auto;
       text-align: center;
       line-height: 5rem;
       button {
-        background-color: #fff;
-        border: 1px solid #000;
+        background-color: $white;
+        border: 1px solid $black;
         padding: 0.8rem 1.8rem;
       }
     }
@@ -79,7 +83,7 @@
         align-items: center;
         width: 610px;
         height: 32px;
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid $black;
         // search
         .brand-search-area {
           width: 100%;
@@ -109,7 +113,7 @@
             font-size: 1.4rem;
 
             button {
-              border: 1px solid #333333;
+              border: 1px solid $black-01;
               width: 56px;
               font-weight: 700;
               padding: 10px 0;
@@ -118,7 +122,7 @@
           div {
             margin-left: 50px;
             button {
-              border: 1px solid #333333;
+              border: 1px solid $black-01;
               width: 50px;
               margin: 5px 5px;
               padding: 10px 0;
@@ -131,11 +135,11 @@
   .tab-list {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     margin: 5rem auto;
     height: 52px;
-    border-left: 1px solid #333333;
-    border-right: 1px solid #333333;
+    border-left: 1px solid $black-01;
+    border-right: 1px solid $black-01;
     box-sizing: border-box;
 
     div.tab-list__left {
@@ -145,17 +149,18 @@
       li {
         width: 20rem;
         height: 5.2em;
-        border: 1px solid #333333;
+        border: 1px solid $black-01;
         box-sizing: border-box;
         border-left: 0;
         button {
           font-size: 1.8rem;
           width: 100%;
           height: 100%;
+          transition: all 0.5s ease;
 
           &:hover {
-            background-color: #333333;
-            color: #fff;
+            background-color: $black-01;
+            color: $white;
           }
         }
       }
@@ -167,15 +172,15 @@
       li {
         width: 19rem;
         height: 5.2em;
-        border: 1px solid #333333;
+        border: 1px solid $black-01;
         border-right: 0;
         button {
           font-size: 1.8rem;
           width: 100%;
           height: 100%;
           &:hover {
-            background-color: #333333;
-            color: #fff;
+            background-color: $black-01;
+            color: $white;
           }
         }
       }
