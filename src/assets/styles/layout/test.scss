@@ -1,33 +1,26 @@
-ul {
-    list-style-type: none; 
-    padding: 0; 
+.test-container {
+    display: flex;
+    padding: 20px; 
+    width: 100%;
+    .item {
+        width: 50%; 
+        margin: 20px; 
+    }
+    button {
+        margin-left: 10px; 
+        background-color: #000;
+        color: #fff;
+        width: 100px;
+        height: 40px; 
+        border-radius: 6px;
+    }
 }
-.tab-container {
-    margin-top: 30px;
-    margin-left: 20px; 
-    max-width: 500px; 
-    .tab-list {
-        display: flex;
-        .tab {
-            flex: 1; 
-            padding: 10px 20px; 
-            cursor: pointer;
-            background-color: #f2f2f2; 
-            border: 1px solid #ccc;
-            &.active {
-                background-color: #e6e6e6;
-                font-weight: bold; 
-            }
-        }
-    }
-    .tab-panel-list {
-        margin-top: 30px;
-        // li {
-        //     display: none; 
-        //     padding: 20px;
-        //     &.active {
-        //         display: block; 
-        //     }
-        // }
-    }
+.flex {
+    display: flex; 
+}
+.items-center {
+    align-items: center;
+}
+.m-b10 {
+    margin-bottom: 10px; 
 }

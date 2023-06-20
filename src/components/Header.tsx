@@ -64,6 +64,11 @@ const Header: React.FC = ()=>{
                 <span>BEST</span>
               </Link>
             </li>
+            <li>
+              <Link to="/test">
+                <span>TEST</span>
+              </Link>
+            </li>
           </ul>
         </div>
         {/* <span className="display-inblock">
