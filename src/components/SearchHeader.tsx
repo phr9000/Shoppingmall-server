@@ -51,12 +51,12 @@ const SearchHeader: React.FC = () => {
             <span>Join</span>
           </button>
         </Link>
-        <Link to="/login">
+        <p>
           <button className="login-area">
             <i className="icon login-icon"></i>
             <span>Login</span>
           </button>
-        </Link>
+        </p>
         <Link to="/shopbag">
           <button className="basket-area">
             <i className="icon basket-icon"></i>
